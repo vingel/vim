@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Owner:	Vingel - http://www.vingel.com
-" Modified: 2010-05-11 10:51:00
+" Modified: 2010-08-26 10:23:59
 
 " set runtimepath=~/vim,$VIMRUNTIME
 " source ~/vim/vimrc
@@ -90,15 +90,17 @@ set nowb
 set noswapfile
 
 " Folding settings
-set nofoldenable        "dont fold by default
-set foldmarker={,}
-set foldopen=block,hor,mark,percent,quickfix,tag
-set foldmethod=indent   "fold based on indent
-set foldnestmax=10      "deepest fold is 10 levels
-set foldlevel=1         "this is just what i use
-map <leader>f1 :set fdm=manual<cr>
-map <leader>f2 :set fdm=indent<cr>
-map <leader>f3 :set fdm=marker<cr>
+if has("folding")
+    set nofoldenable        "dont fold by default
+    set foldmarker={,}
+    set foldopen=block,hor,mark,percent,quickfix,tag
+    set foldmethod=indent   "fold based on indent
+    set foldnestmax=10      "deepest fold is 10 levels
+    set foldlevel=1         "this is just what i use
+    map <leader>f1 :set fdm=manual<cr>
+    map <leader>f2 :set fdm=indent<cr>
+    map <leader>f3 :set fdm=marker<cr>
+endif
 
 " Text options
 set expandtab
@@ -137,6 +139,9 @@ inoremap <C-z> <C-O>u
 " Fast saving
 map <leader>w :w!<cr>
 map <C-S> <Esc>:w!<cr>
+if has("unix") 
+	cmap w!! %!sudo tee > /dev/null %
+endif
 
 " Mapping Q to exit instead of Ex mode
 map Q :x<cr>
@@ -261,7 +266,26 @@ function! CurDir()
 endfunction
 
 "Format the statusline
-set statusline=%F%m%r%h%w\ CW\ %r%{CurDir()}%h\ [%Y,%{&ff},%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [POS=%l,%v,%p%%,%L] 
+if has("statusline")
+    set statusline=%F%m%r%h%w\ CW\ %r%{CurDir()}%h\ [%Y,%{&ff},%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [POS=%l,%v,%p%%,%L] 
+endif
+    "set statusline=\ %F%m%r%h%y[%{&fileformat},\ %{&fileencoding}%{((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\")}]\ %w%=(%b,0x%B)\ (%l,%c)\ %P\ %{&wrap?'WR':'NW'}\ %{&ic?'IC':'CS'}\ 
+"
+if has("mksession")
+	set sessionoptions=buffers,curdir,tabpages
+endif
+
+function! ToggleColor()
+	let colors = ['morning', 'vivi', 'zellner']
+	let current = (index(colors, g:colors_name) + 1) % len(colors)
+	execute 'colorscheme ' . colors[current]
+endfunction
+map <F10> :call ToggleColor()<CR>
+
+" Use Alt-n to switch tab
+for i in range(1, min([&tabpagemax, 9]))
+    execute 'nmap <A-'.i.'> '.i.'gt'
+endfor
 
 """"""""""""""""""""""""""""""
 " => Visual
@@ -459,7 +483,8 @@ au filetype python map <F5> :call CheckPythonSyntax()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Set OminComplete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set completeopt=longest,menu
+set complete=.,k,t,i
+set completeopt=longest,menu,preview
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html,htm set omnifunc=htmlcomplete#CompleteTags
@@ -544,7 +569,7 @@ if has("multi_byte")
         source $VIMRUNTIME\menu.vim
         set path+=E:\Vingel\bin\python\Lib\site-packages\
         if version >= 603
-          set helplang=cn
+          set helplang=cn,en
         endif
     else
         set guifont=Bitstream\ Vera\ Sans\ Mono\ 14
@@ -561,11 +586,16 @@ endif
 
 if has("gui_macvim")
     set transparency=2
+    set noimd
+    "set imactivatekey=C-space
+    inoremap <ESC> <ESC>:set iminsert=1<CR>
 endif
 
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+behave xterm
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " My information
