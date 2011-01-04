@@ -3982,41 +3982,19 @@ with
 write
 writeln
 Vingel Annkiwi vingel@gmail.com 赖剑明 44528119860804563X
-Web2.0
-facebook
-myspace
-twitter
-youtube
-meebo
-flickr
-douban
-tencent
-xianguo
-youku
+Web2.0 facebook myspace twitter youtube meebo flickr douban tencent xianguo youku
 linux ubuntu gentoo debian 
-mac leopard snowleopard iPhone
+Apple mac leopard snowleopard iPhone
 ChinaBank CMBChina
 Feedburner feedsky
 svn github 
 Google AdSense appengine
-baidu
-sina sohu 163
-blueidea
-Slashdot Solidot
-TechCrunch
-Boingboing
-friendfeed
-picasa
-apache
-nginx
-python django twisted pinax lambda enumerate
+baidu sina sohu 163 blueidea sogou 
+Slashdot Solidot TechCrunch Boingboing friendfeed picasa apache nginx
+python django twisted pinax lambda
 javascript jQuery Prototype
 FabriQate Guptas Deepak Manav
-Cocca NSObject NSAutoreleasePool
 Alibaba Alipay Aliway Taobao alibaba-inc alipay-inc
-Arale YAHOO YUI 
-onDOMReady onContentReady onAvailable
-setXY getXY getStyle
-hasClass addClass removeClass
-getAncestorBy getAncestorByTagName getAncestorByClassName getChildren getFirstChild getLastChild getNextSibling getPreviousSibling isAncestor getDocumentHeight getDocumentScrollLeft getDocumentScrollTop getDocumentWidth getElementBy 
-stringUtil.equals setParameter
+Arale YAHOO YUI onDOMReady onContentReady onAvailable setXY getXY getStyle hasClass addClass removeClass getAncestorBy getAncestorByTagName getAncestorByClassName getChildren getFirstChild getLastChild getNextSibling getPreviousSibling isAncestor getDocumentHeight getDocumentScrollLeft getDocumentScrollTop getDocumentWidth getElementBy 
+stringUtil.equals
+Cocca NSObject NSAutoreleasePool NSUserDefaults NSUndoManager NSNotification NSNotificationCenter NSNotificationQueue NSDistributedNotificationCenter NSApplication NSWindow NSView NSController NSObjectController NSArrayController NSTreeController NSPanel NSMenu NSMenuItem NSCursor NSBox NSScrollView NSSplitView NSClipView NSRulerView NSTableView NSBrowser NSOutlineView

@@ -1,9 +1,11 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Owner:	Vingel - http://www.vingel.com
-" Modified: 2010-08-26 10:23:59
+" Modified: 2011-01-04 10:22:39
 
 " set runtimepath=~/vim,$VIMRUNTIME
-" source ~/vim/vimrc
+<source></source>
+<vim></vim>
+<vimrc></vimrc>
 
 " Get out of VI's compatible mode..
 set nocompatible
@@ -89,18 +91,19 @@ set nobackup
 set nowb
 set noswapfile
 
+" Set to auto read when a file is changed from the outside
+set autoread
+
 " Folding settings
-if has("folding")
-    set nofoldenable        "dont fold by default
-    set foldmarker={,}
-    set foldopen=block,hor,mark,percent,quickfix,tag
-    set foldmethod=indent   "fold based on indent
-    set foldnestmax=10      "deepest fold is 10 levels
-    set foldlevel=1         "this is just what i use
-    map <leader>f1 :set fdm=manual<cr>
-    map <leader>f2 :set fdm=indent<cr>
-    map <leader>f3 :set fdm=marker<cr>
-endif
+set nofoldenable        "dont fold by default
+set foldmarker={,}
+set foldopen=block,hor,mark,percent,quickfix,tag
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set foldlevel=1         "this is just what i use
+map <leader>f1 :set fdm=manual<cr>
+map <leader>f2 :set fdm=indent<cr>
+map <leader>f3 :set fdm=marker<cr>
 
 " Text options
 set expandtab
@@ -120,8 +123,6 @@ set shortmess=atI
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Select All
 map <leader>a ggVG
-" BufExplorer
-map <leader>b :BufExplorer<cr>
 " Switch to current dir, see also :set autochdir
 map <leader>cd :cd %:p:h<cr>
 " Temp text buffer
@@ -131,7 +132,11 @@ map <leader>M :%s/\r//g<cr>
 " Fast Quit
 map <leader>q :q<cr>
 " Fast reloading of the .vimrc
+map <leader>es :e $VIMRC<cr>
 map <leader>s :source $VIMRC<cr>
+" 自动载入VIM配置文件
+autocmd! bufwritepost vimrc source $MYVIMRC
+
 " Undolist
 map <leader>u :undolist<cr>
 " Undo
@@ -139,9 +144,8 @@ inoremap <C-z> <C-O>u
 " Fast saving
 map <leader>w :w!<cr>
 map <C-S> <Esc>:w!<cr>
-if has("unix") 
-	cmap w!! %!sudo tee > /dev/null %
-endif
+" Copypath
+map <leader>file :echo expand("%:p")<cr>
 
 " Mapping Q to exit instead of Ex mode
 map Q :x<cr>
@@ -166,9 +170,9 @@ cnoremap <C-F> <Right>
 "noremap <C-K> gk
 
 " Usefull when insert a new indent line
-imap jj <cr><C-O>O
+imap fj <cr><C-O>O
 " Remove tag content see :help object-select
-imap ff <C-O>cit
+imap jf <C-O>cit
 
 " Move lines (Eclipse like)
 nmap <C-Down> :<C-u>move .+1<cr>
@@ -253,6 +257,7 @@ try
     set stal=2
 catch
 endtry
+set guitablabel=%t
 
 """"""""""""""""""""""""""""""
 " => Statusline
@@ -266,26 +271,7 @@ function! CurDir()
 endfunction
 
 "Format the statusline
-if has("statusline")
-    set statusline=%F%m%r%h%w\ CW\ %r%{CurDir()}%h\ [%Y,%{&ff},%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [POS=%l,%v,%p%%,%L] 
-endif
-    "set statusline=\ %F%m%r%h%y[%{&fileformat},\ %{&fileencoding}%{((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\")}]\ %w%=(%b,0x%B)\ (%l,%c)\ %P\ %{&wrap?'WR':'NW'}\ %{&ic?'IC':'CS'}\ 
-"
-if has("mksession")
-	set sessionoptions=buffers,curdir,tabpages
-endif
-
-function! ToggleColor()
-	let colors = ['morning', 'vivi', 'zellner']
-	let current = (index(colors, g:colors_name) + 1) % len(colors)
-	execute 'colorscheme ' . colors[current]
-endfunction
-map <F10> :call ToggleColor()<CR>
-
-" Use Alt-n to switch tab
-for i in range(1, min([&tabpagemax, 9]))
-    execute 'nmap <A-'.i.'> '.i.'gt'
-endfor
+set statusline=%F%m%r%h%w\ CW\ %r%{CurDir()}%h\ [%Y,%{&ff},%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [POS=%l,%v,%p%%,%L] 
 
 """"""""""""""""""""""""""""""
 " => Visual
@@ -336,8 +322,13 @@ map <leader>t4 :set shiftwidth=4<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" BufExplorer
+map <leader>b :BufExplorer<cr>
+let g:bufExplorerDefaultHelp=0
+let g:bufExplorerShowRelativePath=1
+
 " taglist.vim
-"set tags=./tags "now using autotags.vim to set tags
+"set tags=./tags "now using autotag.vim to set tags
 map <leader>t :TlistToggle<cr>
 let Tlist_Auto_Open=0 " let the tag list open automagically
 let Tlist_Compact_Format = 1 " show small menu
@@ -345,6 +336,7 @@ let Tlist_Ctags_Cmd = 'ctags' " location of ctags
 let Tlist_Enable_Fold_Column = 0 " do show folding tree
 let Tlist_Exist_OnlyWindow = 1 " if you are the last, kill yourself
 let Tlist_File_Fold_Auto_Close = 0 " fold closed other trees
+let Tlist_Show_One_File = 1 "Show single file tags only
 let Tlist_Sort_Type = "name" " order by
 let Tlist_Use_Right_Window = 1 " split to the right side of the screen
 let Tlist_WinWidth = 40 " 40 cols wide, so i can (almost always) read my functions
@@ -359,6 +351,8 @@ let tlist_php_settings = 'php;c:Classes;f:Functions;d:Constants;j:Javascript Fun
 " NERD_tree.vim
 map <leader>n  :NERDTree<cr>
 map <leader>nt :NERDTreeToggle<cr>
+let g:NERDTreeShowBookmarks = 1
+let g:NERDTreeChDirMode = 2
 let NERDTreeIgnore=['\.pyc$','\.svn$','\.tmp$','\.bak','\~$']
 
 " project.vim
@@ -399,6 +393,11 @@ let g:snips_author = 'Vingel <http://www.vingel.com/>'
 autocmd FileType python set ft=python.django " For SnipMate
 autocmd FileType html set ft=html.django_template.jquery " For SnipMate & jquery
 
+" neocomplcache.vim
+let g:neocomplcache_enable_at_startup = 1 
+let g:neocomplcache_enable_smart_case = 1 
+let g:neocomplcache_enable_auto_select = 1 
+
 " matchit.vim
 let b:match_ignorecase = 1
 
@@ -426,23 +425,41 @@ let g:user_zen_expandabbr_key = '<c-j>'
 let g:pylint_onwrite = 0
 autocmd FileType python compiler pylint
 
-" Check the syntax of a PHP file
-function! CheckPHPSyntax()
-    if &filetype != 'php'
-        echohl WarningMsg | echo 'This is not a PHP file !' | echohl None
-        return
-    endif
-    setlocal makeprg=php\ -l\ -n\ -d\ html_errors=off\ %
-    setlocal errorformat=%m\ in\ %f\ on\ line\ %l
-    echohl WarningMsg | echo 'Syntax checking output:' | echohl None
-    if &modified == 1
-        silent write
-    endif
-    silent make
-    clist
+" Lookupfile.vim
+let g:LookupFile_TagExpr = '"./filenametags"' 
+let g:LookupFile_MinPatLength = 2               "最少输入2个字符才开始查找
+let g:LookupFile_PreserveLastPattern = 0        "不保存上次查找的字符串
+let g:LookupFile_PreservePatternHistory = 1     "保存查找历史
+let g:LookupFile_AlwaysAcceptFirst = 1          "回车打开第一个匹配项目
+let g:LookupFile_AllowNewFiles = 0              "不允许创建不存在的文件
+let g:LookupFile_SortMethod = ""                "关闭对搜索结果的字母排序
+" 在指定目录生成filenametags，并使lookupfile将这个文件作为查找源
+function SetRootOfTheProject(path)
+    " 进入指定目录
+   exe 'cd '.a:path
+   " 生成文件标签
+    exe '!genfiletag'
+    " 获取标签文件的路径
+   let tagFilePath = genutils#CleanupFileName(a:path.'/filenametags')
+   " 设置LookupFile插件的全局变量，使之以上面生成的标签文件作为查找源
+    exe "let g:LookupFile_TagExpr='\"".tagFilePath."\"'"
 endfunction
-au filetype php map <F5> :call CheckPHPSyntax()<CR>
-au filetype php imap <F5> <ESC>:call CheckPHPSyntax()<CR>
+" 设置当前位置为工程的根目录
+function SetHereTheRoot()
+    call SetRootOfTheProject('.')
+endfunction
+nmap <leader>root :call SetHereTheRoot()<CR>
+" 从用户的输入获取指定路径，并设置为工程的根目录
+function SetSpecifiedPathTheRoot()
+    call SetRootOfTheProject(input('请输入工程根目录的路径：'))
+endfunction
+nmap <leader>xroot :call SetSpecifiedPathTheRoot()<CR>
+
+let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
+set grepprg=/bin/grep\ -nH
+
+" Command-t
+nmap <silent> <Leader>r :CommandT<CR>
 
 " VIM
 autocmd FileType vim map <buffer> <leader><space> :w!<cr>:source %<cr>
@@ -463,36 +480,19 @@ autocmd bufnewfile *.py call setline(1,'#!/usr/bin/env python') |
   \ call setline(5,'') |
   \ exe "normal G"
 
-" Check the syntax of a python file
-function! CheckPythonSyntax()
-    if &filetype != 'python'
-        echohl WarningMsg | echo 'This is not a Python file !' | echohl None
-        return
-    endif
-    setlocal makeprg=python\ -u\ %
-    set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
-    echohl WarningMsg | echo 'Syntax checking output:' | echohl None
-    if &modified == 1
-        silent write
-    endif
-    exec "silent make -c \"import py_compile;py_compile.compile(r'".bufname("%")."')\""
-    clist
-endfunction
-au filetype python map <F5> :call CheckPythonSyntax()<CR>
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Set OminComplete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set complete=.,k,t,i
-set completeopt=longest,menu,preview
+set completeopt=longest,menu
+autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html,htm set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags 
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType php setlocal dict+=$VIMFILES/dict/php_functions.txt
-autocmd FileType c set omnifunc=ccomplete#Complete
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors & Fonts & Syntax
@@ -532,6 +532,16 @@ if has("gui_running")
     hi Pmenu guibg=#333333
     hi PmenuSel guibg=#555555 guifg=#ffffff
 
+    " Turn undofile on
+    set undofile
+    " Set undofile path
+    set undodir=~/tmp/vim/undofile/
+
+    " 关闭VIM的时候保存会话，按F6读取会话
+    set sessionoptions=buffers,sesdir,help,tabpages,winsize
+    au VimLeave * mks! ~/.Session.vim
+    nmap <F6> :so ~/.Session.vim<CR>
+
 else
     set background=dark
     "colorscheme zellner
@@ -540,7 +550,7 @@ endif
 
 " Syntax
 au BufRead,BufNewFile *.js set ft=javascript.jquery
-au BufRead,BufNewFile *.vm set ft=velocity
+au BufRead,BufNewFile *.vm set ft=html
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Set FileEncodeing
@@ -569,7 +579,7 @@ if has("multi_byte")
         source $VIMRUNTIME\menu.vim
         set path+=E:\Vingel\bin\python\Lib\site-packages\
         if version >= 603
-          set helplang=cn,en
+          set helplang=cn
         endif
     else
         set guifont=Bitstream\ Vera\ Sans\ Mono\ 14
@@ -586,16 +596,14 @@ endif
 
 if has("gui_macvim")
     set transparency=2
-    set noimd
-    "set imactivatekey=C-space
-    inoremap <ESC> <ESC>:set iminsert=1<CR>
+    " 开启抗锯齿渲染
+    set anti
 endif
 
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-behave xterm
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " My information
@@ -603,4 +611,3 @@ behave xterm
 set dictionary+=$VIMFILES/dict/dicts.txt,/usr/share/dict/words
 iab xdate <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
 " vim:tw=80 et sw=4 comments=\:\"
-
