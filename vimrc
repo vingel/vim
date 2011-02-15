@@ -473,6 +473,9 @@ noremap <leader>r :CommandT<cr>
 "noremap <leader>y :CommandTFlush<cr>
 let g:CommandTMaxHeight = 15
 
+" DoxygenToolkit.vim
+map <leader>d :Dox<cr>
+
 " Vim grep
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
