@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Owner:	Vingel - http://www.vingel.com
-" Modified: 2010-05-11 10:51:00
+" Modified: 2011-02-14 18:36:09
 
 " set runtimepath=~/vim,$VIMRUNTIME
 " source ~/vim/vimrc
@@ -148,10 +148,12 @@ set noswapfile
 map <leader>u :undolist<cr>
 " Undo in insert mode
 inoremap <C-z> <C-O>u
-" Turn undofile on
-set undofile
-" Set undofile path
-set undodir=~/tmp/vim/
+if version >= 703
+    " Turn undofile on
+    set undofile
+    " Set undofile path
+    set undodir=~/tmp/vim/
+endif
 
 " 关闭VIM的时候保存会话，按F6读取会话
 set sessionoptions=buffers,sesdir,help,tabpages,winsize
@@ -546,6 +548,7 @@ if has("gui_running")
     " Work with Chinese input apps
     set noimdisable
     set imactivatekey=C-space
+    set imsearch=0
     inoremap <ESC> <ESC>:set iminsert=0<CR>
 
     " Auto Maximize when vim starts.
