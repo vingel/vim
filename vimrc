@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Owner:	Vingel - http://www.vingel.com
-" Modified: 2010-05-11 10:51:00
+" Modified: 2011-02-14 18:36:09
 
 " set runtimepath=~/vim,$VIMRUNTIME
 " source ~/vim/vimrc
@@ -35,7 +35,7 @@ set so=7
 " Turn on WiLd menu
 set wildmenu
 set wildmode=longest,full
-set wildignore=*.bak,*.o,*.obj,*.e,*~,*.pyc,*.svn,.git
+set wildignore=*.bak,*.o,*.obj,*.e,*~,*.pyc,*.svn
 " Always show current position
 set ruler
 " Show matching bracets
@@ -148,10 +148,12 @@ set noswapfile
 map <leader>u :undolist<cr>
 " Undo in insert mode
 inoremap <C-z> <C-O>u
-" Turn undofile on
-set undofile
-" Set undofile path
-set undodir=~/tmp/vim/
+if version >= 703
+    " Turn undofile on
+    set undofile
+    " Set undofile path
+    set undodir=~/tmp/vim/
+endif
 
 " 关闭VIM的时候保存会话，按F6读取会话
 set sessionoptions=buffers,sesdir,help,tabpages,winsize
@@ -391,7 +393,7 @@ map <leader>nt :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeChDirMode = 2
-let NERDTreeIgnore=['\.pyc$','\.svn$','\.git','\.tmp$','\.bak$','\~$']
+let NERDTreeIgnore=['\.pyc$','\.svn$','\.tmp$','\.bak$','\~$']
 
 " project.vim
 map <leader>p :Project<cr>
@@ -414,11 +416,10 @@ let html_number_lines = 0
 
 " mru.vim (History file List, Most Recent Used)
 map <leader>h :MRU <cr>
-let MRU_Max_Entries = 30
-let MRU_Exclude_Files='^/tmp/.*\|^/var/tmp/.*'
-let MRU_Include_Files='\.c$\|\.cpp$\|\.h$\|\.hpp$'  " For C Source
-let MRU_Window_Height=15
-let MRU_Add_Menu=0
+let MRU_Max_Entries = 1000
+let MRU_Max_Menu_Entries = 20 
+let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
+let MRU_Window_Height = 8
 
 " fencview.vim
 let g:fencview_autodetect = 0
@@ -546,8 +547,8 @@ if has("gui_running")
     " Work with Chinese input apps
     set noimdisable
     set imactivatekey=C-space
-    inoremap <ESC> <ESC>:set iminsert=2<CR>
-    inoremap <C-[> <ESC>:set iminsert=0<CR>
+    set imsearch=0
+    inoremap <ESC> <ESC>:set iminsert=0<CR>
 
     " Auto Maximize when vim starts.
     if has("win32")
@@ -599,8 +600,7 @@ if has("multi_byte")
             let macvim_skip_cmd_opt_movement = 1
             let macvim_hig_shift_movement = 1
 
-            set transp=10
-            set transparency=8
+            set transparency=4
 
             set anti " 开启抗锯齿渲染
             set guifont=Consolas:h18
