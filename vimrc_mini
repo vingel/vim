@@ -1,0 +1,23 @@
+set nocompatible
+set autoindent
+set copyindent
+set expandtab
+set lazyredraw
+set lbr
+set linespace=4
+set magic
+set nobackup
+set noswapfile
+set nowb
+set nu
+set ruler
+set shiftwidth=4
+set showcmd
+set showfulltag
+set showmatch
+set smarttab
+set softtabstop=4
+set tabstop=4
+set fileformats=unix,dos,mac
+syntax enable
+filetype plugin indent on

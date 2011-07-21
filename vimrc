@@ -52,7 +52,7 @@ set number
 " Line space between
 set linespace=4
 " Do not redraw, when running macros.. lazyredraw
-set lazyredraw
+"set lazyredraw
 " Change buffer - without saving
 set hidden
 " Set backspace
@@ -135,7 +135,6 @@ map <leader>M :%s/\r//g<cr>
 map <leader>q :q<cr>
 " Fast reloading of the .vimrc
 map <leader>es :e $VIMRC<cr>
-map <leader>s :source $VIMRC<cr>
 " 自动载入VIM配置文件
 "autocmd! bufwritepost vimrc source $MYVIMRC
 "
@@ -157,7 +156,7 @@ endif
 
 " 关闭VIM的时候保存会话，按F6读取会话
 set sessionoptions=buffers,sesdir,help,tabpages,winsize
-let $VIMSESSION = $VIMFILES . '/extra/session.vim'
+let $VIMSESSION = '~/.session.vim'
 au VimLeave * mks! $VIMSESSION
 nmap <F6> :so $VIMSESSION<CR>
 
@@ -336,7 +335,7 @@ inoremap ( ()<esc>:let leavechar=")"<cr>i
 inoremap [ []<esc>:let leavechar="]"<cr>i
 inoremap { {}<esc>:let leavechar="}"<cr>i
 inoremap < <><esc>:let leavechar=">"<cr>i
-inoremap ' ''<esc>:let leavechar="'"<cr>i
+"inoremap ' ''<esc>:let leavechar="'"<cr>i
 inoremap " ""<esc>:let leavechar='"'<cr>i
 inoremap )) (<esc>o)<esc>:let leavechar=")"<cr>O
 inoremap ]] [<esc>o]<esc>:let leavechar="]"<cr>O
@@ -510,6 +509,9 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType php setlocal dict+=$VIMFILES/dict/php_functions.txt
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
+"Velocity
+au BufNewFile,BufRead *.vm set fenc=gbk
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors & Fonts & Syntax
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -520,6 +522,7 @@ syntax enable
 au BufRead,BufNewFile *.js set ft=javascript
 au BufRead,BufNewFile *.vm set ft=html
 au BufNewFile,BufRead *.log setf log
+let filetype_m= "objc"
 
 if has("gui_running")
     colorscheme yytextmate
@@ -551,7 +554,8 @@ if has("gui_running")
     set noimdisable
     set imactivatekey=C-space
     set imsearch=0
-    inoremap <ESC> <ESC>:set iminsert=0<CR>
+    autocmd! InsertLeave * set imdisable|set iminsert=0
+    autocmd! InsertEnter * set noimdisable|set iminsert=0
 
     " Auto Maximize when vim starts.
     if has("win32")
