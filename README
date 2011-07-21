@@ -1,1 +1,6 @@
-#owner: Vingel <http://www.vingel.com>
+#Owner: Vingel <http://www.vingel.com>
+
+#Useage
+    ln -s ~/.vim vim
+    ln -s ~/.vimrc ~/.vim/vimrc
+    ln -s ~/.gvimrc ~/.vim/gvimrc
