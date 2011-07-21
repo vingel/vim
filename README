@@ -1,6 +1,7 @@
 #Owner: Vingel <http://www.vingel.com>
 
 #Useage
+    git clone git@github.com:vingel/vim.git
     ln -s ~/.vim vim
     ln -s ~/.vimrc ~/.vim/vimrc
     ln -s ~/.gvimrc ~/.vim/gvimrc
