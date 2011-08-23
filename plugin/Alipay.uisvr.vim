@@ -7,13 +7,12 @@
 "        :Uisvr xml    -> uisvr/config/config.xml
 "        :Uisvr css.vm -> uisvr/config/css.vm
 "        :Uisvr js.vm  -> uisvr/config/js.vm
-" FIXME: 远程挂载的目录，打开 uisvr 时有问题。
 " TODO: 已经打开的文件，不再新建窗口。
-" TODO: screen 下目录还是子目录时，对应的 uisvr 目录结构。
+" TODO: :Uisvr config[ xml|js|css]
 " TODO: 老版 uisvr 支持(maybe)。
 " Author: 闲耘™(hotoo.cn[AT]gmail.com)
-" Version: 1.5
-" Last Change: 2011/05/02
+" Version: 1.6
+" Last Change: 2011/07/21
 
 if exists('loaded_alipay_uisvr')
     finish
@@ -69,7 +68,7 @@ function! s:uisvr(...)
 
     let paths = s:getPaths()
 
-    exec win . " " . paths[targetType]
+    exec win . " " . fnamemodify(paths[targetType], ":p")
 endfunction
 
 function! s:getPaths()
@@ -79,21 +78,23 @@ function! s:getPaths()
     let src_path = expand("%:p")
     let uisvrDir = finddir('uisvr', expand('%:p:h').';')
     if "vm"==src_ext
-        let car = substitute(src_dir, '^.*'.s:sp.'htdocs'.s:sp.'templates'.s:sp.'\([a-zA-Z0-9]\+\)'.s:sp.'screen', '\1', "")
+        let car = substitute(src_dir, '^.*' . s:sp . 'templates' . s:sp . '\([a-zA-Z0-9]\+\)' . s:sp . 'screen' . s:sp . '.*$', '\1', "")
+        let subpath = substitute(src_dir, '^.*' . s:sp . 'templates' . s:sp . car . s:sp . 'screen', '', "")
     elseif "js"==src_ext || "css"==src_ext
-        let car = substitute(src_dir, '^.*'.s:sp.'htdocs'.s:sp.'uisvr'.s:sp.'\([a-zA-Z0-9]\+\)', '\1', "")
+        let car = substitute(src_dir, '^.*' . s:sp . 'uisvr' . s:sp . '\([a-zA-Z0-9]\+\)\($\|' . s:sp . '.*$\)', '\1', "")
+        let subpath = substitute(src_dir, '^.*' . s:sp . 'uisvr' . s:sp . car, '\1', "")
     else
         return
     endif
     let uisvrDir = fnamemodify(uisvrDir, ":p")
     let path = {
-                \ "css" : uisvrDir . s:sp . car . s:sp . src_filename . ".css",
-                \ "js"  : uisvrDir . s:sp . car . s:sp . src_filename . ".js",
-                \ "vm"  : uisvrDir . s:sp . ".." . s:sp . "templates" . s:sp . car . s:sp . "screen"  . s:sp . src_filename . ".vm",
-                \ "xml" : uisvrDir . s:sp . "config" . s:sp . "config.xml",
-                \ "js.vm" : uisvrDir . s:sp . "config" . s:sp . "js.vm",
-                \ "css.vm" : uisvrDir . s:sp . "config" . s:sp . "css.vm"
-                \ }
+        \ "css" : uisvrDir . s:sp . car . subpath . s:sp . src_filename . ".css",
+        \ "js"  : uisvrDir . s:sp . car . subpath . s:sp . src_filename . ".js",
+        \ "vm"  : uisvrDir . s:sp . ".." . s:sp . "templates" . s:sp . car . s:sp . "screen" . subpath . s:sp . src_filename . ".vm",
+        \ "xml" : uisvrDir . s:sp . "config" . s:sp . "config.xml",
+        \ "js.vm" : uisvrDir . s:sp . "config" . s:sp . "js.vm",
+        \ "css.vm" : uisvrDir . s:sp . "config" . s:sp . "css.vm"
+        \ }
     return path
 endfunction
 
