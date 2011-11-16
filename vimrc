@@ -82,7 +82,7 @@ set showcmd
 " Sets how many lines of history VIM har to remember
 set history=800
 " Always switch to the current file directory
-"set autochdir
+set autochdir
 "Set the terminal title
 set title
 let &titleold=getcwd()
@@ -230,7 +230,7 @@ map <F2> :%s/\s*$//g<cr>:noh<cr>''
 " Paste toggle - when pasting something in, don't indent.
 set pastetoggle=<F3>
 " SVN Diff
-map <F7> :new<cr>:read !svn diff<cr>:set syntax=diff buftype=nofile<cr>gg
+map <F7> <leader>cd:new<cr>:read !svn diff<cr>:set syntax=diff buftype=nofile<cr>gg
 " ROT13
 map <F12> ggVGg?
 
@@ -366,9 +366,13 @@ let g:bufExplorerSplitVertSize = 30  " 分开高度
 let g:bufExplorerSplitVertical=1     " 垂直分开
 let g:bufExplorerUseCurrentWindow=1  " 在新窗口打开
 
+
+" tagbar.vim
+map <leader>t :TagbarToggle<cr>
+
 " taglist.vim
 "set tags=./tags "now using autotag.vim to set tags
-map <leader>t :TlistToggle<cr>
+"map <leader>t :TlistToggle<cr>
 let Tlist_Auto_Open = 0 " let the tag list open automagically
 let Tlist_Close_OnSelect = 1
 let Tlist_Compact_Format = 1 " show small menu
@@ -416,7 +420,7 @@ let html_number_lines = 0
 " mru.vim (History file List, Most Recent Used)
 map <leader>h :MRU <cr>
 let MRU_Max_Entries = 1000
-let MRU_Max_Menu_Entries = 20 
+let MRU_Max_Menu_Entries = 20
 let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
 let MRU_Window_Height = 8
 
@@ -430,6 +434,8 @@ let g:acp_enableAtStartup = 0
 let g:snips_author = 'Vingel <http://www.vingel.com/>'
 "autocmd FileType python set ft=python.django " For SnipMate
 autocmd FileType html,htmldjango set ft=html.django_template.jquery " For SnipMate & jquery
+
+au BufRead,BufNewFile *.c,*.cpp,*.py,*.js 2match Underlined /.\%81v/
 
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
@@ -481,6 +487,7 @@ set grepprg=/bin/grep\ -nH
 
 " Python section
 " Run the current buffer in python - ie. on leader+space
+autocmd FileType python set textwidth=79 " PEP-8 Friendly
 autocmd FileType python map <buffer> <leader><space> :w!<cr>:!python %<cr>
 " set python modules path so that 'gd' can find it.
 autocmd FileType python set path+=~/Dropbox/Library/python,/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/,/usr/lib/python2.5/site-packages/
@@ -510,7 +517,13 @@ autocmd FileType php setlocal dict+=$VIMFILES/dict/php_functions.txt
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
 "Velocity
-au BufNewFile,BufRead *.vm set fenc=gbk
+autocmd BufNewFile,BufRead *.vm set fenc=gbk
+
+"CSSTidy :brew install csstidy
+"autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true 
+
+"Write when you leave insert mode
+autocmd InsertLeave * write
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors & Fonts & Syntax
@@ -631,4 +644,4 @@ endif
 set dictionary+=$VIMFILES/dict/dicts.txt,/usr/share/dict/words
 iab xdate <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
 " vim:tw=80 et sw=4 comments=\:\"
-    
+
