@@ -435,7 +435,8 @@ let g:snips_author = 'Vingel <http://www.vingel.com/>'
 "autocmd FileType python set ft=python.django " For SnipMate
 autocmd FileType html,htmldjango set ft=html.django_template.jquery " For SnipMate & jquery
 
-au BufRead,BufNewFile *.c,*.cpp,*.py,*.js 2match Underlined /.\%81v/
+"au BufRead,BufNewFile *.c,*.cpp,*.py,*.js 2match Underlined /.\%81v/
+set colorcolumn=81
 
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1

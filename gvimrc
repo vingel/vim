@@ -8,13 +8,16 @@ let macvim_hig_shift_movement = 1
 
 set transparency=4
 
-set anti "¿ªÆô¿¹¾â³İäÖÈ¾
+set anti " ¿ªÆô¿¹¾â³İäÖÈ¾
 set guifont=Consolas:h18
 "macmenu &File.New\ Tab key=<nop>
 
-" Cursor
+set cursorline
+set cursorcolumn
 hi cursorline guibg=#333333
 hi CursorColumn guibg=#333333
+set colorcolumn=81
+hi ColorColumn ctermbg=lightgrey guibg=#333333                                      
 
 " Omni menu colors
 hi Pmenu guibg=#333333
