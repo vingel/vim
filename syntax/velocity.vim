@@ -1,7 +1,7 @@
 " Vim syntax file
-" Language:	Velocity templates
-" Maintainer:	Antonio Terceiro <terceiro@im.ufba.br>
-" Last Change:	2003 Jan 22
+" Language:	Velocity HTML template
+" Maintainer:	Hsiaoming Young <http://lepture.com>
+" Last Change:	2011 Dec 23
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -11,75 +11,54 @@ elseif exists("b:current_syntax")
   finish
 endif
 
-if version < 600
-  source $VIMRUNTIME/syntax/html.vim
-else
-  runtime! syntax/html.vim
+if !exists("main_syntax")
+  let main_syntax = 'html'
 endif
 
-syn keyword	velocityTodo	contained TODO FIXME XXX
+if version < 600
+  so <sfile>:p:h/html.vim
+else
+  runtime! syntax/html.vim
+  unlet b:current_syntax
+endif
 
-" redefine HTML Strings so they contain velocity stuff:
-syn region  htmlString   contained start=+"+ end=+"+ contains=htmlSpecialChar,javaScriptExpression,@htmlPreproc,velocityReference,velocityFormalReference
-syn region  htmlString   contained start=+'+ end=+'+ contains=htmlSpecialChar,javaScriptExpression,@htmlPreproc,velocityReference,velocityFormalReference
+syn keyword velocityTodo FIXME TODO contained
+syn region velocitySpec start="@" end=":" oneline contained
+syn region velocityComment start="#\*" end="\*#" contains=velocityTodo,velocitySpec
+syn match velocityComment /##.*/ contains=velocityTodo,velocitySpec
+syn region velocityString start='"' end='"' oneline
+syn region velocityList start='\[' end='\]' oneline contained contains=velocityString
+syn match velocityMath /=\|-\|+\|\/\|\*\|%/ contained
+syn match velocityBlock /#[a-z]\{2,\}/ contains=velocityStatement
+syn match velocityBlock /#[a-z]\{2,\}([^)]\+)/ contains=velocityStatement,velocityVar,velocityString,velocityMath,velocityList,velocityFunction
+syn keyword velocityStatement in set if else elseif end foreach include parse macro cmsparse stop break evaluate define contained
 
-" the both reference types support the silent mode: $!variableName
-
-syn match velocityIdentifier "[a-zA-Z][a-zA-Z_\-0-9]*" contained
-
-" changed on suggestion from Philippe Paravicini <philippe.paravicini@datalex.com>
-" syn region velocityReference         start=/\$/    skip=/(\s*\|\s*,\s*\|\s*)/   end=/\s\|$/  contains=velocityIdentifier,velocityString,velocityNumber
-syn region velocityReference         start=/\$/    skip=/([^)])/                end=/\s\|$/  contains=velocityIdentifier,velocityString,velocityNumber
-
-syn region velocitySilentReference   start=/\$\!/  skip=/(\s*\|\s*,\s*\|\s*)/   end=/\s\|$/   contains=velocityIdentifier,velocityString,velocityNumber
-
-syn region velocityFormalReference   start=/\${/      end=/}/          contains=velocityIdentifier,velocityString,velocityNumber
-syn region velocitySilentFormalReference   start=/\$\!{/      end=/}/  contains=velocityIdentifier,velocityString,velocityNumber
-
-" keywords:
-syn keyword velocityKeyWord contained set if else elseif end foreach include parse stop macro
-
-" literals (numbers and strings):
-syn match velocityNumber "[0-9][0-9]*\(\.[0-9][0-9]*\)\?" contained
-syn region velocityString	contained start=+"+ skip=+\\\\\|\\"+ end=+"+ oneline
-
-" highlighting the inicial sharp (#) of each directive:
-syn match velocityInitialSharp "#" contained
-
-syn match velocityDirective "^\s*#[^#].*" contains=velocityString,velocityReference,velocityFormalReference,velocityKeyWord,velocityNumber,velocityInitialSharp,velocityString,velocityLineComment,velocityMultilineComment
-
-" velocity comments:
-syn region	velocityMultilineComment start=/#\*/ end=/\*#/ contains=velocityTodo
-syn match	velocityLineComment	"##.*$" contains=velocityTodo
-
+syn match velocityVar /$!\?[a-zA-Z][a-zA-Z0-9_-]\+\.\?[a-zA-Z0-9]*/ contains=velocityFunction
+syn match velocityVar /$!\?{[a-zA-Z][a-zA-Z0-9_-]\+}/
+syn match velocityFunction /[a-zA-Z][a-zA-Z0-9_-]\+\.[a-zA-Z][a-zA-Z0-9_-]\+(.*)/ contains=velocityString,velocityList,velocityMath,velocityVar,velocityFunction
 
 " Define the default highlighting.
 " For version 5.7 and earlier: only when not done already
 " For version 5.8 and later: only when an item doesn't have highlighting yet
-if version >= 508 || !exists("did_velocity_syntax_inits")
+if version >= 508 || !exists("did_velocity_syn_inits")
   if version < 508
-    let did_velocity_syntax_inits = 1
+    let did_velocity_syn_inits = 1
     command -nargs=+ HiLink hi link <args>
   else
     command -nargs=+ HiLink hi def link <args>
   endif
 
-  HiLink velocityLineComment             Comment
-  HiLink velocityMultilineComment        Comment
-  HiLink velocityTodo                    Todo
-  HiLink velocityKeyWord                 KeyWord
-  HiLink velocityReference               Special 
-  HiLink velocitySilentReference         Special 
-  HiLink velocityFormalReference         Special 
-  HiLink velocitySilentFormalReference   Special 
-  HiLink velocityIdentifier              Identifier
-  HiLink velocityNumber                  Number
-  HiLink velocityString	                 String
-  HiLink velocityInitialSharp            KeyWord
+  HiLink velocityString String
+  HiLink velocityList Constant
+  HiLink velocityBlock PreProc
+  HiLink velocitySpec Special
+  HiLink velocityVar Identifier
+  HiLink velocityFunction Function
+  HiLink velocityStatement Statement
+  HiLink velocityComment Comment
+  HiLink velocityTodo Todo
 
   delcommand HiLink
 endif
 
 let b:current_syntax = "velocity"
-
-" vim: ts=8 sw=2

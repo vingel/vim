@@ -518,7 +518,7 @@ autocmd FileType php setlocal dict+=$VIMFILES/dict/php_functions.txt
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
 "Velocity
-autocmd BufNewFile,BufRead *.vm set fenc=gbk
+autocmd BufNewFile,BufRead *.vm set ft=html fenc=gbk syntax=velocity
 
 "CSSTidy :brew install csstidy
 "autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true 
@@ -534,7 +534,6 @@ syntax enable
 
 " Syntax
 au BufRead,BufNewFile *.js set ft=javascript
-au BufRead,BufNewFile *.vm set ft=html
 au BufNewFile,BufRead *.log setf log
 let filetype_m= "objc"
 
@@ -646,3 +645,8 @@ set dictionary+=$VIMFILES/dict/dicts.txt,/usr/share/dict/words
 iab xdate <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
 " vim:tw=80 et sw=4 comments=\:\"
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tips
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" delete blank lines  :g/^\s*$/d
+" diff  :vertical diffsplit filename
