@@ -190,9 +190,9 @@ cnoremap <C-F> <Right>
 "noremap <C-K> gk
 
 " Usefull when insert a new indent line
-imap fj <cr><C-O>O
+"imap fj <cr><C-O>O
 " Remove tag content see :help object-select
-imap jf <C-O>cit
+"imap jf <C-O>cit
 
 " Switch windows
 nmap <Tab> <C-w>w
@@ -436,7 +436,7 @@ let g:snips_author = 'Vingel <http://www.vingel.com/>'
 autocmd FileType html,htmldjango set ft=html.django_template.jquery " For SnipMate & jquery
 
 "au BufRead,BufNewFile *.c,*.cpp,*.py,*.js 2match Underlined /.\%81v/
-set colorcolumn=81
+au BufRead,BufNewFile *.c,*.cpp,*.py,*.js set colorcolumn=81
 
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
@@ -517,8 +517,14 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType php setlocal dict+=$VIMFILES/dict/php_functions.txt
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
+"Nginx
+autocmd BufRead,BufNewFile /usr/local/nginx/conf/* /etc/nginx/* set ft=nginx 
+
 "Velocity
 autocmd BufNewFile,BufRead *.vm set ft=html fenc=gbk syntax=velocity
+
+"Markdown
+"autocmd BufNewFile,BufRead *.markdown,*.md,*.mdown,*.mkd,*.mkdn
 
 "CSSTidy :brew install csstidy
 "autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true 
@@ -536,6 +542,8 @@ syntax enable
 au BufRead,BufNewFile *.js set ft=javascript
 au BufNewFile,BufRead *.log setf log
 let filetype_m= "objc"
+
+au BufRead,BufNewFile *.go set filetype=go
 
 if has("gui_running")
     colorscheme yytextmate
@@ -593,8 +601,7 @@ set fileformats=unix,dos,mac
 if has("multi_byte")
     set encoding=utf-8
     set fileencoding=utf-8
-    set fileencodings=utf-8,chinese,latin-1
-    set fencs=utf-8,gbk,chinese,latin1
+    set fileencodings=utf-8,gbk,chinese,latin1
     set formatoptions+=mM " for charactors fold and patch
     set nobomb " Don' use Unicode
     set helplang=cn

@@ -1,12 +1,13 @@
-set nocompatible
 set autoindent
 set copyindent
 set expandtab
+set fileformats=unix,dos,mac
 set lazyredraw
 set lbr
 set linespace=4
 set magic
 set nobackup
+set nocompatible
 set noswapfile
 set nowb
 set nu
@@ -16,8 +17,10 @@ set showcmd
 set showfulltag
 set showmatch
 set smarttab
+set so=7
 set softtabstop=4
+set statusline=%F%m%r%h%w\ CW\ %r%{CurDir()}%h\ [%Y,%{&ff},%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [POS=%l,%v,%p%%,%L]
 set tabstop=4
-set fileformats=unix,dos,mac
+set wildmenu
 syntax enable
 filetype plugin indent on

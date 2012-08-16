@@ -1,0 +1,1898 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+$FENCVIEW_TELLENC	fencview.vim	/^    let $FENCVIEW_TELLENC ='tellenc'$/;"	v
+$VimIM	vimim.vim	/^let $VimIM = "$Date: 2010-05-21 09:41:43 -0700 (Fri, 21 May 2010) $"$/;"	v
+$VimIM	vimim.vim	/^let $VimIM = "$Revision: 3114 $"$/;"	v
+%	matchit.vim	/^nnoremap <silent> %  :<C-U>call <SID>Match_wrapper('',1,'n') <CR>$/;"	m
+%	matchit.vim	/^onoremap <silent> %  v:<C-U>call <SID>Match_wrapper('',1,'o') <CR>$/;"	m
+%	matchit.vim	/^vnoremap <silent> %  :<C-U>call <SID>Match_wrapper('',1,'v') <CR>m'gv``$/;"	m
+,ca	NERD_commenter.vim	/^        nmap ,ca <plug>NERDCommenterAltDelims$/;"	m
+<2-LeftMouse>	project.vim	/^        nnoremap <buffer> <silent> <2-LeftMouse>   \\|:call <SID>DoFoldOrOpenEntry('', 'e')<CR>$/;"	m
+<2-RightMouse>	project.vim	/^        nmap     <buffer> <silent> <2-RightMouse> <space>$/;"	m
+<3-LeftMouse>	project.vim	/^        nnoremap <buffer> <silent> <3-LeftMouse>  <Nop>$/;"	m
+<3-RightMouse>	project.vim	/^        nmap     <buffer> <silent> <3-RightMouse> <space>$/;"	m
+<4-RightMouse>	project.vim	/^        nmap     <buffer> <silent> <4-RightMouse> <space>$/;"	m
+<C-2-LeftMouse>	project.vim	/^        nmap     <buffer> <silent> <C-2-LeftMouse> <C-Return>$/;"	m
+<C-Down>	project.vim	/^        nnoremap <buffer> <silent> <C-Down> \\|:silent call <SID>MoveDown()<CR>$/;"	m
+<C-LeftMouse>	project.vim	/^        nnoremap <buffer> <silent> <C-LeftMouse>   <LeftMouse>$/;"	m
+<C-Return>	project.vim	/^        nnoremap <buffer> <silent> <C-Return> \\|:call <SID>DoFoldOrOpenEntry('silent! only', 'e')<CR>$/;"	m
+<C-Up>	project.vim	/^        nnoremap <buffer> <silent> <C-Up>   \\|:silent call <SID>MoveUp()<CR>$/;"	m
+<C-W><C-O>	project.vim	/^                nmap <silent> <unique> <C-W><C-O> <C-W>o$/;"	m
+<C-W>o	project.vim	/^                nmap <silent> <unique> <C-W>o <Plug>ProjectOnly$/;"	m
+<C-^>	project.vim	/^        nnoremap <buffer> <silent> <C-^> <Nop>$/;"	m
+<C-_>	closetag.vim	/^inoremap <C-_> <C-R>=GetCloseTag()<CR>$/;"	m
+<C-_>	closetag.vim	/^map <C-_> a<C-_><ESC>$/;"	m
+<F12>	project.vim	/^        nmap <silent> <F12> <Plug>ToggleProject$/;"	m
+<F1>	project.vim	/^        nnoremap <buffer> <F1> :let g:proj_doinghelp = 1<CR><F1>$/;"	m
+<F4>	checksyntax.vim	/^    inoremap <F4> <c-o>:CheckSyntax<cr>$/;"	m
+<F4>	checksyntax.vim	/^    noremap <F4> :CheckSyntax<cr>$/;"	m
+<F5>	lookupfile.vim	/^      imap <unique> <expr> <silent> <F5> (pumvisible() ? "\\<Plug>LookupFileCE" :$/;"	m
+<F5>	lookupfile.vim	/^      nmap <unique> <silent> <F5> <Plug>LookupFile$/;"	m
+<F5>	project.vim	/^        nnoremap <buffer> <silent>           <F5> :call <SID>RefreshEntriesFromDir(1)<CR>$/;"	m
+<F8>	pep8.vim	/^  map <F8> :call <SID>Pep8()<CR>$/;"	m
+<F8>	pep8.vim	/^  map! <F8> :call <SID>Pep8()<CR>$/;"	m
+<Leader>be	bufexplorer.vim	/^nmap <script> <silent> <unique> <Leader>be :BufExplorer<CR>$/;"	m
+<Leader>bs	bufexplorer.vim	/^nmap <script> <silent> <unique> <Leader>bs :BufExplorerHorizontalSplit<CR>$/;"	m
+<Leader>bv	bufexplorer.vim	/^nmap <script> <silent> <unique> <Leader>bv :BufExplorerVerticalSplit<CR>$/;"	m
+<Leader>caL	calendar.vim	/^  nmap <unique> <Leader>caL <Plug>CalendarH$/;"	m
+<Leader>cal	calendar.vim	/^  nmap <unique> <Leader>cal <Plug>CalendarV$/;"	m
+<Leader>ih	a.vim	/^imap <Leader>ih <ESC>:IHS<CR>$/;"	m
+<Leader>ih	a.vim	/^nmap <Leader>ih :IHS<CR>$/;"	m
+<Leader>ihn	a.vim	/^imap <Leader>ihn <ESC>:IHN<CR>$/;"	m
+<Leader>ihn	a.vim	/^nmap <Leader>ihn :IHN<CR>$/;"	m
+<Leader>is	a.vim	/^imap <Leader>is <ESC>:IHS<CR>:A<CR>$/;"	m
+<Leader>is	a.vim	/^nmap <Leader>is :IHS<CR>:A<CR>$/;"	m
+<LocalLeader>0	project.vim	/^        nnoremap <buffer>          <LocalLeader>0 \\|:call <SID>ListSpawn("")<CR>$/;"	m
+<LocalLeader><Down>	project.vim	/^        nmap     <buffer> <silent> <LocalLeader><Down> <C-Down>$/;"	m
+<LocalLeader><Up>	project.vim	/^        nmap     <buffer> <silent> <LocalLeader><Up> <C-Up>$/;"	m
+<LocalLeader>C	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>C :call <SID>CreateEntriesFromDir(1)<CR>$/;"	m
+<LocalLeader>E	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>E :call <SID>OpenEntry(line('.'), '', 'e', 1)<CR>$/;"	m
+<LocalLeader>F0	project.vim	/^        nnoremap <buffer>          <LocalLeader>F0 \\|:call <SID>ListSpawn("_fold")<CR>$/;"	m
+<LocalLeader>G	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>G \\|:call <SID>GrepAll(1, line('.'), "")<CR>$/;"	m
+<LocalLeader>I	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>I :echo Project_GetFname(line('.'))<CR>$/;"	m
+<LocalLeader>L	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>L \\|:call <SID>LoadAll(1, line('.'))<CR>$/;"	m
+<LocalLeader>R	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>R :call <SID>RefreshEntriesFromDir(1)<CR>$/;"	m
+<LocalLeader>S	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>S \\|:call <SID>LoadAllSplit(0, line('.'))<CR>$/;"	m
+<LocalLeader>T	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>T \\|:call <SID>DoFoldOrOpenEntry('', 'tabe')<CR>$/;"	m
+<LocalLeader>W	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>W \\|:call <SID>WipeAll(1, line('.'))<CR>$/;"	m
+<LocalLeader>c	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>c :call <SID>CreateEntriesFromDir(0)<CR>$/;"	m
+<LocalLeader>e	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>e :call <SID>OpenEntry(line('.'), '', '', 0)<CR>$/;"	m
+<LocalLeader>f0	project.vim	/^        nnoremap <buffer>          <LocalLeader>f0 \\|:call <SID>ListSpawn("_fold")<CR>$/;"	m
+<LocalLeader>g	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>g \\|:call <SID>GrepAll(0, line('.'), "")<CR>$/;"	m
+<LocalLeader>i	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>i :echo <SID>RecursivelyConstructDirectives(line('.'))<CR>$/;"	m
+<LocalLeader>l	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>l \\|:call <SID>LoadAll(0, line('.'))<CR>$/;"	m
+<LocalLeader>o	project.vim	/^        nmap     <buffer> <silent> <LocalLeader>o <C-Return>$/;"	m
+<LocalLeader>r	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>r :call <SID>RefreshEntriesFromDir(0)<CR>$/;"	m
+<LocalLeader>s	project.vim	/^        nmap     <buffer> <silent> <LocalLeader>s <S-Return>$/;"	m
+<LocalLeader>v	project.vim	/^        nmap     <buffer> <silent> <LocalLeader>v <M-CR>$/;"	m
+<LocalLeader>w	project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>w \\|:call <SID>WipeAll(0, line('.'))<CR>$/;"	m
+<M-2-LeftMouse>	project.vim	/^        nnoremap <buffer> <silent> <M-2-LeftMouse> <M-CR>$/;"	m
+<M-CR>	project.vim	/^        nmap     <buffer> <silent> <M-CR> <Return><C-W>p$/;"	m
+<Plug>CalendarH	calendar.vim	/^nnoremap <silent> <Plug>CalendarH :cal Calendar(1)<CR>$/;"	m
+<Plug>CalendarV	calendar.vim	/^nnoremap <silent> <Plug>CalendarV :cal Calendar(0)<CR>$/;"	m
+<Plug>LookupFile	lookupfile.vim	/^  noremap <script> <silent> <Plug>LookupFile :LookupFile<CR>$/;"	m
+<Plug>LookupFileCE	lookupfile.vim	/^      inoremap <Plug>LookupFileCE <C-E>$/;"	m
+<Plug>ProjectOnly	project.vim	/^        nnoremap <script> <Plug>ProjectOnly :call <SID>DoProjectOnly()<CR>$/;"	m
+<Plug>ToggleProject	project.vim	/^nnoremap <script> <Plug>ToggleProject :call <SID>DoToggleProject()<CR>$/;"	m
+<Plug>VCSAdd	vcscommand.vim	/^nnoremap <silent> <Plug>VCSAdd :VCSAdd<CR>$/;"	m
+<Plug>VCSAnnotate	vcscommand.vim	/^nnoremap <silent> <Plug>VCSAnnotate :VCSAnnotate<CR>$/;"	m
+<Plug>VCSClearAndGotoOriginal	vcscommand.vim	/^nnoremap <silent> <Plug>VCSClearAndGotoOriginal :VCSGotoOriginal!<CR>$/;"	m
+<Plug>VCSCommit	vcscommand.vim	/^nnoremap <silent> <Plug>VCSCommit :VCSCommit<CR>$/;"	m
+<Plug>VCSDelete	vcscommand.vim	/^nnoremap <silent> <Plug>VCSDelete :VCSDelete<CR>$/;"	m
+<Plug>VCSDiff	vcscommand.vim	/^nnoremap <silent> <Plug>VCSDiff :VCSDiff<CR>$/;"	m
+<Plug>VCSGotoOriginal	vcscommand.vim	/^nnoremap <silent> <Plug>VCSGotoOriginal :VCSGotoOriginal<CR>$/;"	m
+<Plug>VCSInfo	vcscommand.vim	/^nnoremap <silent> <Plug>VCSInfo :VCSInfo<CR>$/;"	m
+<Plug>VCSLock	vcscommand.vim	/^nnoremap <silent> <Plug>VCSLock :VCSLock<CR>$/;"	m
+<Plug>VCSLog	vcscommand.vim	/^nnoremap <silent> <Plug>VCSLog :VCSLog<CR>$/;"	m
+<Plug>VCSRevert	vcscommand.vim	/^nnoremap <silent> <Plug>VCSRevert :VCSRevert<CR>$/;"	m
+<Plug>VCSReview	vcscommand.vim	/^nnoremap <silent> <Plug>VCSReview :VCSReview<CR>$/;"	m
+<Plug>VCSSplitAnnotate	vcscommand.vim	/^nnoremap <silent> <Plug>VCSSplitAnnotate :VCSAnnotate!<CR>$/;"	m
+<Plug>VCSStatus	vcscommand.vim	/^nnoremap <silent> <Plug>VCSStatus :VCSStatus<CR>$/;"	m
+<Plug>VCSUnlock	vcscommand.vim	/^nnoremap <silent> <Plug>VCSUnlock :VCSUnlock<CR>$/;"	m
+<Plug>VCSUpdate	vcscommand.vim	/^nnoremap <silent> <Plug>VCSUpdate :VCSUpdate<CR>$/;"	m
+<Plug>VCSVimDiff	vcscommand.vim	/^nnoremap <silent> <Plug>VCSVimDiff :VCSVimDiff<CR>$/;"	m
+<Return>	project.vim	/^        nnoremap <buffer> <silent> <Return>   \\|:call <SID>DoFoldOrOpenEntry('', 'e')<CR>$/;"	m
+<RightMouse>	project.vim	/^        nmap     <buffer> <silent> <RightMouse>   <space>$/;"	m
+<S-2-LeftMouse>	project.vim	/^        nnoremap <buffer> <silent> <S-2-LeftMouse> \\|:call <SID>DoFoldOrOpenEntry('', 'sp')<CR>$/;"	m
+<S-LeftMouse>	project.vim	/^        nnoremap <buffer> <silent> <S-LeftMouse>   <LeftMouse>$/;"	m
+<S-Return>	project.vim	/^        nnoremap <buffer> <silent> <S-Return> \\|:call <SID>DoFoldOrOpenEntry('', 'sp')<CR>$/;"	m
+<SID>xx	taglist.vim	/^    map <SID>xx <SID>xx$/;"	m
+<c-i>	powertab.vim	/^imap <c-i> <c-o>:Powertab<cr>$/;"	m
+<leader>fj	jsbeautify.vim	/^nnoremap <silent> <leader>fj :call g:Jsbeautify()<cr>$/;"	m
+<plug>NERDCommenterAlignBoth	NERD_commenter.vim	/^nnoremap <silent> <plug>NERDCommenterAlignBoth :call NERDComment(0, "alignBoth")<cr>$/;"	m
+<plug>NERDCommenterAlignBoth	NERD_commenter.vim	/^vnoremap <silent> <plug>NERDCommenterAlignBoth <ESC>:call NERDComment(1, "alignBoth")<cr>$/;"	m
+<plug>NERDCommenterAlignLeft	NERD_commenter.vim	/^nnoremap <silent> <plug>NERDCommenterAlignLeft :call NERDComment(0, "alignLeft")<cr>$/;"	m
+<plug>NERDCommenterAlignLeft	NERD_commenter.vim	/^vnoremap <silent> <plug>NERDCommenterAlignLeft <ESC>:call NERDComment(1, "alignLeft")<cr>$/;"	m
+<plug>NERDCommenterAltDelims	NERD_commenter.vim	/^nnoremap <plug>NERDCommenterAltDelims :call <SID>SwitchToAlternativeDelimiters(1)<cr>$/;"	m
+<plug>NERDCommenterAppend	NERD_commenter.vim	/^nmap <silent> <plug>NERDCommenterAppend :call NERDComment(0, "append")<cr>$/;"	m
+<plug>NERDCommenterComment	NERD_commenter.vim	/^nnoremap <silent> <plug>NERDCommenterComment :call NERDComment(0, "norm")<cr>$/;"	m
+<plug>NERDCommenterComment	NERD_commenter.vim	/^vnoremap <silent> <plug>NERDCommenterComment <ESC>:call NERDComment(1, "norm")<cr>$/;"	m
+<plug>NERDCommenterInInsert	NERD_commenter.vim	/^inoremap <silent> <plug>NERDCommenterInInsert <SPACE><BS><ESC>:call NERDComment(0, "insert")<CR>$/;"	m
+<plug>NERDCommenterInvert	NERD_commenter.vim	/^nnoremap <silent> <plug>NERDCommenterInvert :call NERDComment(0, "invert")<CR>$/;"	m
+<plug>NERDCommenterInvert	NERD_commenter.vim	/^vnoremap <silent> <plug>NERDCommenterInvert <ESC>:call NERDComment(1, "invert")<CR>$/;"	m
+<plug>NERDCommenterMinimal	NERD_commenter.vim	/^nnoremap <silent> <plug>NERDCommenterMinimal :call NERDComment(0, "minimal")<cr>$/;"	m
+<plug>NERDCommenterMinimal	NERD_commenter.vim	/^vnoremap <silent> <plug>NERDCommenterMinimal <ESC>:call NERDComment(1, "minimal")<cr>$/;"	m
+<plug>NERDCommenterNest	NERD_commenter.vim	/^nnoremap <silent> <plug>NERDCommenterNest :call NERDComment(0, "nested")<cr>$/;"	m
+<plug>NERDCommenterNest	NERD_commenter.vim	/^vnoremap <silent> <plug>NERDCommenterNest <ESC>:call NERDComment(1, "nested")<cr>$/;"	m
+<plug>NERDCommenterSexy	NERD_commenter.vim	/^nnoremap <silent> <plug>NERDCommenterSexy :call NERDComment(0, "sexy")<CR>$/;"	m
+<plug>NERDCommenterSexy	NERD_commenter.vim	/^vnoremap <silent> <plug>NERDCommenterSexy <ESC>:call NERDComment(1, "sexy")<CR>$/;"	m
+<plug>NERDCommenterToEOL	NERD_commenter.vim	/^nnoremap <silent> <plug>NERDCommenterToEOL :call NERDComment(0, "toEOL")<cr>$/;"	m
+<plug>NERDCommenterToggle	NERD_commenter.vim	/^nnoremap <silent> <plug>NERDCommenterToggle :call NERDComment(0, "toggle")<cr>$/;"	m
+<plug>NERDCommenterToggle	NERD_commenter.vim	/^vnoremap <silent> <plug>NERDCommenterToggle <ESC>:call NERDComment(1, "toggle")<cr>$/;"	m
+<plug>NERDCommenterUncomment	NERD_commenter.vim	/^nnoremap <silent> <plug>NERDCommenterUncomment :call NERDComment(0, "uncomment")<cr>$/;"	m
+<plug>NERDCommenterUncomment	NERD_commenter.vim	/^vnoremap <silent> <plug>NERDCommenterUncomment :call NERDComment(1, "uncomment")<cr>$/;"	m
+<plug>NERDCommenterYank	NERD_commenter.vim	/^nmap <silent> <plug>NERDCommenterYank :call NERDComment(0, "yank")<CR>$/;"	m
+<plug>NERDCommenterYank	NERD_commenter.vim	/^vmap <silent> <plug>NERDCommenterYank <ESC>:call NERDComment(1, "yank")<CR>$/;"	m
+<space>	project.vim	/^        nnoremap <buffer> <silent> <space>  \\|:silent exec 'vertical resize '.(match(g:proj_flags, '\\Ct')!=-1 && winwidth('.') > g:proj_window_width?(g:proj_window_width):(winwidth('.') + g:proj_window_increment))<CR>$/;"	m
+A	a.vim	/^comm! -nargs=? -bang A call AlternateFile("n<bang>", <f-args>)$/;"	c
+AN	a.vim	/^comm! -nargs=? -bang AN call NextAlternate("<bang>")$/;"	c
+AS	a.vim	/^comm! -nargs=? -bang AS call AlternateFile("h<bang>", <f-args>)$/;"	c
+AT	a.vim	/^comm! -nargs=? -bang AT call AlternateFile("t<bang>", <f-args>)$/;"	c
+AV	a.vim	/^comm! -nargs=? -bang AV call AlternateFile("v<bang>", <f-args>)$/;"	c
+AcpDisable	acp.vim	/^command! -bar -narg=0 AcpDisable call acp#disable()$/;"	c
+AcpEnable	acp.vim	/^command! -bar -narg=0 AcpEnable  call acp#enable()$/;"	c
+AcpLock	acp.vim	/^command! -bar -narg=0 AcpLock    call acp#lock()$/;"	c
+AcpUnlock	acp.vim	/^command! -bar -narg=0 AcpUnlock  call acp#unlock()$/;"	c
+AddAlternateExtensionMapping	a.vim	/^function! <SID>AddAlternateExtensionMapping(extension, alternates)$/;"	f
+AddCleanup	lookupfile.vim	/^function! s:AddCleanup(cmd)$/;"	f
+AddLeftDelim	NERD_commenter.vim	/^function s:AddLeftDelim(delim, theLine)$/;"	f
+AddLeftDelimAligned	NERD_commenter.vim	/^function s:AddLeftDelimAligned(delim, theLine, alignIndx)$/;"	f
+AddRightDelim	NERD_commenter.vim	/^function s:AddRightDelim(delim, theLine)$/;"	f
+AddRightDelimAligned	NERD_commenter.vim	/^function s:AddRightDelimAligned(delim, theLine, alignIndx)$/;"	f
+AddScopedTags	tagbar.vim	/^function! s:AddScopedTags(tags, processedtags, parent, depth,$/;"	f
+AltMultipart	NERD_commenter.vim	/^function s:AltMultipart()$/;"	f
+AlternateFile	a.vim	/^function! AlternateFile(splitWindow, ...)$/;"	f
+AlternateOpenFileUnderCursor	a.vim	/^function! AlternateOpenFileUnderCursor(splitWindow,...)$/;"	f
+AlternateOpenNextFile	a.vim	/^function! AlternateOpenNextFile(bang)$/;"	f
+Animate	matrix.vim	/^function! s:Animate()$/;"	f
+AppendCommentToLine	NERD_commenter.vim	/^function s:AppendCommentToLine()$/;"	f
+AutoComplPopDisable	acp.vim	/^command! -bar -narg=0 AutoComplPopDisable AcpDisable$/;"	c
+AutoComplPopEnable	acp.vim	/^command! -bar -narg=0 AutoComplPopEnable  AcpEnable$/;"	c
+AutoComplPopLock	acp.vim	/^command! -bar -narg=0 AutoComplPopLock    AcpLock$/;"	c
+AutoComplPopUnlock	acp.vim	/^command! -bar -narg=0 AutoComplPopUnlock  AcpUnlock$/;"	c
+AutoUpdate	tagbar.vim	/^function! s:AutoUpdate(fname)$/;"	f
+BEActivateBuffer	bufexplorer.vim	/^function! s:BEActivateBuffer()$/;"	f
+BEAddBuffer	bufexplorer.vim	/^function! s:BEAddBuffer()$/;"	f
+BEBuildBufferList	bufexplorer.vim	/^function! s:BEBuildBufferList()$/;"	f
+BECleanup	bufexplorer.vim	/^function! s:BECleanup()$/;"	f
+BEClose	bufexplorer.vim	/^function! s:BEClose()$/;"	f
+BECreateHelp	bufexplorer.vim	/^function! s:BECreateHelp()$/;"	f
+BEDeactivateBuffer	bufexplorer.vim	/^function! s:BEDeactivateBuffer(remove)$/;"	f
+BEDeleteBuffer	bufexplorer.vim	/^function! s:BEDeleteBuffer(bufNbr, mode)$/;"	f
+BEDeleteBufferListing	bufexplorer.vim	/^function! s:BEDeleteBufferListing(buf)$/;"	f
+BEDisplayBufferList	bufexplorer.vim	/^function! s:BEDisplayBufferList()$/;"	f
+BEError	bufexplorer.vim	/^function! s:BEError(msg)$/;"	f
+BEGetBufferInfo	bufexplorer.vim	/^function! s:BEGetBufferInfo(bufnr)$/;"	f
+BEGetHelpStatus	bufexplorer.vim	/^function! s:BEGetHelpStatus()$/;"	f
+BEGetTabNbr	bufexplorer.vim	/^function! s:BEGetTabNbr(bufNbr)$/;"	f
+BEGetWinNbr	bufexplorer.vim	/^function! s:BEGetWinNbr(tabNbr, bufNbr)$/;"	f
+BEIgnoreBuffer	bufexplorer.vim	/^function! s:BEIgnoreBuffer(buf)$/;"	f
+BEInitialize	bufexplorer.vim	/^function! s:BEInitialize()$/;"	f
+BEMRUCmp	bufexplorer.vim	/^function! s:BEMRUCmp(line1, line2)$/;"	f
+BEMRUListShow	bufexplorer.vim	/^function! s:BEMRUListShow()$/;"	f
+BEMRUPop	bufexplorer.vim	/^function! s:BEMRUPop(buf)$/;"	f
+BEMRUPush	bufexplorer.vim	/^function! s:BEMRUPush(buf)$/;"	f
+BEMapKeys	bufexplorer.vim	/^function! s:BEMapKeys()$/;"	f
+BEReSortListing	bufexplorer.vim	/^function! s:BEReSortListing()$/;"	f
+BERebuildBufferList	bufexplorer.vim	/^function! s:BERebuildBufferList(...)$/;"	f
+BERemoveBuffer	bufexplorer.vim	/^function! s:BERemoveBuffer(type, mode) range$/;"	f
+BEReset	bufexplorer.vim	/^function! s:BEReset()$/;"	f
+BEReverseSortSelect	bufexplorer.vim	/^function! s:BEReverseSortSelect()$/;"	f
+BESelectBuffer	bufexplorer.vim	/^function! s:BESelectBuffer(...)$/;"	f
+BESet	bufexplorer.vim	/^function! s:BESet(var, default)$/;"	f
+BESetup	bufexplorer.vim	/^function! s:BESetup()$/;"	f
+BESetupSyntax	bufexplorer.vim	/^function! s:BESetupSyntax()$/;"	f
+BESortListing	bufexplorer.vim	/^function! s:BESortListing()$/;"	f
+BESortReverse	bufexplorer.vim	/^function! s:BESortReverse()$/;"	f
+BESortSelect	bufexplorer.vim	/^function! s:BESortSelect()$/;"	f
+BETabEnter	bufexplorer.vim	/^function! s:BETabEnter()$/;"	f
+BEToggleFindActive	bufexplorer.vim	/^function! s:BEToggleFindActive()$/;"	f
+BEToggleHelp	bufexplorer.vim	/^function! s:BEToggleHelp()$/;"	f
+BEToggleOnlyOneTab	bufexplorer.vim	/^function! s:BEToggleOnlyOneTab()$/;"	f
+BEToggleShowRelativePath	bufexplorer.vim	/^function! s:BEToggleShowRelativePath()$/;"	f
+BEToggleShowTabBuffer	bufexplorer.vim	/^function! s:BEToggleShowTabBuffer()$/;"	f
+BEToggleShowUnlisted	bufexplorer.vim	/^function! s:BEToggleShowUnlisted()$/;"	f
+BEToggleSplitOutPathName	bufexplorer.vim	/^function! s:BEToggleSplitOutPathName()$/;"	f
+BEUpdateHelpStatus	bufexplorer.vim	/^function! s:BEUpdateHelpStatus()$/;"	f
+BEWarning	bufexplorer.vim	/^function! s:BEWarning(msg)$/;"	f
+BIG5	vimim.vim	/^function! BIG5()$/;"	f
+BackwardsSnippet	snipMate.vim	/^fun! BackwardsSnippet()$/;"	f
+BaseTag._getPrefix	tagbar.vim	/^function! s:BaseTag._getPrefix() dict$/;"	f
+BaseTag._init	tagbar.vim	/^function! s:BaseTag._init(name) dict$/;"	f
+BaseTag.closeFold	tagbar.vim	/^function! s:BaseTag.closeFold() dict$/;"	f
+BaseTag.getClosedParentTline	tagbar.vim	/^function! s:BaseTag.getClosedParentTline() dict$/;"	f
+BaseTag.getPrototype	tagbar.vim	/^function! s:BaseTag.getPrototype() dict$/;"	f
+BaseTag.initFoldState	tagbar.vim	/^function! s:BaseTag.initFoldState() dict$/;"	f
+BaseTag.isFoldable	tagbar.vim	/^function! s:BaseTag.isFoldable() dict$/;"	f
+BaseTag.isFolded	tagbar.vim	/^function! s:BaseTag.isFolded() dict$/;"	f
+BaseTag.isKindheader	tagbar.vim	/^function! s:BaseTag.isKindheader() dict$/;"	f
+BaseTag.isNormalTag	tagbar.vim	/^function! s:BaseTag.isNormalTag() dict$/;"	f
+BaseTag.isPseudoTag	tagbar.vim	/^function! s:BaseTag.isPseudoTag() dict$/;"	f
+BaseTag.openFold	tagbar.vim	/^function! s:BaseTag.openFold() dict$/;"	f
+BaseTag.openParents	tagbar.vim	/^function! s:BaseTag.openParents() dict$/;"	f
+BaseTag.setFolded	tagbar.vim	/^function! s:BaseTag.setFolded(folded) dict$/;"	f
+Bookmark.AddBookmark	NERD_tree.vim	/^function! s:Bookmark.AddBookmark(name, path)$/;"	f
+Bookmark.BookmarkExistsFor	NERD_tree.vim	/^function! s:Bookmark.BookmarkExistsFor(name)$/;"	f
+Bookmark.BookmarkFor	NERD_tree.vim	/^function! s:Bookmark.BookmarkFor(name)$/;"	f
+Bookmark.BookmarkNames	NERD_tree.vim	/^function! s:Bookmark.BookmarkNames()$/;"	f
+Bookmark.Bookmarks	NERD_tree.vim	/^function! s:Bookmark.Bookmarks()$/;"	f
+Bookmark.CacheBookmarks	NERD_tree.vim	/^function! s:Bookmark.CacheBookmarks(silent)$/;"	f
+Bookmark.ClearAll	NERD_tree.vim	/^function! s:Bookmark.ClearAll()$/;"	f
+Bookmark.GetNodeForName	NERD_tree.vim	/^function! s:Bookmark.GetNodeForName(name, searchFromAbsoluteRoot)$/;"	f
+Bookmark.GetSelected	NERD_tree.vim	/^function! s:Bookmark.GetSelected()$/;"	f
+Bookmark.InvalidBookmarks	NERD_tree.vim	/^function! s:Bookmark.InvalidBookmarks()$/;"	f
+Bookmark.New	NERD_tree.vim	/^function! s:Bookmark.New(name, path)$/;"	f
+Bookmark.Sort	NERD_tree.vim	/^function! s:Bookmark.Sort()$/;"	f
+Bookmark.ToRoot	NERD_tree.vim	/^function! s:Bookmark.ToRoot(name)$/;"	f
+Bookmark.Write	NERD_tree.vim	/^function! s:Bookmark.Write()$/;"	f
+Bookmark.activate	NERD_tree.vim	/^function! s:Bookmark.activate()$/;"	f
+Bookmark.compareTo	NERD_tree.vim	/^function! s:Bookmark.compareTo(otherbookmark)$/;"	f
+Bookmark.delete	NERD_tree.vim	/^function! s:Bookmark.delete()$/;"	f
+Bookmark.getNode	NERD_tree.vim	/^function! s:Bookmark.getNode(searchFromAbsoluteRoot)$/;"	f
+Bookmark.mustExist	NERD_tree.vim	/^function! s:Bookmark.mustExist()$/;"	f
+Bookmark.openInNewTab	NERD_tree.vim	/^function! s:Bookmark.openInNewTab(options)$/;"	f
+Bookmark.setPath	NERD_tree.vim	/^function! s:Bookmark.setPath(path)$/;"	f
+Bookmark.str	NERD_tree.vim	/^function! s:Bookmark.str()$/;"	f
+Bookmark.toRoot	NERD_tree.vim	/^function! s:Bookmark.toRoot()$/;"	f
+Bookmark.validate	NERD_tree.vim	/^function! s:Bookmark.validate()$/;"	f
+BufExplorer	bufexplorer.vim	/^command! BufExplorer :call StartBufExplorer(has ("gui") ? "drop" : "hide edit")$/;"	c
+BufExplorerHorizontalSplit	bufexplorer.vim	/^command! BufExplorerHorizontalSplit :call BufExplorerHorizontalSplit()$/;"	c
+BufExplorerHorizontalSplit	bufexplorer.vim	/^function! BufExplorerHorizontalSplit()$/;"	f
+BufExplorerVerticalSplit	bufexplorer.vim	/^command! BufExplorerVerticalSplit :call BufExplorerVerticalSplit()$/;"	c
+BufExplorerVerticalSplit	bufexplorer.vim	/^function! BufExplorerVerticalSplit()$/;"	f
+BufExplorerVimEnter	bufexplorer.vim	/^augroup BufExplorerVimEnter$/;"	a
+BufExplorer_IsValid	bufexplorer.vim	/^function! BufExplorer_IsValid()$/;"	f
+BufExplorer_ReSize	bufexplorer.vim	/^function! BufExplorer_ReSize()$/;"	f
+BufExplorer_Refresh	bufexplorer.vim	/^function! BufExplorer_Refresh()$/;"	f
+BufExplorer_Start	bufexplorer.vim	/^function! BufExplorer_Start()$/;"	f
+BufInit	rails.vim	/^function! s:BufInit(path)$/;"	f
+BufferOrFileExists	a.vim	/^function! <SID>BufferOrFileExists(fileName)$/;"	f
+CJK	vimim.vim	/^function! CJK()$/;"	f
+CJK16	vimim.vim	/^function! CJK16(...)$/;"	f
+CVSEdit	vcscvs.vim	/^com! CVSEdit call s:CVSEdit()$/;"	c
+CVSEdit	vcscvs.vim	/^function! s:CVSEdit()$/;"	f
+CVSEditors	vcscvs.vim	/^com! CVSEditors call s:CVSEditors()$/;"	c
+CVSEditors	vcscvs.vim	/^function! s:CVSEditors()$/;"	f
+CVSUnedit	vcscvs.vim	/^com! CVSUnedit call s:CVSUnedit()$/;"	c
+CVSUnedit	vcscvs.vim	/^function! s:CVSUnedit()$/;"	f
+CVSWatch	vcscvs.vim	/^com! -nargs=1 CVSWatch call s:CVSWatch(<f-args>)$/;"	c
+CVSWatch	vcscvs.vim	/^function! s:CVSWatch(onoff)$/;"	f
+CVSWatchAdd	vcscvs.vim	/^com! CVSWatchAdd call s:CVSWatch('add')$/;"	c
+CVSWatchOff	vcscvs.vim	/^com! CVSWatchOff call s:CVSWatch('off')$/;"	c
+CVSWatchOn	vcscvs.vim	/^com! CVSWatchOn call s:CVSWatch('on')$/;"	c
+CVSWatchRemove	vcscvs.vim	/^com! CVSWatchRemove call s:CVSWatch('remove')$/;"	c
+CVSWatchers	vcscvs.vim	/^com! CVSWatchers call s:CVSWatchers()$/;"	c
+CVSWatchers	vcscvs.vim	/^function! s:CVSWatchers()$/;"	f
+Calendar	calendar.vim	/^command! -nargs=* Calendar  call Calendar(0,<f-args>)$/;"	c
+Calendar	calendar.vim	/^function! Calendar(...)$/;"	f
+CalendarDiary	calendar.vim	/^function! s:CalendarDiary(day, month, year, week, dir)$/;"	f
+CalendarDoAction	calendar.vim	/^function! s:CalendarDoAction(...)$/;"	f
+CalendarH	calendar.vim	/^command! -nargs=* CalendarH call Calendar(1,<f-args>)$/;"	c
+CalendarHelp	calendar.vim	/^function! s:CalendarHelp()$/;"	f
+CalendarMakeDir	calendar.vim	/^function! s:CalendarMakeDir(dir)$/;"	f
+CalendarSign	calendar.vim	/^function! s:CalendarSign(day, month, year)$/;"	f
+CalendarVar	calendar.vim	/^function! s:CalendarVar(var)$/;"	f
+CanCommentLine	NERD_commenter.vim	/^function s:CanCommentLine(forceNested, lineNum)$/;"	f
+CanPlaceCursor	NERD_commenter.vim	/^function s:CanPlaceCursor(line, col)$/;"	f
+CanSexyCommentLines	NERD_commenter.vim	/^function s:CanSexyCommentLines(topline, bottomline)$/;"	f
+CanToggleCommentLine	NERD_commenter.vim	/^function s:CanToggleCommentLine(forceNested, lineNum)$/;"	f
+CheckExCtagsVersion	tagbar.vim	/^function! s:CheckExCtagsVersion(output)$/;"	f
+CheckFileType	DoxygenToolkit.vim	/^function! s:CheckFileType()$/;"	f
+CheckForExCtags	tagbar.vim	/^function! s:CheckForExCtags()$/;"	f
+CheckModelineFileEncoding	fencview.vim	/^function! s:CheckModelineFileEncoding() "{{{1$/;"	f
+CheckMouseClick	tagbar.vim	/^function! s:CheckMouseClick()$/;"	f
+CheckSyntax	checksyntax.vim	/^augroup CheckSyntax$/;"	a
+CheckSyntax	checksyntax.vim	/^command! -bang -nargs=? CheckSyntax call checksyntax#Check(1, "<bang>", <f-args>)$/;"	c
+ChineseToggle	TransferChinese.vim	/^com! -range=% ChineseToggle        <line1>,<line2>call ChineseToggle()$/;"	c
+ChineseToggle	TransferChinese.vim	/^function! ChineseToggle() range abort$/;"	f
+Chinesemode	vimim.vim	/^function! <SID>Chinesemode()$/;"	f
+Choose	matchit.vim	/^fun! s:Choose(patterns, string, comma, branch, prefix, suffix, ...)$/;"	f
+ChooseSnippet	snipMate.vim	/^fun s:ChooseSnippet(scope, trigger)$/;"	f
+CleanUp	matchit.vim	/^fun! s:CleanUp(options, mode, startline, startcol, ...)$/;"	f
+CleanUp	tagbar.vim	/^function! s:CleanUp()$/;"	f
+Cleanup	matrix.vim	/^function! s:Cleanup()$/;"	f
+CleanupFileinfo	tagbar.vim	/^function! s:CleanupFileinfo(fname)$/;"	f
+ClearCursorLineColor	javaScriptLint.vim	/^function s:ClearCursorLineColor()$/;"	f
+ClearMenu	vcscommand.vim	/^function! s:ClearMenu()$/;"	f
+Clearstack	closetag.vim	/^function! s:Clearstack(sname)$/;"	f
+CloseAllResultBuffers	vcscommand.vim	/^function! s:CloseAllResultBuffers()$/;"	f
+CloseFold	tagbar.vim	/^function! s:CloseFold()$/;"	f
+CloseWindow	tagbar.vim	/^function! s:CloseWindow()$/;"	f
+Colorizer	colorizer.vim	/^   command Colorizer call s:UpdateAll()$/;"	c
+CommandT	command-t.vim	/^command -nargs=? -complete=dir CommandT call <SID>CommandTShow(<q-args>)$/;"	c
+CommandTAcceptSelection	command-t.vim	/^function CommandTAcceptSelection()$/;"	f
+CommandTAcceptSelectionSplit	command-t.vim	/^function CommandTAcceptSelectionSplit()$/;"	f
+CommandTAcceptSelectionTab	command-t.vim	/^function CommandTAcceptSelectionTab()$/;"	f
+CommandTAcceptSelectionVSplit	command-t.vim	/^function CommandTAcceptSelectionVSplit()$/;"	f
+CommandTBackspace	command-t.vim	/^function CommandTBackspace()$/;"	f
+CommandTCancel	command-t.vim	/^function CommandTCancel()$/;"	f
+CommandTClear	command-t.vim	/^function CommandTClear()$/;"	f
+CommandTCursorEnd	command-t.vim	/^function CommandTCursorEnd()$/;"	f
+CommandTCursorLeft	command-t.vim	/^function CommandTCursorLeft()$/;"	f
+CommandTCursorRight	command-t.vim	/^function CommandTCursorRight()$/;"	f
+CommandTCursorStart	command-t.vim	/^function CommandTCursorStart()$/;"	f
+CommandTDelete	command-t.vim	/^function CommandTDelete()$/;"	f
+CommandTFlush	command-t.vim	/^command CommandTFlush call <SID>CommandTFlush()$/;"	c
+CommandTFlush	command-t.vim	/^function s:CommandTFlush()$/;"	f
+CommandTHandleKey	command-t.vim	/^function CommandTHandleKey(arg)$/;"	f
+CommandTRubyWarning	command-t.vim	/^function s:CommandTRubyWarning()$/;"	f
+CommandTSelectNext	command-t.vim	/^function CommandTSelectNext()$/;"	f
+CommandTSelectPrev	command-t.vim	/^function CommandTSelectPrev()$/;"	f
+CommandTShow	command-t.vim	/^function s:CommandTShow(arg)$/;"	f
+CommandTToggleFocus	command-t.vim	/^function CommandTToggleFocus()$/;"	f
+CommentBlock	NERD_commenter.vim	/^function s:CommentBlock(top, bottom, lSide, rSide, forceNested )$/;"	f
+CommentLines	NERD_commenter.vim	/^function s:CommentLines(forceNested, align, firstLine, lastLine)$/;"	f
+CommentLinesMinimal	NERD_commenter.vim	/^function s:CommentLinesMinimal(firstLine, lastLine)$/;"	f
+CommentLinesSexy	NERD_commenter.vim	/^function s:CommentLinesSexy(topline, bottomline)$/;"	f
+CommentLinesToggle	NERD_commenter.vim	/^function s:CommentLinesToggle(forceNested, firstLine, lastLine)$/;"	f
+CommentRegion	NERD_commenter.vim	/^function s:CommentRegion(topLine, topCol, bottomLine, bottomCol, forceNested)$/;"	f
+CompareByKind	tagbar.vim	/^function! s:CompareByKind(tag1, tag2)$/;"	f
+CompareByLine	tagbar.vim	/^function! s:CompareByLine(tag1, tag2)$/;"	f
+ConfigBufs	lookupfile.vim	/^function! s:ConfigBufs()$/;"	f
+ConfigWalk	lookupfile.vim	/^function! s:ConfigWalk()$/;"	f
+ConqueTerm	conque_term.vim	/^command! -nargs=+ -complete=shellcmd ConqueTerm call conque_term#open(<q-args>)$/;"	c
+ConqueTermSplit	conque_term.vim	/^command! -nargs=+ -complete=shellcmd ConqueTermSplit call conque_term#open(<q-args>, ['belowright split'])$/;"	c
+ConqueTermTab	conque_term.vim	/^command! -nargs=+ -complete=shellcmd ConqueTermTab call conque_term#open(<q-args>, ['tabnew'])$/;"	c
+ConqueTermVSplit	conque_term.vim	/^command! -nargs=+ -complete=shellcmd ConqueTermVSplit call conque_term#open(<q-args>, ['belowright vsplit'])$/;"	c
+ConstructInfo	project.vim	/^    function! s:ConstructInfo(home, c_d, scriptin, scriptout, flags, filter)$/;"	f
+ConvertHtmlEncoding	fencview.vim	/^function! s:ConvertHtmlEncoding(enc) "{{{1$/;"	f
+ConvertLeadingSpacesToTabs	NERD_commenter.vim	/^function s:ConvertLeadingSpacesToTabs(line)$/;"	f
+ConvertLeadingTabsToSpaces	NERD_commenter.vim	/^function s:ConvertLeadingTabsToSpaces(line)$/;"	f
+ConvertLeadingWhiteSpace	NERD_commenter.vim	/^function s:ConvertLeadingWhiteSpace(line)$/;"	f
+Count	matchit.vim	/^fun! s:Count(string, pattern, ...)$/;"	f
+CountBrackets	DoxygenToolkit.vim	/^function! s:CountBrackets( buffer )$/;"	f
+CountNonESCedOccurances	NERD_commenter.vim	/^function s:CountNonESCedOccurances(str, searchstr, escChar)$/;"	f
+CreateAutocommands	tagbar.vim	/^function! s:CreateAutocommands()$/;"	f
+CreateEntriesFromDir	project.vim	/^    function! s:CreateEntriesFromDir(recursive)$/;"	f
+CreateMapping	vcscommand.vim	/^function! s:CreateMapping(shortcut, expansion, display)$/;"	f
+CreateMaps	NERD_commenter.vim	/^function! s:CreateMaps(target, combo)$/;"	f
+CreateMenuItems	NERD_commenter.vim	/^    function! s:CreateMenuItems(target, desc, root)$/;"	f
+CreateMenus	rails.vim	/^function! s:CreateMenus() abort$/;"	f
+CreateObject	matrix.vim	/^function! s:CreateObject(i)$/;"	f
+CreatePseudoTag	tagbar.vim	/^function! s:CreatePseudoTag(name, parent, scope, typeinfo, fileinfo)$/;"	f
+DefineSnips	snipMate.vim	/^fun s:DefineSnips(dir, aliasft, realft)$/;"	f
+Detect	rails.vim	/^function! s:Detect(filename)$/;"	f
+DetectHtmlEncoding	fencview.vim	/^function! s:DetectHtmlEncoding() " {{{1$/;"	f
+DetectSplit	matrix.vim	/^function! s:DetectSplit()$/;"	f
+DetermineExtension	a.vim	/^function! DetermineExtension(path) $/;"	f
+DisplayInfo	project.vim	/^    function! s:DisplayInfo()$/;"	f
+DoCommand	vcsbzr.vim	/^function! s:DoCommand(cmd, cmdName, statusText, options)$/;"	f
+DoCommand	vcscvs.vim	/^function! s:DoCommand(cmd, cmdName, statusText, options)$/;"	f
+DoCommand	vcsgit.vim	/^function! s:DoCommand(cmd, cmdName, statusText, options)$/;"	f
+DoCommand	vcshg.vim	/^function! s:DoCommand(cmd, cmdName, statusText, options)$/;"	f
+DoCommand	vcssvk.vim	/^function! s:DoCommand(cmd, cmdName, statusText, options)$/;"	f
+DoCommand	vcssvn.vim	/^function! s:DoCommand(cmd, cmdName, statusText, options)$/;"	f
+DoEnsurePlacementSize_au	project.vim	/^    function! s:DoEnsurePlacementSize_au()$/;"	f
+DoEntryFromDir	project.vim	/^    function! s:DoEntryFromDir(recursive, line, name, absolute_dir, dir, c_d, filter_directive, filter, foldlev, sort)$/;"	f
+DoFoldOrOpenEntry	project.vim	/^    function! s:DoFoldOrOpenEntry(cmd0, cmd1)$/;"	f
+DoProjectOnly	project.vim	/^        function! s:DoProjectOnly()$/;"	f
+DoSetup	project.vim	/^    function! s:DoSetup()$/;"	f
+DoSetupAndSplit	project.vim	/^    function! s:DoSetupAndSplit()$/;"	f
+DoSetupAndSplit_au	project.vim	/^    function! s:DoSetupAndSplit_au()$/;"	f
+DoToggleProject	project.vim	/^    function! s:DoToggleProject()$/;"	f
+DoesBlockHaveDelim	NERD_commenter.vim	/^function s:DoesBlockHaveDelim(delim, top, bottom)$/;"	f
+DoesBlockHaveMultipartDelim	NERD_commenter.vim	/^function s:DoesBlockHaveMultipartDelim(top, bottom)$/;"	f
+Dox	DoxygenToolkit.vim	/^command! -nargs=0 Dox :call <SID>DoxygenCommentFunc()$/;"	c
+DoxAuthor	DoxygenToolkit.vim	/^command! -nargs=0 DoxAuthor :call <SID>DoxygenAuthorFunc()$/;"	c
+DoxBlock	DoxygenToolkit.vim	/^command! -nargs=0 DoxBlock :call <SID>DoxygenBlockFunc()$/;"	c
+DoxLic	DoxygenToolkit.vim	/^command! -nargs=0 DoxLic :call <SID>DoxygenLicenseFunc()$/;"	c
+DoxUndoc	DoxygenToolkit.vim	/^command! -nargs=1 DoxUndoc :call <SID>DoxygenUndocumentFunc(<q-args>)$/;"	c
+DoxygenAuthorFunc	DoxygenToolkit.vim	/^function! <SID>DoxygenAuthorFunc()$/;"	f
+DoxygenBlockFunc	DoxygenToolkit.vim	/^function! <SID>DoxygenBlockFunc()$/;"	f
+DoxygenCommentFunc	DoxygenToolkit.vim	/^function! <SID>DoxygenCommentFunc()$/;"	f
+DoxygenLicenseFunc	DoxygenToolkit.vim	/^function! <SID>DoxygenLicenseFunc()$/;"	f
+DoxygenUndocumentFunc	DoxygenToolkit.vim	/^function! <SID>DoxygenUndocumentFunc(blockTag)$/;"	f
+DrawObject	matrix.vim	/^function! s:DrawObject(i)$/;"	f
+EditAutoEncoding	fencview.vim	/^function! s:EditAutoEncoding(...) "{{{1$/;"	f
+EditFile	vcscommand.vim	/^function! s:EditFile(command, originalBuffer, statusText)$/;"	f
+EditManualEncoding	fencview.vim	/^function! s:EditManualEncoding(enc, ...) "{{{1$/;"	f
+EmptystackP	closetag.vim	/^function! s:EmptystackP(sname)$/;"	f
+EnumerateFilesByExtension	a.vim	/^function! EnumerateFilesByExtension(path, baseName, extension)$/;"	f
+EnumerateFilesByExtensionInPath	a.vim	/^function! EnumerateFilesByExtensionInPath(baseName, extension, pathList, relPathBase)$/;"	f
+EqualFilePaths	a.vim	/^function! <SID>EqualFilePaths(path1, path2)$/;"	f
+Esc	NERD_commenter.vim	/^function s:Esc(str)$/;"	f
+EscapeCtagsCmd	tagbar.vim	/^function! s:EscapeCtagsCmd(ctags_bin, args, ...)$/;"	f
+Executable	vcsbzr.vim	/^function! s:Executable()$/;"	f
+Executable	vcscvs.vim	/^function! s:Executable()$/;"	f
+Executable	vcsgit.vim	/^function! s:Executable()$/;"	f
+Executable	vcshg.vim	/^function! s:Executable()$/;"	f
+Executable	vcssvk.vim	/^function! s:Executable()$/;"	f
+Executable	vcssvn.vim	/^function! s:Executable()$/;"	f
+ExecuteCtags	tagbar.vim	/^function! s:ExecuteCtags(ctags_cmd)$/;"	f
+ExecuteCtagsOnFile	tagbar.vim	/^function! s:ExecuteCtagsOnFile(fname, ftype)$/;"	f
+ExecuteExtensionMapping	vcscommand.vim	/^function! s:ExecuteExtensionMapping(mapping)$/;"	f
+ExecuteVCSCommand	vcscommand.vim	/^function! s:ExecuteVCSCommand(command, argList)$/;"	f
+ExpandAlternatePath	a.vim	/^function! <SID>ExpandAlternatePath(pathSpec, sfPath) $/;"	f
+ExtractSnips	snipMate.vim	/^fun! ExtractSnips(dir, ft)$/;"	f
+ExtractSnipsFile	snipMate.vim	/^fun! ExtractSnipsFile(file, ft)$/;"	f
+FGforBG	colorizer.vim	/^function! s:FGforBG(bg) "{{{2$/;"	f
+FencAutoDetect	fencview.vim	/^command! -nargs=* -complete=file FencAutoDetect call$/;"	c
+FencCreateMenu	fencview.vim	/^function! s:FencCreateMenu() "{{{1$/;"	f
+FencDetectFileEncoding	fencview.vim	/^function! s:FencDetectFileEncoding() "{{{1$/;"	f
+FencHandleData	fencview.vim	/^function! s:FencHandleData() "{{{1$/;"	f
+FencInitVar	fencview.vim	/^function! s:FencInitVar() "{{{1$/;"	f
+FencManualEncoding	fencview.vim	/^command! -nargs=+ -complete=file FencManualEncoding call$/;"	c
+FencMenuSel	fencview.vim	/^function! FencMenuSel(fen_name) "{{{1$/;"	f
+FencProbeBOM	fencview.vim	/^function! s:FencProbeBOM(Firstline) "{{{1$/;"	f
+FencProbeCp932	fencview.vim	/^function! s:FencProbeCp932(c) "{{{1$/;"	f
+FencProbeCp936	fencview.vim	/^function! s:FencProbeCp936(c) "{{{1$/;"	f
+FencProbeCp949	fencview.vim	/^function! s:FencProbeCp949(c) "{{{1$/;"	f
+FencProbeCp950	fencview.vim	/^function! s:FencProbeCp950(c) "{{{1$/;"	f
+FencProbeEuc_jp	fencview.vim	/^function! s:FencProbeEuc_jp(c) "{{{1$/;"	f
+FencProbeEuc_tw	fencview.vim	/^function! s:FencProbeEuc_tw(c) "{{{1$/;"	f
+FencProbeUTF8	fencview.vim	/^function! s:FencProbeUTF8(c) "{{{1$/;"	f
+FencProgressBar	fencview.vim	/^function! s:FencProgressBar(percentage, string) "{{{1$/;"	f
+FencSelect	fencview.vim	/^function! s:FencSelect() "{{{1$/;"	f
+FencView	fencview.vim	/^    augroup FencView$/;"	a
+FencView	fencview.vim	/^augroup FencView$/;"	a
+FencView	fencview.vim	/^command! -nargs=0                FencView       call s:ToggleFencView()$/;"	c
+FileInfo.New	tagbar.vim	/^function! s:FileInfo.New(fname, ftype) dict$/;"	f
+FileInfo.clearOldFolds	tagbar.vim	/^function! s:FileInfo.clearOldFolds() dict$/;"	f
+FileInfo.closeKindFold	tagbar.vim	/^function! s:FileInfo.closeKindFold(kind) dict$/;"	f
+FileInfo.openKindFold	tagbar.vim	/^function! s:FileInfo.openKindFold(kind) dict$/;"	f
+FileInfo.reset	tagbar.vim	/^function! s:FileInfo.reset() dict$/;"	f
+FileInfo.sortTags	tagbar.vim	/^function! s:FileInfo.sortTags() dict$/;"	f
+FilePatIgnoreCase	lookupfile.vim	/^function! s:FilePatIgnoreCase(filePat)$/;"	f
+FindBoundingLinesOfSexyCom	NERD_commenter.vim	/^function s:FindBoundingLinesOfSexyCom(lineNum)$/;"	f
+FindDelimiterIndex	NERD_commenter.vim	/^function s:FindDelimiterIndex(delimiter, line)$/;"	f
+FindFileInSearchPath	a.vim	/^function! <SID>FindFileInSearchPath(fileName, pathList, relPathBase)$/;"	f
+FindFileInSearchPathEx	a.vim	/^function! <SID>FindFileInSearchPathEx(fileName, pathList, relPathBase, count)$/;"	f
+FindFoldBottom	project.vim	/^    function! s:FindFoldBottom(line)$/;"	f
+FindFoldTop	project.vim	/^    function! s:FindFoldTop(line)$/;"	f
+FindOrCreateBuffer	a.vim	/^function! <SID>FindOrCreateBuffer(fileName, doSplit, findSimilar)$/;"	f
+FormatFileResults	lookupfile.vim	/^function! s:FormatFileResults(fl, parentLen, matchPat, matchingCase, dirsOnly)$/;"	f
+GBK	vimim.vim	/^function! GBK()$/;"	f
+GJSLint	gjslint.vim	/^command! -nargs=0 -buffer GJSLint :call GJSLint()$/;"	c
+GJSLint	gjslint.vim	/^function! GJSLint()$/;"	f
+GenerateEntry	project.vim	/^    function! s:GenerateEntry(recursive, line, name, absolute_dir, dir, c_d, filter_directive, filter, foldlev, sort)$/;"	f
+GenerateResultBufferName	vcscommand.vim	/^function! s:GenerateResultBufferName(command, originalBuffer, vcsType, statusText)$/;"	f
+GenerateResultBufferNameWithExtension	vcscommand.vim	/^function! s:GenerateResultBufferNameWithExtension(command, originalBuffer, vcsType, statusText)$/;"	f
+GetBlockCommentIndent	IndentAnything.vim	/^function! s:GetBlockCommentIndent(CurrLNum, LastLNum)$/;"	f
+GetCd	project.vim	/^    function! s:GetCd(info, home)$/;"	f
+GetCloseTag	closetag.vim	/^function! GetCloseTag()$/;"	f
+GetContIndent	IndentAnything.vim	/^function! s:GetContIndent(Rule, CurrLine, LastLine, LastLNum, PrevLNum)$/;"	f
+GetDefDir	lookupfile.vim	/^function! s:GetDefDir()$/;"	f
+GetFilter	project.vim	/^    function! s:GetFilter(info, parent_filter)$/;"	f
+GetFlags	project.vim	/^    function! s:GetFlags(info)$/;"	f
+GetHome	project.vim	/^    function! s:GetHome(info, parent_home)$/;"	f
+GetLastOpenTag	closetag.vim	/^function! GetLastOpenTag(unaryTagsStack)$/;"	f
+GetLeft	NERD_commenter.vim	/^function s:GetLeft(alt, space, esc)$/;"	f
+GetNearbyTag	tagbar.vim	/^function! s:GetNearbyTag()$/;"	f
+GetNthItemFromList	a.vim	/^function! <SID>GetNthItemFromList(list, n) $/;"	f
+GetPairIndent	IndentAnything.vim	/^function! s:GetPairIndent(CurrLine, LastLine, LastLNum, Head, Mid, Tail)$/;"	f
+GetPostBlockCommentIndent	IndentAnything.vim	/^function! s:GetPostBlockCommentIndent(LastLNum)$/;"	f
+GetPrevNonBlankNonComment	IndentAnything.vim	/^function! GetPrevNonBlankNonComment(begin)$/;"	f
+GetRevision	vcscvs.vim	/^function! s:GetRevision()$/;"	f
+GetRight	NERD_commenter.vim	/^function s:GetRight(alt, space, esc)$/;"	f
+GetScriptin	project.vim	/^    function! s:GetScriptin(info, home)$/;"	f
+GetScriptout	project.vim	/^    function! s:GetScriptout(info, home)$/;"	f
+GetSexyComLeft	NERD_commenter.vim	/^function s:GetSexyComLeft(space, esc)$/;"	f
+GetSexyComMarker	NERD_commenter.vim	/^function s:GetSexyComMarker(space, esc)$/;"	f
+GetSexyComRight	NERD_commenter.vim	/^function s:GetSexyComRight(space, esc)$/;"	f
+GetSnippet	snipMate.vim	/^fun s:GetSnippet(word, scope)$/;"	f
+GetSnippets	snipMate.vim	/^fun! GetSnippets(dir, filetypes)$/;"	f
+GetSnipsInCurrentScope	snipMate.vim	/^fun! GetSnipsInCurrentScope()$/;"	f
+GetTagInfo	tagbar.vim	/^function! s:GetTagInfo(linenr, ignorepseudo)$/;"	f
+GetToken	calendar.vim	/^function! s:GetToken(src,dlm,cnt)$/;"	f
+GetUserTypeDefs	tagbar.vim	/^function! s:GetUserTypeDefs()$/;"	f
+Gjslint	gjslint.vim	/^command! -nargs=0 -buffer Gjslint :call GJSLint()$/;"	c
+GoSimplifiedChinese	TransferChinese.vim	/^com! -range=% GoSimplifiedChinese  <line1>,<line2>call GoSimplifiedChinese()$/;"	c
+GoSimplifiedChinese	TransferChinese.vim	/^function! GoSimplifiedChinese() range abort$/;"	f
+GoTraditionalChinese	TransferChinese.vim	/^com! -range=% GoTraditionalChinese <line1>,<line2>call GoTraditionalChinese()$/;"	c
+GoTraditionalChinese	TransferChinese.vim	/^function! GoTraditionalChinese() range abort$/;"	f
+GotoNextToplevelTag	tagbar.vim	/^function! s:GotoNextToplevelTag(direction)$/;"	f
+GrepAll	project.vim	/^    function! s:GrepAll(recurse, lineno, pattern)$/;"	f
+HasCStyleComments	NERD_commenter.vim	/^function s:HasCStyleComments()$/;"	f
+HasLeadingTabs	NERD_commenter.vim	/^function s:HasLeadingTabs(...)$/;"	f
+HasMultipartDelims	NERD_commenter.vim	/^function s:HasMultipartDelims()$/;"	f
+HighlightTag	tagbar.vim	/^function! s:HighlightTag()$/;"	f
+IH	a.vim	/^comm! -nargs=? -bang IH call AlternateOpenFileUnderCursor("n<bang>", <f-args>)$/;"	c
+IHN	a.vim	/^comm! -nargs=? -bang IHN call AlternateOpenNextFile("<bang>")$/;"	c
+IHS	a.vim	/^comm! -nargs=? -bang IHS call AlternateOpenFileUnderCursor("h<bang>", <f-args>)$/;"	c
+IHT	a.vim	/^comm! -nargs=? -bang IHT call AlternateOpenFileUnderCursor("t<bang>", <f-args>)$/;"	c
+IHV	a.vim	/^comm! -nargs=? -bang IHV call AlternateOpenFileUnderCursor("v<bang>", <f-args>)$/;"	c
+IMName	vimim.vim	/^function! IMName()$/;"	f
+IdoAccept	lookupfile.vim	/^function! s:IdoAccept(splitWin, key)$/;"	f
+IdoBS	lookupfile.vim	/^function! s:IdoBS()$/;"	f
+IdoSwitchTo	lookupfile.vim	/^function! s:IdoSwitchTo(mode)$/;"	f
+IdoTab	lookupfile.vim	/^function! s:IdoTab()$/;"	f
+InComment	closetag.vim	/^function! s:InComment()$/;"	f
+InCommentAt	closetag.vim	/^function! s:InCommentAt(line, col)$/;"	f
+InCommentOrString	IndentAnything.vim	/^function! InCommentOrString()$/;"	f
+IndentAnything	IndentAnything.vim	/^function! IndentAnything()$/;"	f
+IndentAnythingInit	IndentAnything.vim	/^function! IndentAnythingInit()$/;"	f
+Init	matrix.vim	/^function! s:Init()$/;"	f
+InitTypes	tagbar.vim	/^function! s:InitTypes()$/;"	f
+InitVariable	NERD_commenter.vim	/^function s:InitVariable(var, value)$/;"	f
+InitWindow	tagbar.vim	/^function! s:InitWindow(autoclose)$/;"	f
+InitializeParameters	DoxygenToolkit.vim	/^function! s:InitializeParameters()$/;"	f
+InsertRefs	matchit.vim	/^fun! s:InsertRefs(groupBR, prefix, group, suffix, matchline)$/;"	f
+Instack	closetag.vim	/^function! s:Instack(el, sname)$/;"	f
+InvertComment	NERD_commenter.vim	/^function s:InvertComment(firstLine, lastLine)$/;"	f
+IsAbsolutePath	project.vim	/^    function! s:IsAbsolutePath(path)$/;"	f
+IsBlockComment	IndentAnything.vim	/^function! IsBlockComment(linenum)$/;"	f
+IsComment	IndentAnything.vim	/^function! IsComment(linenum)$/;"	f
+IsCommented	NERD_commenter.vim	/^function s:IsCommented(left, right, line)$/;"	f
+IsCommentedFromStartOfLine	NERD_commenter.vim	/^function s:IsCommentedFromStartOfLine(left, line)$/;"	f
+IsCommentedNormOrSexy	NERD_commenter.vim	/^function s:IsCommentedNormOrSexy(lineNum)$/;"	f
+IsCommentedOuttermost	NERD_commenter.vim	/^function s:IsCommentedOuttermost(left, right, leftAlt, rightAlt, line)$/;"	f
+IsDelimValid	NERD_commenter.vim	/^function s:IsDelimValid(delimiter, delIndx, line)$/;"	f
+IsEscaped	NERD_commenter.vim	/^function s:IsEscaped(str, indx, escChar)$/;"	f
+IsInSexyComment	NERD_commenter.vim	/^function s:IsInSexyComment(line)$/;"	f
+IsLineComment	IndentAnything.vim	/^function! IsLineComment(linenum)$/;"	f
+IsNumEven	NERD_commenter.vim	/^function s:IsNumEven(num)$/;"	f
+IsSexyComment	NERD_commenter.vim	/^function s:IsSexyComment(topline, bottomline)$/;"	f
+IsValidFile	tagbar.vim	/^function! s:IsValidFile(fname, ftype)$/;"	f
+JavascriptLint	javaScriptLint.vim	/^function JavascriptLint() $/;"	f
+Jsbeautify	jsbeautify.vim	/^function! g:Jsbeautify()$/;"	f
+JumpToTag	tagbar.vim	/^function! s:JumpToTag(stay_in_tagbar)$/;"	f
+KeyMap.All	NERD_tree.vim	/^function! s:KeyMap.All()$/;"	f
+KeyMap.BindAll	NERD_tree.vim	/^function! s:KeyMap.BindAll()$/;"	f
+KeyMap.Create	NERD_tree.vim	/^function! s:KeyMap.Create(options)$/;"	f
+KeyMap.bind	NERD_tree.vim	/^function! s:KeyMap.bind()$/;"	f
+KindheaderTag.New	tagbar.vim	/^function! s:KindheaderTag.New(name) dict$/;"	f
+KindheaderTag.closeFold	tagbar.vim	/^function! s:KindheaderTag.closeFold() dict$/;"	f
+KindheaderTag.getPrototype	tagbar.vim	/^function! s:KindheaderTag.getPrototype() dict$/;"	f
+KindheaderTag.isFoldable	tagbar.vim	/^function! s:KindheaderTag.isFoldable() dict$/;"	f
+KindheaderTag.isFolded	tagbar.vim	/^function! s:KindheaderTag.isFolded() dict$/;"	f
+KindheaderTag.isKindheader	tagbar.vim	/^function! s:KindheaderTag.isKindheader() dict$/;"	f
+KindheaderTag.openFold	tagbar.vim	/^function! s:KindheaderTag.openFold() dict$/;"	f
+KindheaderTag.toggleFold	tagbar.vim	/^function! s:KindheaderTag.toggleFold() dict$/;"	f
+LUArgs	lookupfile.vim	/^command! -nargs=? -bang -complete=file LUArgs :call$/;"	c
+LUBufs	lookupfile.vim	/^command! -nargs=? -bang -complete=file LUBufs :call$/;"	c
+LUPath	lookupfile.vim	/^command! -nargs=? -bang -complete=file LUPath :call$/;"	c
+LUTags	lookupfile.vim	/^command! -nargs=? -bang -complete=tag LUTags :call$/;"	c
+LUWalk	lookupfile.vim	/^command! -nargs=? -bang -complete=dir LUWalk :call$/;"	c
+LastIndexOfDelim	NERD_commenter.vim	/^function s:LastIndexOfDelim(delim, str)$/;"	f
+LeftMostIndx	NERD_commenter.vim	/^function s:LeftMostIndx(countCommentedLines, countEmptyLines, topline, bottomline)$/;"	f
+ListSpawn	project.vim	/^    function! s:ListSpawn(varnamesegment)$/;"	f
+LoadAll	project.vim	/^    function! s:LoadAll(recurse, line)$/;"	f
+LoadAllSplit	project.vim	/^    function! s:LoadAllSplit(recurse, line)$/;"	f
+LookupArgs	lookupfile.vim	/^function! s:LookupArgs(pattern)$/;"	f
+LookupBufs	lookupfile.vim	/^function! s:LookupBufs(pattern)$/;"	f
+LookupFile	lookupfile.vim	/^command! -nargs=? -bang -complete=file LookupFile :call$/;"	c
+LookupPath	lookupfile.vim	/^function! s:LookupPath(pattern)$/;"	f
+LookupReset	lookupfile.vim	/^function! s:LookupReset()$/;"	f
+LookupUsing	lookupfile.vim	/^function! s:LookupUsing(ftr, bang, initPat, minPatLen)$/;"	f
+LookupWalk	lookupfile.vim	/^function! s:LookupWalk(pattern)$/;"	f
+MRU	mru.vim	/^command! -nargs=? -complete=customlist,s:MRU_Complete MRU$/;"	c
+MRU_AddFile	mru.vim	/^function! s:MRU_AddFile(acmd_bufnr)$/;"	f
+MRU_Add_Menu	mru.vim	/^    let MRU_Add_Menu = 1$/;"	v
+MRU_Auto_Close	mru.vim	/^    let MRU_Auto_Close = 1$/;"	v
+MRU_Cmd	mru.vim	/^function! s:MRU_Cmd(pat)$/;"	f
+MRU_Complete	mru.vim	/^function! s:MRU_Complete(ArgLead, CmdLine, CursorPos)$/;"	f
+MRU_Edit_File	mru.vim	/^function! s:MRU_Edit_File(filename, sanitized)$/;"	f
+MRU_Exclude_Files	mru.vim	/^    let MRU_Exclude_Files = ''$/;"	v
+MRU_File	mru.vim	/^                let MRU_File = $USERPROFILE . '\\_vim_mru_files'$/;"	v
+MRU_File	mru.vim	/^        let MRU_File = $HOME . '\/.vim_mru_files'$/;"	v
+MRU_File	mru.vim	/^        let MRU_File = $VIM . '\/_vim_mru_files'$/;"	v
+MRU_Include_Files	mru.vim	/^    let MRU_Include_Files = ''$/;"	v
+MRU_LoadList	mru.vim	/^function! s:MRU_LoadList()$/;"	f
+MRU_Max_Entries	mru.vim	/^    let MRU_Max_Entries = 100$/;"	v
+MRU_Max_Menu_Entries	mru.vim	/^    let MRU_Max_Menu_Entries = 10$/;"	v
+MRU_Max_Submenu_Entries	mru.vim	/^    let MRU_Max_Submenu_Entries = 10$/;"	v
+MRU_Open_Window	mru.vim	/^function! s:MRU_Open_Window(...)$/;"	f
+MRU_Refresh_Menu	mru.vim	/^function! s:MRU_Refresh_Menu()$/;"	f
+MRU_SaveList	mru.vim	/^function! s:MRU_SaveList()$/;"	f
+MRU_Select_File_Cmd	mru.vim	/^function! s:MRU_Select_File_Cmd(opt) range$/;"	f
+MRU_Use_Current_Window	mru.vim	/^    let MRU_Use_Current_Window = 0$/;"	v
+MRU_Warn_Msg	mru.vim	/^function! s:MRU_Warn_Msg(msg)$/;"	f
+MRU_Window_Edit_File	mru.vim	/^function! s:MRU_Window_Edit_File(fname, multi, edit_type, open_type)$/;"	f
+MRU_Window_Height	mru.vim	/^    let MRU_Window_Height = 8$/;"	v
+MRU_add_files_to_menu	mru.vim	/^function! s:MRU_add_files_to_menu(prefix, file_list)$/;"	f
+MRU_escape_filename	mru.vim	/^function! s:MRU_escape_filename(fname)$/;"	f
+MakeSnip	snipMate.vim	/^fun! MakeSnip(scope, trigger, content, ...)$/;"	f
+MapDelimiters	NERD_commenter.vim	/^function s:MapDelimiters(left, right)$/;"	f
+MapDelimitersWithAlternative	NERD_commenter.vim	/^function s:MapDelimitersWithAlternative(left, right, leftAlt, rightAlt)$/;"	f
+MapKeys	tagbar.vim	/^function! s:MapKeys()$/;"	f
+MarkOrigBufferForSetup	vcscommand.vim	/^function! s:MarkOrigBufferForSetup(buffer)$/;"	f
+MatchDebug	matchit.vim	/^  command! -nargs=0 MatchDebug call s:Match_debug()$/;"	c
+Match_debug	matchit.vim	/^fun! s:Match_debug()$/;"	f
+Match_wrapper	matchit.vim	/^function! s:Match_wrapper(word, forward, mode) range$/;"	f
+MatchingExactCase	lookupfile.vim	/^function! s:MatchingExactCase(filePat)$/;"	f
+Matrix	matrix.vim	/^   command! Matrix call Matrix()$/;"	c
+Matrix	matrix.vim	/^function! Matrix()$/;"	f
+MaybeClearCursorLineColor	javaScriptLint.vim	/^function s:MaybeClearCursorLineColor()$/;"	f
+MenuController.New	NERD_tree.vim	/^function! s:MenuController.New(menuItems)$/;"	f
+MenuController._allIndexesFor	NERD_tree.vim	/^function! s:MenuController._allIndexesFor(shortcut)$/;"	f
+MenuController._current	NERD_tree.vim	/^function! s:MenuController._current()$/;"	f
+MenuController._cursorDown	NERD_tree.vim	/^function! s:MenuController._cursorDown()$/;"	f
+MenuController._cursorUp	NERD_tree.vim	/^function! s:MenuController._cursorUp()$/;"	f
+MenuController._echoPrompt	NERD_tree.vim	/^function! s:MenuController._echoPrompt()$/;"	f
+MenuController._handleKeypress	NERD_tree.vim	/^function! s:MenuController._handleKeypress(key)$/;"	f
+MenuController._nextIndexFor	NERD_tree.vim	/^function! s:MenuController._nextIndexFor(shortcut)$/;"	f
+MenuController._restoreOptions	NERD_tree.vim	/^function! s:MenuController._restoreOptions()$/;"	f
+MenuController._saveOptions	NERD_tree.vim	/^function! s:MenuController._saveOptions()$/;"	f
+MenuController._setCmdheight	NERD_tree.vim	/^function! s:MenuController._setCmdheight()$/;"	f
+MenuController.showMenu	NERD_tree.vim	/^function! s:MenuController.showMenu()$/;"	f
+MenuItem.All	NERD_tree.vim	/^function! s:MenuItem.All()$/;"	f
+MenuItem.AllEnabled	NERD_tree.vim	/^function! s:MenuItem.AllEnabled()$/;"	f
+MenuItem.Create	NERD_tree.vim	/^function! s:MenuItem.Create(options)$/;"	f
+MenuItem.CreateSeparator	NERD_tree.vim	/^function! s:MenuItem.CreateSeparator(options)$/;"	f
+MenuItem.CreateSubmenu	NERD_tree.vim	/^function! s:MenuItem.CreateSubmenu(options)$/;"	f
+MenuItem.enabled	NERD_tree.vim	/^function! s:MenuItem.enabled()$/;"	f
+MenuItem.execute	NERD_tree.vim	/^function! s:MenuItem.execute()$/;"	f
+MenuItem.isSeparator	NERD_tree.vim	/^function! s:MenuItem.isSeparator()$/;"	f
+MenuItem.isSubmenu	NERD_tree.vim	/^function! s:MenuItem.isSubmenu()$/;"	f
+MoveDown	project.vim	/^    function! s:MoveDown()$/;"	f
+MoveUp	project.vim	/^    function! s:MoveUp()$/;"	f
+Mru	mru.vim	/^command! -nargs=? -complete=customlist,s:MRU_Complete Mru$/;"	c
+MultiMatch	matchit.vim	/^fun! s:MultiMatch(spflag, mode)$/;"	f
+Multipart	NERD_commenter.vim	/^function s:Multipart()$/;"	f
+NERDComment	NERD_commenter.vim	/^function! NERDComment(isVisual, type) range$/;"	f
+NERDTree	NERD_tree.vim	/^augroup NERDTree$/;"	a
+NERDTree	NERD_tree.vim	/^command! -n=? -complete=dir -bar NERDTree :call s:initNerdTree('<args>')$/;"	c
+NERDTreeAddKeyMap	NERD_tree.vim	/^function! NERDTreeAddKeyMap(options)$/;"	f
+NERDTreeAddMenuItem	NERD_tree.vim	/^function! NERDTreeAddMenuItem(options)$/;"	f
+NERDTreeAddMenuSeparator	NERD_tree.vim	/^function! NERDTreeAddMenuSeparator(...)$/;"	f
+NERDTreeAddSubmenu	NERD_tree.vim	/^function! NERDTreeAddSubmenu(options)$/;"	f
+NERDTreeClose	NERD_tree.vim	/^command! -n=0 -bar NERDTreeClose :call s:closeTreeIfOpen()$/;"	c
+NERDTreeFind	NERD_tree.vim	/^command! -n=0 -bar NERDTreeFind call s:findAndRevealPath()$/;"	c
+NERDTreeFromBookmark	NERD_tree.vim	/^command! -n=1 -complete=customlist,s:completeBookmarks -bar NERDTreeFromBookmark call s:initNerdTree('<args>')$/;"	c
+NERDTreeHijackNetrw	NERD_tree.vim	/^    augroup NERDTreeHijackNetrw$/;"	a
+NERDTreeMirror	NERD_tree.vim	/^command! -n=0 -bar NERDTreeMirror call s:initNerdTreeMirror()$/;"	c
+NERDTreeRender	NERD_tree.vim	/^function! NERDTreeRender()$/;"	f
+NERDTreeToggle	NERD_tree.vim	/^command! -n=? -complete=dir -bar NERDTreeToggle :call s:toggle('<args>')$/;"	c
+NerdEcho	NERD_commenter.vim	/^function s:NerdEcho(msg, typeOfMsg)$/;"	f
+NewQuickTemplate	QuickTemplate.vim	/^com! -nargs=1 -range=% NewQuickTemplate call NewQuickTemplate(<f-args>, 'window')$/;"	c
+NewQuickTemplate	QuickTemplate.vim	/^function! NewQuickTemplate(name, mode)$/;"	f
+NewQuickTemplateTab	QuickTemplate.vim	/^    com! -nargs=1 -range=% NewQuickTemplateTab call NewQuickTemplate(<f-args>, 'tab')$/;"	c
+NextAlternate	a.vim	/^function! NextAlternate(bang)$/;"	f
+NormalTag.New	tagbar.vim	/^function! s:NormalTag.New(name) dict$/;"	f
+NormalTag.getPrototype	tagbar.vim	/^function! s:NormalTag.getPrototype() dict$/;"	f
+NormalTag.isNormalTag	tagbar.vim	/^function! s:NormalTag.isNormalTag() dict$/;"	f
+NormalTag.str	tagbar.vim	/^function! s:NormalTag.str() dict$/;"	f
+NormalizeEncodingName	fencview.vim	/^function! s:NormalizeEncodingName(enc) "{{{1$/;"	f
+NumLinesInBuf	NERD_commenter.vim	/^function s:NumLinesInBuf()$/;"	f
+NumberOfLeadingTabs	NERD_commenter.vim	/^function s:NumberOfLeadingTabs(s)$/;"	f
+OneToOneMap	TransferChinese.vim	/^function! s:OneToOneMap(char, from, to)$/;"	f
+Onekey	vimim.vim	/^function! <SID>Onekey()$/;"	f
+OpenEntry	project.vim	/^    function! s:OpenEntry(line, precmd, editcmd, dir)$/;"	f
+OpenEntry2	project.vim	/^    function! s:OpenEntry2(line, infoline, fname, editcmd)$/;"	f
+OpenFold	tagbar.vim	/^function! s:OpenFold()$/;"	f
+OpenParents	tagbar.vim	/^function! s:OpenParents(...)$/;"	f
+OpenWindow	tagbar.vim	/^function! s:OpenWindow(autoclose)$/;"	f
+OverrideOption	vcscommand.vim	/^function! s:OverrideOption(option, ...)$/;"	f
+ParseFunctionParameters	DoxygenToolkit.vim	/^function! s:ParseFunctionParameters( lineBuffer, doc )$/;"	f
+ParseFunctionTemplateParameters	DoxygenToolkit.vim	/^function! s:ParseFunctionTemplateParameters( lineBuffer, doc )$/;"	f
+ParseParameter	DoxygenToolkit.vim	/^function! s:ParseParameter( param )$/;"	f
+ParseSkip	matchit.vim	/^fun! s:ParseSkip(str)$/;"	f
+ParseTagline	tagbar.vim	/^function! s:ParseTagline(part1, part2, typeinfo, fileinfo)$/;"	f
+ParseThrowParameters	DoxygenToolkit.vim	/^function! s:ParseThrowParameters( lineBuffer, doc, throwPattern )$/;"	f
+ParseWords	matchit.vim	/^fun! s:ParseWords(groups)$/;"	f
+Path.AbsolutePathFor	NERD_tree.vim	/^function! s:Path.AbsolutePathFor(str)$/;"	f
+Path.CopyingSupported	NERD_tree.vim	/^function! s:Path.CopyingSupported()$/;"	f
+Path.Create	NERD_tree.vim	/^function! s:Path.Create(fullpath)$/;"	f
+Path.JoinPathStrings	NERD_tree.vim	/^function! s:Path.JoinPathStrings(...)$/;"	f
+Path.New	NERD_tree.vim	/^function! s:Path.New(path)$/;"	f
+Path.Slash	NERD_tree.vim	/^function! s:Path.Slash()$/;"	f
+Path.WinToUnixPath	NERD_tree.vim	/^function! s:Path.WinToUnixPath(pathstr)$/;"	f
+Path._str	NERD_tree.vim	/^function! s:Path._str()$/;"	f
+Path._strForCd	NERD_tree.vim	/^function! s:Path._strForCd()$/;"	f
+Path._strForEdit	NERD_tree.vim	/^function! s:Path._strForEdit()$/;"	f
+Path._strForGlob	NERD_tree.vim	/^function! s:Path._strForGlob()$/;"	f
+Path._strForUI	NERD_tree.vim	/^function! s:Path._strForUI()$/;"	f
+Path.bookmarkNames	NERD_tree.vim	/^function! s:Path.bookmarkNames()$/;"	f
+Path.cacheDisplayString	NERD_tree.vim	/^function! s:Path.cacheDisplayString()$/;"	f
+Path.changeToDir	NERD_tree.vim	/^function! s:Path.changeToDir()$/;"	f
+Path.compareTo	NERD_tree.vim	/^function! s:Path.compareTo(path)$/;"	f
+Path.copy	NERD_tree.vim	/^function! s:Path.copy(dest)$/;"	f
+Path.copyingWillOverwrite	NERD_tree.vim	/^function! s:Path.copyingWillOverwrite(dest)$/;"	f
+Path.delete	NERD_tree.vim	/^function! s:Path.delete()$/;"	f
+Path.displayString	NERD_tree.vim	/^function! s:Path.displayString()$/;"	f
+Path.equals	NERD_tree.vim	/^function! s:Path.equals(path)$/;"	f
+Path.exists	NERD_tree.vim	/^function! s:Path.exists()$/;"	f
+Path.extractDriveLetter	NERD_tree.vim	/^function! s:Path.extractDriveLetter(fullpath)$/;"	f
+Path.getDir	NERD_tree.vim	/^function! s:Path.getDir()$/;"	f
+Path.getLastPathComponent	NERD_tree.vim	/^function! s:Path.getLastPathComponent(dirSlash)$/;"	f
+Path.getParent	NERD_tree.vim	/^function! s:Path.getParent()$/;"	f
+Path.getSortOrderIndex	NERD_tree.vim	/^function! s:Path.getSortOrderIndex()$/;"	f
+Path.ignore	NERD_tree.vim	/^function! s:Path.ignore()$/;"	f
+Path.isUnder	NERD_tree.vim	/^function! s:Path.isUnder(path)$/;"	f
+Path.readInfoFromDisk	NERD_tree.vim	/^function! s:Path.readInfoFromDisk(fullpath)$/;"	f
+Path.refresh	NERD_tree.vim	/^function! s:Path.refresh()$/;"	f
+Path.rename	NERD_tree.vim	/^function! s:Path.rename(newPath)$/;"	f
+Path.str	NERD_tree.vim	/^function! s:Path.str(...)$/;"	f
+Path.strTrunk	NERD_tree.vim	/^function! s:Path.strTrunk()$/;"	f
+Peekstack	closetag.vim	/^function! s:Peekstack(sname)$/;"	f
+Pep8	pep8.vim	/^function <SID>Pep8()$/;"	f
+PlaceDelimitersAndInsBetween	NERD_commenter.vim	/^function s:PlaceDelimitersAndInsBetween()$/;"	f
+Pop	closetag.vim	/^function! s:Pop(sname)$/;"	f
+Powertab	powertab.vim	/^command! Powertab :call Powertab()$/;"	c
+Powertab	powertab.vim	/^function! Powertab () $/;"	f
+PreviewColorInLine	colorizer.vim	/^function! s:PreviewColorInLine(where)$/;"	f
+PrintHelp	tagbar.vim	/^function! s:PrintHelp()$/;"	f
+PrintKinds	tagbar.vim	/^function! s:PrintKinds(typeinfo, fileinfo)$/;"	f
+PrintTag	tagbar.vim	/^function! s:PrintTag(tag, depth, fileinfo, typeinfo)$/;"	f
+ProcessFile	snipMate.vim	/^fun s:ProcessFile(file, ft, ...)$/;"	f
+ProcessFile	tagbar.vim	/^function! s:ProcessFile(fname, ftype)$/;"	f
+ProcessPseudoChildren	tagbar.vim	/^function! s:ProcessPseudoChildren(tags, tag, depth, typeinfo, fileinfo)$/;"	f
+ProcessPseudoTag	tagbar.vim	/^function! s:ProcessPseudoTag(curtags, tag, parent, typeinfo, fileinfo)$/;"	f
+Project	project.vim	/^    command -nargs=? -complete=file Project call <SID>Project('<args>')$/;"	c
+Project	project.vim	/^function! s:Project(filename) " <<<$/;"	f
+ProjectMenu	rails.vim	/^function! s:ProjectMenu()$/;"	f
+Project_ForEach	project.vim	/^    function! Project_ForEach(recurse, lineno, cmd, data, match)$/;"	f
+Project_ForEachR	project.vim	/^    function! s:Project_ForEachR(recurse, lineno, info, cmd, data, match)$/;"	f
+Project_GetAllFnames	project.vim	/^    function! Project_GetAllFnames(recurse, lineno, separator)$/;"	f
+Project_GetFname	project.vim	/^    function! Project_GetFname(line)$/;"	f
+PseudoTag.New	tagbar.vim	/^function! s:PseudoTag.New(name) dict$/;"	f
+PseudoTag.isPseudoTag	tagbar.vim	/^function! s:PseudoTag.isPseudoTag() dict$/;"	f
+PseudoTag.str	tagbar.vim	/^function! s:PseudoTag.str() dict$/;"	f
+Push	closetag.vim	/^function! s:Push(el, sname)$/;"	f
+QuitIfOnlyWindow	tagbar.vim	/^function! s:QuitIfOnlyWindow()$/;"	f
+Rails	rails.vim	/^command! -bar -bang -nargs=* -complete=dir Rails :if s:autoload()|call rails#new_app_command(<bang>0,<f-args>)|endif$/;"	c
+Rand	matrix.vim	/^function! s:Rand()$/;"	f
+RecordPrevBuffer_au	project.vim	/^    function! s:RecordPrevBuffer_au()$/;"	f
+RecursivelyConstructDirectives	project.vim	/^    function! s:RecursivelyConstructDirectives(lineno)$/;"	f
+Ref	matchit.vim	/^fun! s:Ref(string, d, ...)$/;"	f
+RefreshEntriesFromDir	project.vim	/^    function! s:RefreshEntriesFromDir(recursive)$/;"	f
+RemapLookupFile	lookupfile.vim	/^function! s:RemapLookupFile(cmd)$/;"	f
+RemoveComments	DoxygenToolkit.vim	/^function! s:RemoveComments( lineBuffer )$/;"	f
+RemoveDelimiters	NERD_commenter.vim	/^function s:RemoveDelimiters(left, right, line)$/;"	f
+RenderContent	tagbar.vim	/^function! s:RenderContent(...)$/;"	f
+RenderKeepView	tagbar.vim	/^function! s:RenderKeepView(...)$/;"	f
+ReplaceDelims	NERD_commenter.vim	/^function s:ReplaceDelims(toReplace1, toReplace2, replacor1, replacor2, str)$/;"	f
+ReplaceLeftMostDelim	NERD_commenter.vim	/^function s:ReplaceLeftMostDelim(toReplace, replacor, str)$/;"	f
+ReplaceRightMostDelim	NERD_commenter.vim	/^function s:ReplaceRightMostDelim(toReplace, replacor, str)$/;"	f
+ReportError	vcscommand.vim	/^function! s:ReportError(error)$/;"	f
+Reset	matrix.vim	/^function! s:Reset()$/;"	f
+ResetSnippets	snipMate.vim	/^fun! ResetSnippets()$/;"	f
+Resolve	matchit.vim	/^fun! s:Resolve(source, target, output)$/;"	f
+RestoreKeywords	closetag.vim	/^function! s:RestoreKeywords()$/;"	f
+RestoreParameters	DoxygenToolkit.vim	/^function! s:RestoreParameters()$/;"	f
+RestoreScreenState	NERD_commenter.vim	/^function s:RestoreScreenState()$/;"	f
+RestoreSession	tagbar.vim	/^function! s:RestoreSession()$/;"	f
+Rgb2xterm	colorizer.vim	/^function! s:Rgb2xterm(color) "{{{2$/;"	f
+RightMostIndx	NERD_commenter.vim	/^function s:RightMostIndx(countCommentedLines, countEmptyLines, topline, bottomline)$/;"	f
+SNR	lookupfile.vim	/^function! s:SNR()$/;"	f
+SaveScreenState	NERD_commenter.vim	/^function s:SaveScreenState()$/;"	f
+SaveSett	lookupfile.vim	/^function! s:SaveSett(sett)$/;"	f
+SetCursorLineColor	javaScriptLint.vim	/^function s:SetCursorLineColor() $/;"	f
+SetFoldLevel	tagbar.vim	/^function! s:SetFoldLevel(level)$/;"	f
+SetFoldLevelRecursive	tagbar.vim	/^function! s:SetFoldLevelRecursive(fileinfo, tags, level)$/;"	f
+SetKeywords	closetag.vim	/^function! s:SetKeywords()$/;"	f
+SetMatcher	colorizer.vim	/^function! s:SetMatcher(clr,pat) "{{{2$/;"	f
+SetOptDefault	rails.vim	/^function! s:SetOptDefault(opt,val)$/;"	f
+SetUpForNewFiletype	NERD_commenter.vim	/^function s:SetUpForNewFiletype(filetype, forceReset)$/;"	f
+SetupAutoCommand	project.vim	/^    function! s:SetupAutoCommand(cwd)$/;"	f
+SetupBuffer	vcscommand.vim	/^function! s:SetupBuffer()$/;"	f
+SetupScratchBuffer	vcscommand.vim	/^function! s:SetupScratchBuffer(command, vcsType, originalBuffer, statusText)$/;"	f
+SetupScriptAutoCommand	project.vim	/^    function! s:SetupScriptAutoCommand(bufcmd, script)$/;"	f
+Sexymode	vimim.vim	/^function! <SID>Sexymode()$/;"	f
+ShowAvailableSnips	snipMate.vim	/^fun! ShowAvailableSnips()$/;"	f
+ShowPrototype	tagbar.vim	/^function! s:ShowPrototype()$/;"	f
+SortR	project.vim	/^    function! s:SortR(start, end)$/;"	f
+SortTags	tagbar.vim	/^function! s:SortTags(tags, comparemethod)$/;"	f
+Spawn	project.vim	/^    function! s:Spawn(number)$/;"	f
+SpawnAll	project.vim	/^    function! s:SpawnAll(recurse, number)$/;"	f
+StartBufExplorer	bufexplorer.vim	/^function! StartBufExplorer(open)$/;"	f
+StartDocumentationBlock	DoxygenToolkit.vim	/^function! s:StartDocumentationBlock()$/;"	f
+SwapOutterMultiPartDelimsForPlaceHolders	NERD_commenter.vim	/^function s:SwapOutterMultiPartDelimsForPlaceHolders(line)$/;"	f
+SwapOutterPlaceHoldersForMultiPartDelims	NERD_commenter.vim	/^function s:SwapOutterPlaceHoldersForMultiPartDelims(line)$/;"	f
+SwitchToAlternativeDelimiters	NERD_commenter.vim	/^function s:SwitchToAlternativeDelimiters(printMsgs)$/;"	f
+SynHere	IndentAnything.vim	/^function! SynHere()$/;"	f
+TabSpace	NERD_commenter.vim	/^function s:TabSpace()$/;"	f
+TabbedCol	NERD_commenter.vim	/^function s:TabbedCol(line, col)$/;"	f
+TagList_IsValid	taglist.vim	/^function! TagList_IsValid()$/;"	f
+TagList_Start	taglist.vim	/^function! TagList_Start()$/;"	f
+TagList_WrapUp	taglist.vim	/^function! TagList_WrapUp()$/;"	f
+TagList_title	taglist.vim	/^    let TagList_title = "__Tag_List__"$/;"	v
+TagbarBalloonExpr	tagbar.vim	/^function! TagbarBalloonExpr()$/;"	f
+TagbarClose	tagbar.vim	/^command! -nargs=0 TagbarClose         call s:CloseWindow()$/;"	c
+TagbarGenerateStatusline	tagbar.vim	/^function! TagbarGenerateStatusline()$/;"	f
+TagbarOpen	tagbar.vim	/^command! -nargs=0 TagbarOpen          call s:OpenWindow(0)$/;"	c
+TagbarOpenAutoClose	tagbar.vim	/^command! -nargs=0 TagbarOpenAutoClose call s:OpenWindow(1)$/;"	c
+TagbarSetFoldlevel	tagbar.vim	/^command! -nargs=1 TagbarSetFoldlevel  call s:SetFoldLevel(<args>)$/;"	c
+TagbarShowTag	tagbar.vim	/^command! -nargs=0 TagbarShowTag       call s:OpenParents()$/;"	c
+TagbarToggle	tagbar.vim	/^command! -nargs=0 TagbarToggle        call s:ToggleWindow()$/;"	c
+Tlist	taglist.vim	/^    command! -nargs=0 -bar Tlist TlistToggle$/;"	c
+TlistAddFiles	taglist.vim	/^    command! -nargs=+ -complete=file TlistAddFiles$/;"	c
+TlistAddFilesRecursive	taglist.vim	/^    command! -nargs=+ -complete=dir TlistAddFilesRecursive$/;"	c
+TlistClose	taglist.vim	/^    command! -nargs=0 -bar TlistClose call s:Tlist_Window_Close()$/;"	c
+TlistDebug	taglist.vim	/^    command! -nargs=? -complete=file -bar TlistDebug$/;"	c
+TlistHighlightTag	taglist.vim	/^    command! -nargs=0 -bar TlistHighlightTag call s:Tlist_Window_Highlight_Tag($/;"	c
+TlistLock	taglist.vim	/^    command! -bar TlistLock let Tlist_Auto_Update=0$/;"	c
+TlistMessages	taglist.vim	/^    command! -nargs=0 -bar TlistMessages call s:Tlist_Debug_Show()$/;"	c
+TlistOpen	taglist.vim	/^    command! -nargs=0 -bar TlistOpen call s:Tlist_Window_Open()$/;"	c
+TlistSessionLoad	taglist.vim	/^    command! -nargs=* -complete=file TlistSessionLoad$/;"	c
+TlistSessionSave	taglist.vim	/^    command! -nargs=* -complete=file TlistSessionSave$/;"	c
+TlistShowPrototype	taglist.vim	/^    command! -nargs=* -complete=buffer TlistShowPrototype$/;"	c
+TlistShowTag	taglist.vim	/^    command! -nargs=* -complete=buffer TlistShowTag$/;"	c
+TlistSync	taglist.vim	/^    command! -nargs=0 -bar TlistSync TlistHighlightTag$/;"	c
+TlistToggle	taglist.vim	/^    command! -nargs=0 -bar TlistToggle call s:Tlist_Window_Toggle()$/;"	c
+TlistUndebug	taglist.vim	/^    command! -nargs=0 -bar TlistUndebug  call s:Tlist_Debug_Disable()$/;"	c
+TlistUnlock	taglist.vim	/^    command! -bar TlistUnlock let Tlist_Auto_Update=1$/;"	c
+TlistUpdate	taglist.vim	/^    command! -nargs=0 -bar TlistUpdate call s:Tlist_Update_Current_File()$/;"	c
+Tlist_Add_Files	taglist.vim	/^function! s:Tlist_Add_Files(...)$/;"	f
+Tlist_Add_Files_Recursive	taglist.vim	/^function! s:Tlist_Add_Files_Recursive(dir, ...)$/;"	f
+Tlist_Auto_Highlight_Tag	taglist.vim	/^        let Tlist_Auto_Highlight_Tag = 1$/;"	v
+Tlist_Auto_Open	taglist.vim	/^        let Tlist_Auto_Open = 0$/;"	v
+Tlist_Auto_Update	taglist.vim	/^        let Tlist_Auto_Update = 1$/;"	v
+Tlist_Ballon_Expr	taglist.vim	/^function! Tlist_Ballon_Expr()$/;"	f
+Tlist_Buffer_Removed	taglist.vim	/^function! s:Tlist_Buffer_Removed(filename)$/;"	f
+Tlist_Change_Sort	taglist.vim	/^function! s:Tlist_Change_Sort(caller, action, sort_type)$/;"	f
+Tlist_Close_On_Select	taglist.vim	/^        let Tlist_Close_On_Select = 0$/;"	v
+Tlist_Compact_Format	taglist.vim	/^        let Tlist_Compact_Format = 0$/;"	v
+Tlist_Ctags_	taglist.vim	/^            let Tlist_Ctags_ Cmd = 'exctags'$/;"	v
+Tlist_Ctags_Cmd	taglist.vim	/^            let Tlist_Ctags_Cmd = 'ctags'$/;"	v
+Tlist_Ctags_Cmd	taglist.vim	/^            let Tlist_Ctags_Cmd = 'ctags.exe'$/;"	v
+Tlist_Ctags_Cmd	taglist.vim	/^            let Tlist_Ctags_Cmd = 'exuberant-ctags'$/;"	v
+Tlist_Ctags_Cmd	taglist.vim	/^            let Tlist_Ctags_Cmd = 'tags'$/;"	v
+Tlist_Debug_Disable	taglist.vim	/^function! s:Tlist_Debug_Disable(...)$/;"	f
+Tlist_Debug_Enable	taglist.vim	/^function! s:Tlist_Debug_Enable(...)$/;"	f
+Tlist_Debug_Show	taglist.vim	/^function! s:Tlist_Debug_Show()$/;"	f
+Tlist_Discard_FileInfo	taglist.vim	/^function! s:Tlist_Discard_FileInfo(fidx)$/;"	f
+Tlist_Discard_TagInfo	taglist.vim	/^function! s:Tlist_Discard_TagInfo(fidx)$/;"	f
+Tlist_Display_Prototype	taglist.vim	/^        let Tlist_Display_Prototype = 0$/;"	v
+Tlist_Display_Tag_Scope	taglist.vim	/^        let Tlist_Display_Tag_Scope = 1$/;"	v
+Tlist_Enable_Fold_Column	taglist.vim	/^        let Tlist_Enable_Fold_Column = 1$/;"	v
+Tlist_Exe_Cmd_No_Acmds	taglist.vim	/^function! s:Tlist_Exe_Cmd_No_Acmds(cmd)$/;"	f
+Tlist_Exit_OnlyWindow	taglist.vim	/^        let Tlist_Exit_OnlyWindow = 0$/;"	v
+Tlist_Extract_Tag_Scope	taglist.vim	/^function! s:Tlist_Extract_Tag_Scope(tag_line)$/;"	f
+Tlist_Extract_Tagtype	taglist.vim	/^function! s:Tlist_Extract_Tagtype(tag_line)$/;"	f
+Tlist_FileType_Init	taglist.vim	/^function! s:Tlist_FileType_Init(ftype)$/;"	f
+Tlist_File_Fold_Auto_Close	taglist.vim	/^        let Tlist_File_Fold_Auto_Close = 0$/;"	v
+Tlist_Find_Nearest_Tag_Idx	taglist.vim	/^function! s:Tlist_Find_Nearest_Tag_Idx(fidx, linenum)$/;"	f
+Tlist_GainFocus_On_ToggleOpen	taglist.vim	/^        let Tlist_GainFocus_On_ToggleOpen = 0$/;"	v
+Tlist_Get_Buffer_Filetype	taglist.vim	/^function! s:Tlist_Get_Buffer_Filetype(bnum)$/;"	f
+Tlist_Get_File_Index	taglist.vim	/^function! s:Tlist_Get_File_Index(fname)$/;"	f
+Tlist_Get_Filetype	taglist.vim	/^function! s:Tlist_Get_Filetype(fname)$/;"	f
+Tlist_Get_Tag_Linenum	taglist.vim	/^function! s:Tlist_Get_Tag_Linenum(fidx, tidx)$/;"	f
+Tlist_Get_Tag_Prototype	taglist.vim	/^function! s:Tlist_Get_Tag_Prototype(fidx, tidx)$/;"	f
+Tlist_Get_Tag_Prototype_By_Line	taglist.vim	/^function! Tlist_Get_Tag_Prototype_By_Line(...)$/;"	f
+Tlist_Get_Tag_SearchPat	taglist.vim	/^function! s:Tlist_Get_Tag_SearchPat(fidx, tidx)$/;"	f
+Tlist_Get_Tag_Type_By_Tag	taglist.vim	/^function! s:Tlist_Get_Tag_Type_By_Tag(fidx, tidx)$/;"	f
+Tlist_Get_Tagname_By_Line	taglist.vim	/^function! Tlist_Get_Tagname_By_Line(...)$/;"	f
+Tlist_Highlight_Tag_On_BufEnter	taglist.vim	/^        let Tlist_Highlight_Tag_On_BufEnter = 1$/;"	v
+Tlist_Inc_Winwidth	taglist.vim	/^            let Tlist_Inc_Winwidth = 0$/;"	v
+Tlist_Inc_Winwidth	taglist.vim	/^            let Tlist_Inc_Winwidth = 1$/;"	v
+Tlist_Init_File	taglist.vim	/^function! s:Tlist_Init_File(filename, ftype)$/;"	f
+Tlist_Log_Msg	taglist.vim	/^function! s:Tlist_Log_Msg(msg)$/;"	f
+Tlist_Max_Submenu_Items	taglist.vim	/^        let Tlist_Max_Submenu_Items = 20$/;"	v
+Tlist_Max_Tag_Length	taglist.vim	/^        let Tlist_Max_Tag_Length = 10$/;"	v
+Tlist_Menu_Add_Base_Menu	taglist.vim	/^function! s:Tlist_Menu_Add_Base_Menu()$/;"	f
+Tlist_Menu_File_Refresh	taglist.vim	/^function! s:Tlist_Menu_File_Refresh(fidx)$/;"	f
+Tlist_Menu_Get_Tag_Type_Cmd	taglist.vim	/^function! s:Tlist_Menu_Get_Tag_Type_Cmd(fidx, ftype, add_ttype_name, ttype_idx)$/;"	f
+Tlist_Menu_Init	taglist.vim	/^function! s:Tlist_Menu_Init()$/;"	f
+Tlist_Menu_Jump_To_Tag	taglist.vim	/^function! s:Tlist_Menu_Jump_To_Tag(tidx)$/;"	f
+Tlist_Menu_Refresh	taglist.vim	/^function! s:Tlist_Menu_Refresh()$/;"	f
+Tlist_Menu_Remove_File	taglist.vim	/^function! s:Tlist_Menu_Remove_File()$/;"	f
+Tlist_Menu_Update_File	taglist.vim	/^function! s:Tlist_Menu_Update_File(clear_menu)$/;"	f
+Tlist_Parse_Tagline	taglist.vim	/^function! s:Tlist_Parse_Tagline(tag_line)$/;"	f
+Tlist_Post_Close_Cleanup	taglist.vim	/^function! s:Tlist_Post_Close_Cleanup()$/;"	f
+Tlist_Process_Dir	taglist.vim	/^function! s:Tlist_Process_Dir(dir_name, pat)$/;"	f
+Tlist_Process_File	taglist.vim	/^function! s:Tlist_Process_File(filename, ftype)$/;"	f
+Tlist_Process_File_Always	taglist.vim	/^        let Tlist_Process_File_Always = 0$/;"	v
+Tlist_Process_Filelist	taglist.vim	/^function! s:Tlist_Process_Filelist(file_names)$/;"	f
+Tlist_Refresh	taglist.vim	/^function! s:Tlist_Refresh()$/;"	f
+Tlist_Remove_File	taglist.vim	/^function! s:Tlist_Remove_File(file_idx, user_request)$/;"	f
+Tlist_Session_Load	taglist.vim	/^function! s:Tlist_Session_Load(...)$/;"	f
+Tlist_Session_Save	taglist.vim	/^function! s:Tlist_Session_Save(...)$/;"	f
+Tlist_Set_App	taglist.vim	/^function! Tlist_Set_App(name)$/;"	f
+Tlist_Show_Menu	taglist.vim	/^        let Tlist_Show_Menu = 0$/;"	v
+Tlist_Show_One_File	taglist.vim	/^        let Tlist_Show_One_File = 0$/;"	v
+Tlist_Skip_File	taglist.vim	/^function! s:Tlist_Skip_File(filename, ftype)$/;"	f
+Tlist_Sort_Type	taglist.vim	/^        let Tlist_Sort_Type = 'order'$/;"	v
+Tlist_Update_Current_File	taglist.vim	/^function! s:Tlist_Update_Current_File()$/;"	f
+Tlist_Update_File	taglist.vim	/^function! Tlist_Update_File(filename, ftype)$/;"	f
+Tlist_Update_Remove_List	taglist.vim	/^function! s:Tlist_Update_Remove_List(filename, add)$/;"	f
+Tlist_Use_Horiz_Window	taglist.vim	/^        let Tlist_Use_Horiz_Window = 0$/;"	v
+Tlist_Use_Right_Window	taglist.vim	/^        let Tlist_Use_Right_Window = 0$/;"	v
+Tlist_Use_SingleClick	taglist.vim	/^        let Tlist_Use_SingleClick = 0$/;"	v
+Tlist_User_Removed_File	taglist.vim	/^function! s:Tlist_User_Removed_File(filename)$/;"	f
+Tlist_Vim_Session_Load	taglist.vim	/^function! s:Tlist_Vim_Session_Load()$/;"	f
+Tlist_Warning_Msg	taglist.vim	/^function! s:Tlist_Warning_Msg(msg)$/;"	f
+Tlist_WinHeight	taglist.vim	/^        let Tlist_WinHeight = 10$/;"	v
+Tlist_WinWidth	taglist.vim	/^        let Tlist_WinWidth = 30$/;"	v
+Tlist_Window_Check_Auto_Open	taglist.vim	/^function! s:Tlist_Window_Check_Auto_Open()$/;"	f
+Tlist_Window_Check_Width	taglist.vim	/^function! s:Tlist_Window_Check_Width()$/;"	f
+Tlist_Window_Close	taglist.vim	/^function! s:Tlist_Window_Close()$/;"	f
+Tlist_Window_Create	taglist.vim	/^function! s:Tlist_Window_Create()$/;"	f
+Tlist_Window_Display_Help	taglist.vim	/^function! s:Tlist_Window_Display_Help()$/;"	f
+Tlist_Window_Exit_Only_Window	taglist.vim	/^function! s:Tlist_Window_Exit_Only_Window()$/;"	f
+Tlist_Window_Get_File_Index_By_Linenum	taglist.vim	/^function! s:Tlist_Window_Get_File_Index_By_Linenum(lnum)$/;"	f
+Tlist_Window_Get_Tag_Index	taglist.vim	/^function! s:Tlist_Window_Get_Tag_Index(fidx, lnum)$/;"	f
+Tlist_Window_Get_Tag_Type_By_Linenum	taglist.vim	/^function! s:Tlist_Window_Get_Tag_Type_By_Linenum(fidx, lnum)$/;"	f
+Tlist_Window_Goto_Window	taglist.vim	/^function! s:Tlist_Window_Goto_Window()$/;"	f
+Tlist_Window_Highlight_Line	taglist.vim	/^function! s:Tlist_Window_Highlight_Line()$/;"	f
+Tlist_Window_Highlight_Tag	taglist.vim	/^function! s:Tlist_Window_Highlight_Tag(filename, cur_lnum, cntx, center)$/;"	f
+Tlist_Window_Init	taglist.vim	/^function! s:Tlist_Window_Init()$/;"	f
+Tlist_Window_Jump_To_Tag	taglist.vim	/^function! s:Tlist_Window_Jump_To_Tag(win_ctrl)$/;"	f
+Tlist_Window_Mark_File_Window	taglist.vim	/^function! s:Tlist_Window_Mark_File_Window()$/;"	f
+Tlist_Window_Move_To_File	taglist.vim	/^function! s:Tlist_Window_Move_To_File(dir)$/;"	f
+Tlist_Window_Open	taglist.vim	/^function! s:Tlist_Window_Open()$/;"	f
+Tlist_Window_Open_File	taglist.vim	/^function! s:Tlist_Window_Open_File(win_ctrl, filename, tagpat)$/;"	f
+Tlist_Window_Open_File_Fold	taglist.vim	/^function! s:Tlist_Window_Open_File_Fold(filename)$/;"	f
+Tlist_Window_Refresh	taglist.vim	/^function! s:Tlist_Window_Refresh()$/;"	f
+Tlist_Window_Refresh_File	taglist.vim	/^function! s:Tlist_Window_Refresh_File(filename, ftype)$/;"	f
+Tlist_Window_Remove_File_From_Display	taglist.vim	/^function! s:Tlist_Window_Remove_File_From_Display(fidx)$/;"	f
+Tlist_Window_Show_Info	taglist.vim	/^function! s:Tlist_Window_Show_Info()$/;"	f
+Tlist_Window_Toggle	taglist.vim	/^function! s:Tlist_Window_Toggle()$/;"	f
+Tlist_Window_Toggle_Help_Text	taglist.vim	/^function! s:Tlist_Window_Toggle_Help_Text()$/;"	f
+Tlist_Window_Update_File	taglist.vim	/^function! s:Tlist_Window_Update_File()$/;"	f
+Tlist_Window_Update_Line_Offsets	taglist.vim	/^function! s:Tlist_Window_Update_Line_Offsets(start_idx, increment, offset)$/;"	f
+Tlist_Window_Zoom	taglist.vim	/^function! s:Tlist_Window_Zoom()$/;"	f
+ToggleFencView	fencview.vim	/^function! s:ToggleFencView() "{{{1$/;"	f
+ToggleFold	tagbar.vim	/^function! s:ToggleFold()$/;"	f
+ToggleHelp	tagbar.vim	/^function! s:ToggleHelp()$/;"	f
+ToggleSort	tagbar.vim	/^function! s:ToggleSort()$/;"	f
+ToggleWindow	tagbar.vim	/^function! s:ToggleWindow()$/;"	f
+Transfer	TransferChinese.vim	/^function! Transfer(from, to) range abort$/;"	f
+TranslateAlpha	lookupfile.vim	/^function! s:TranslateAlpha(pat)$/;"	f
+TranslateFileRegex	lookupfile.vim	/^function! s:TranslateFileRegex(filePat)$/;"	f
+TranslateFileWild	lookupfile.vim	/^function! s:TranslateFileWild(fileWild)$/;"	f
+TreeDirNode.AbsoluteTreeRoot	NERD_tree.vim	/^function! s:TreeDirNode.AbsoluteTreeRoot()$/;"	f
+TreeDirNode.GetSelected	NERD_tree.vim	/^function! s:TreeDirNode.GetSelected()$/;"	f
+TreeDirNode.New	NERD_tree.vim	/^function! s:TreeDirNode.New(path)$/;"	f
+TreeDirNode._initChildren	NERD_tree.vim	/^function! s:TreeDirNode._initChildren(silent)$/;"	f
+TreeDirNode._openRecursively2	NERD_tree.vim	/^function! s:TreeDirNode._openRecursively2(forceOpen)$/;"	f
+TreeDirNode.activate	NERD_tree.vim	/^function! s:TreeDirNode.activate(forceKeepWinOpen)$/;"	f
+TreeDirNode.addChild	NERD_tree.vim	/^function! s:TreeDirNode.addChild(treenode, inOrder)$/;"	f
+TreeDirNode.close	NERD_tree.vim	/^function! s:TreeDirNode.close()$/;"	f
+TreeDirNode.closeChildren	NERD_tree.vim	/^function! s:TreeDirNode.closeChildren()$/;"	f
+TreeDirNode.createChild	NERD_tree.vim	/^function! s:TreeDirNode.createChild(path, inOrder)$/;"	f
+TreeDirNode.findNode	NERD_tree.vim	/^function! s:TreeDirNode.findNode(path)$/;"	f
+TreeDirNode.getChild	NERD_tree.vim	/^function! s:TreeDirNode.getChild(path)$/;"	f
+TreeDirNode.getChildByIndex	NERD_tree.vim	/^function! s:TreeDirNode.getChildByIndex(indx, visible)$/;"	f
+TreeDirNode.getChildCount	NERD_tree.vim	/^function! s:TreeDirNode.getChildCount()$/;"	f
+TreeDirNode.getChildIndex	NERD_tree.vim	/^function! s:TreeDirNode.getChildIndex(path)$/;"	f
+TreeDirNode.getVisibleChildCount	NERD_tree.vim	/^function! s:TreeDirNode.getVisibleChildCount()$/;"	f
+TreeDirNode.getVisibleChildren	NERD_tree.vim	/^function! s:TreeDirNode.getVisibleChildren()$/;"	f
+TreeDirNode.hasVisibleChildren	NERD_tree.vim	/^function! s:TreeDirNode.hasVisibleChildren()$/;"	f
+TreeDirNode.open	NERD_tree.vim	/^function! s:TreeDirNode.open()$/;"	f
+TreeDirNode.openExplorer	NERD_tree.vim	/^function! s:TreeDirNode.openExplorer()$/;"	f
+TreeDirNode.openInNewTab	NERD_tree.vim	/^function! s:TreeDirNode.openInNewTab(options)$/;"	f
+TreeDirNode.openRecursively	NERD_tree.vim	/^function! s:TreeDirNode.openRecursively()$/;"	f
+TreeDirNode.refresh	NERD_tree.vim	/^function! s:TreeDirNode.refresh()$/;"	f
+TreeDirNode.removeChild	NERD_tree.vim	/^function! s:TreeDirNode.removeChild(treenode)$/;"	f
+TreeDirNode.reveal	NERD_tree.vim	/^function! s:TreeDirNode.reveal(path)$/;"	f
+TreeDirNode.sortChildren	NERD_tree.vim	/^function! s:TreeDirNode.sortChildren()$/;"	f
+TreeDirNode.toggleOpen	NERD_tree.vim	/^function! s:TreeDirNode.toggleOpen()$/;"	f
+TreeDirNode.transplantChild	NERD_tree.vim	/^function! s:TreeDirNode.transplantChild(newNode)$/;"	f
+TreeFileNode.GetRootForTab	NERD_tree.vim	/^function! s:TreeFileNode.GetRootForTab()$/;"	f
+TreeFileNode.GetRootLineNum	NERD_tree.vim	/^function! s:TreeFileNode.GetRootLineNum()$/;"	f
+TreeFileNode.GetSelected	NERD_tree.vim	/^function! s:TreeFileNode.GetSelected()$/;"	f
+TreeFileNode.New	NERD_tree.vim	/^function! s:TreeFileNode.New(path)$/;"	f
+TreeFileNode._renderToString	NERD_tree.vim	/^function! s:TreeFileNode._renderToString(depth, drawText, vertMap, isLastChild)$/;"	f
+TreeFileNode.activate	NERD_tree.vim	/^function! s:TreeFileNode.activate(forceKeepWinOpen)$/;"	f
+TreeFileNode.bookmark	NERD_tree.vim	/^function! s:TreeFileNode.bookmark(name)$/;"	f
+TreeFileNode.cacheParent	NERD_tree.vim	/^function! s:TreeFileNode.cacheParent()$/;"	f
+TreeFileNode.clearBoomarks	NERD_tree.vim	/^function! s:TreeFileNode.clearBoomarks()$/;"	f
+TreeFileNode.copy	NERD_tree.vim	/^function! s:TreeFileNode.copy(dest)$/;"	f
+TreeFileNode.delete	NERD_tree.vim	/^function! s:TreeFileNode.delete()$/;"	f
+TreeFileNode.displayString	NERD_tree.vim	/^function! s:TreeFileNode.displayString()$/;"	f
+TreeFileNode.equals	NERD_tree.vim	/^function! s:TreeFileNode.equals(treenode)$/;"	f
+TreeFileNode.findNode	NERD_tree.vim	/^function! s:TreeFileNode.findNode(path)$/;"	f
+TreeFileNode.findOpenDirSiblingWithVisibleChildren	NERD_tree.vim	/^function! s:TreeFileNode.findOpenDirSiblingWithVisibleChildren(direction)$/;"	f
+TreeFileNode.findSibling	NERD_tree.vim	/^function! s:TreeFileNode.findSibling(direction)$/;"	f
+TreeFileNode.getLineNum	NERD_tree.vim	/^function! s:TreeFileNode.getLineNum()$/;"	f
+TreeFileNode.isRoot	NERD_tree.vim	/^function! s:TreeFileNode.isRoot()$/;"	f
+TreeFileNode.isVisible	NERD_tree.vim	/^function! s:TreeFileNode.isVisible()$/;"	f
+TreeFileNode.makeRoot	NERD_tree.vim	/^function! s:TreeFileNode.makeRoot()$/;"	f
+TreeFileNode.open	NERD_tree.vim	/^function! s:TreeFileNode.open()$/;"	f
+TreeFileNode.openInNewTab	NERD_tree.vim	/^function! s:TreeFileNode.openInNewTab(options)$/;"	f
+TreeFileNode.openSplit	NERD_tree.vim	/^function! s:TreeFileNode.openSplit()$/;"	f
+TreeFileNode.openVSplit	NERD_tree.vim	/^function! s:TreeFileNode.openVSplit()$/;"	f
+TreeFileNode.putCursorHere	NERD_tree.vim	/^function! s:TreeFileNode.putCursorHere(isJump, recurseUpward)$/;"	f
+TreeFileNode.refresh	NERD_tree.vim	/^function! s:TreeFileNode.refresh()$/;"	f
+TreeFileNode.rename	NERD_tree.vim	/^function! s:TreeFileNode.rename(newName)$/;"	f
+TreeFileNode.renderToString	NERD_tree.vim	/^function! s:TreeFileNode.renderToString()$/;"	f
+TriggerSnippet	snipMate.vim	/^fun! TriggerSnippet()$/;"	f
+UISVR	uisvr.vim	/^command -nargs=* UISVR call <SID>uisvr(<f-args>)$/;"	c
+UnEsc	NERD_commenter.vim	/^function s:UnEsc(str, escChar)$/;"	f
+UncommentLineNormal	NERD_commenter.vim	/^function s:UncommentLineNormal(line)$/;"	f
+UncommentLines	NERD_commenter.vim	/^function s:UncommentLines(topLine, bottomLine)$/;"	f
+UncommentLinesNormal	NERD_commenter.vim	/^function s:UncommentLinesNormal(topline, bottomline)$/;"	f
+UncommentLinesSexy	NERD_commenter.vim	/^function s:UncommentLinesSexy(topline, bottomline)$/;"	f
+UntabbedCol	NERD_commenter.vim	/^function s:UntabbedCol(line, col)$/;"	f
+UpdateAll	colorizer.vim	/^function s:UpdateAll() "{{{2$/;"	f
+VCSAdd	vcscommand.vim	/^com! -nargs=* VCSAdd call s:MarkOrigBufferForSetup(s:ExecuteVCSCommand('Add', [<f-args>]))$/;"	c
+VCSAnnotate	vcscommand.vim	/^com! -nargs=* -bang VCSAnnotate call s:VCSAnnotate(<q-bang>, <f-args>)$/;"	c
+VCSAnnotate	vcscommand.vim	/^function! s:VCSAnnotate(bang, ...)$/;"	f
+VCSBlame	vcscommand.vim	/^com! -nargs=* -bang VCSBlame call s:VCSAnnotate(<q-bang>, <f-args>)$/;"	c
+VCSCommand	vcscommand.vim	/^augroup VCSCommand$/;"	a
+VCSCommandChangeToCurrentFileDir	vcscommand.vim	/^function! VCSCommandChangeToCurrentFileDir(fileName)$/;"	f
+VCSCommandChdir	vcscommand.vim	/^function! VCSCommandChdir(directory)$/;"	f
+VCSCommandCommit	vcscommand.vim	/^augroup VCSCommandCommit$/;"	a
+VCSCommandDisableBufferSetup	vcscommand.vim	/^com! VCSCommandDisableBufferSetup call VCSCommandDisableBufferSetup()$/;"	c
+VCSCommandDisableBufferSetup	vcscommand.vim	/^function! VCSCommandDisableBufferSetup()$/;"	f
+VCSCommandDoCommand	vcscommand.vim	/^function! VCSCommandDoCommand(cmd, cmdName, statusText, options)$/;"	f
+VCSCommandEnableBufferSetup	vcscommand.vim	/^com! VCSCommandEnableBufferSetup call VCSCommandEnableBufferSetup()$/;"	c
+VCSCommandEnableBufferSetup	vcscommand.vim	/^function! VCSCommandEnableBufferSetup()$/;"	f
+VCSCommandGetOption	vcscommand.vim	/^function! VCSCommandGetOption(name, default)$/;"	f
+VCSCommandGetOriginalBuffer	vcscommand.vim	/^function! VCSCommandGetOriginalBuffer(vcsBuffer)$/;"	f
+VCSCommandGetStatusLine	vcscommand.vim	/^function! VCSCommandGetStatusLine()$/;"	f
+VCSCommandGetVCSType	vcscommand.vim	/^function! VCSCommandGetVCSType(buffer)$/;"	f
+VCSCommandRegisterModule	vcscommand.vim	/^function! VCSCommandRegisterModule(name, path, commandMap, mappingMap)$/;"	f
+VCSCommandUtility.addMenuItem	vcscommand.vim	/^function! s:VCSCommandUtility.addMenuItem(shortcut, command)$/;"	f
+VCSCommandUtility.system	vcscommand.vim	/^function! s:VCSCommandUtility.system(...)$/;"	f
+VCSCommandVIMShutdown	vcscommand.vim	/^augroup VCSCommandVIMShutdown$/;"	a
+VCSCommit	vcscommand.vim	/^com! -nargs=? -bang VCSCommit call s:VCSCommit(<q-bang>, <q-args>)$/;"	c
+VCSCommit	vcscommand.vim	/^function! s:VCSCommit(bang, message)$/;"	f
+VCSDelete	vcscommand.vim	/^com! -nargs=* VCSDelete call s:ExecuteVCSCommand('Delete', [<f-args>])$/;"	c
+VCSDiff	vcscommand.vim	/^com! -nargs=* VCSDiff call s:VCSDiff(<f-args>)$/;"	c
+VCSDiff	vcscommand.vim	/^function! s:VCSDiff(...)  "{{{2$/;"	f
+VCSFinishCommit	vcscommand.vim	/^function! s:VCSFinishCommit(logMessageList, originalBuffer)$/;"	f
+VCSFinishCommitWithBuffer	vcscommand.vim	/^function! s:VCSFinishCommitWithBuffer()$/;"	f
+VCSGotoOriginal	vcscommand.vim	/^com! -nargs=0 -bang VCSGotoOriginal call s:VCSGotoOriginal(<q-bang>)$/;"	c
+VCSGotoOriginal	vcscommand.vim	/^function! s:VCSGotoOriginal(bang)$/;"	f
+VCSInfo	vcscommand.vim	/^com! -nargs=* VCSInfo call s:ExecuteVCSCommand('Info', [<f-args>])$/;"	c
+VCSLock	vcscommand.vim	/^com! -nargs=* VCSLock call s:MarkOrigBufferForSetup(s:ExecuteVCSCommand('Lock', [<f-args>]))$/;"	c
+VCSLog	vcscommand.vim	/^com! -nargs=* VCSLog call s:ExecuteVCSCommand('Log', [<f-args>])$/;"	c
+VCSReload	vcscommand.vim	/^com! VCSReload let savedPlugins = s:plugins|let s:plugins = {}|call s:ClearMenu()|unlet! g:loaded_VCSCommand|runtime plugin\/vcscommand.vim|for plugin in values(savedPlugins)|execute 'source' plugin[0]|endfor|unlet savedPlugins$/;"	c
+VCSRemove	vcscommand.vim	/^com! -nargs=* VCSRemove call s:ExecuteVCSCommand('Delete', [<f-args>])$/;"	c
+VCSRevert	vcscommand.vim	/^com! -nargs=0 VCSRevert call s:MarkOrigBufferForSetup(s:ExecuteVCSCommand('Revert', []))$/;"	c
+VCSReview	vcscommand.vim	/^com! -nargs=? VCSReview call s:VCSReview(<f-args>)$/;"	c
+VCSReview	vcscommand.vim	/^function! s:VCSReview(...)  "{{{2$/;"	f
+VCSStatus	vcscommand.vim	/^com! -nargs=* VCSStatus call s:ExecuteVCSCommand('Status', [<f-args>])$/;"	c
+VCSUnlock	vcscommand.vim	/^com! -nargs=* VCSUnlock call s:MarkOrigBufferForSetup(s:ExecuteVCSCommand('Unlock', [<f-args>]))$/;"	c
+VCSUpdate	vcscommand.vim	/^com! -nargs=0 VCSUpdate call s:MarkOrigBufferForSetup(s:ExecuteVCSCommand('Update', []))$/;"	c
+VCSVimDiff	vcscommand.vim	/^com! -nargs=* VCSVimDiff call s:VCSVimDiff(<f-args>)$/;"	c
+VCSVimDiff	vcscommand.vim	/^function! s:VCSVimDiff(...)$/;"	f
+VST_Args	vstplugin.vim	/^function! VST_Args(A, C, P)$/;"	f
+VST_Menus	vstplugin.vim	/^function! VST_Menus()$/;"	f
+VimDiffRestore	vcscommand.vim	/^augroup VimDiffRestore$/;"	a
+VimDiffRestore	vcscommand.vim	/^function! s:VimDiffRestore(vimDiffBuff)$/;"	f
+VimDirListing	project.vim	/^    function! s:VimDirListing(filter, padding, separator, filevariable, filecount, dirvariable, dircount)$/;"	f
+VimIM	vimim.vim	/^function! VimIM(start, keyboard)$/;"	f
+VimIM	vimim.vim	/^let VimIM = " ====  Back_End_Common  ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Back_End_DIY     ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Chinese2Pinyin   ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Chinese_Mode     ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Chinese_Number   ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Core_Drive       ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Core_Engine      ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Core_Workflow    ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Customization    ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Datafile_Update  ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Debug_Framework  ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Easter_Egg       ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Encoding_BIG5    ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Encoding_GBK     ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Encoding_Unicode ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  English2Chinese  ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Initialization   ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Input_4Corner    ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Input_Cloud      ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Input_Erbi       ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Input_Pinyin     ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Input_Shuangpin  ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Input_Wubi       ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Input_my_Cloud   ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Instruction      ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Introduction     ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Omni_Popup_Menu  ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  OneKey           ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Punctuations     ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Seamless         ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  Skin             ==== {{{"$/;"	v
+VimIM	vimim.vim	/^let VimIM = " ====  User_Interface   ==== {{{"$/;"	v
+Vst	vstplugin.vim	/^command! -range=% -nargs=? -complete=custom,VST_Args Vst call vst#vst#VST_Export(<line1>, <line2>, <q-args>)$/;"	c
+Vsti	vstplugin.vim	/^command! -range=% -nargs=? -complete=custom,VST_Args Vsti call vst#vst#VST_InstantWrapper(<line1>, <line2>, <q-args>)$/;"	c
+Vstm	vstplugin.vim	/^command! -range=% -nargs=? -complete=custom,VST_Args Vstm call VST_Menus()$/;"	c
+WarnMsg	DoxygenToolkit.vim	/^function! s:WarnMsg( msg )$/;"	f
+Wholematch	matchit.vim	/^fun! s:Wholematch(string, pat, start)$/;"	f
+WipeAll	project.vim	/^    function! s:WipeAll(recurse, line)$/;"	f
+WipeoutCommandBuffers	vcscommand.vim	/^function! s:WipeoutCommandBuffers(originalBuffer, VCSCommand)$/;"	f
+Xterm2rgb	colorizer.vim	/^function! s:Xterm2rgb(color) "{{{2$/;"	f
+ZoomWindow	tagbar.vim	/^function! s:ZoomWindow()$/;"	f
+[%	matchit.vim	/^nnoremap <silent> [% :<C-U>call <SID>MultiMatch("bW", "n") <CR>$/;"	m
+[%	matchit.vim	/^onoremap <silent> [% v:<C-U>call <SID>MultiMatch("bW", "o") <CR>$/;"	m
+[%	matchit.vim	/^vmap [% <Esc>[%m'gv``$/;"	m
+]%	matchit.vim	/^nnoremap <silent> ]% :<C-U>call <SID>MultiMatch("W",  "n") <CR>$/;"	m
+]%	matchit.vim	/^onoremap <silent> ]% v:<C-U>call <SID>MultiMatch("W",  "o") <CR>$/;"	m
+]%	matchit.vim	/^vmap ]% <Esc>]%m'gv``$/;"	m
+a%	matchit.vim	/^vmap a% <Esc>[%v]%$/;"	m
+activateNode	NERD_tree.vim	/^function! s:activateNode(forceKeepWindowOpen)$/;"	f
+alternateExtensionsDict	a.vim	/^let alternateExtensionsDict = {}$/;"	v
+autoload	rails.vim	/^function! s:autoload(...)$/;"	f
+b:escape_spaces	project.vim	/^                let b:escape_spaces=1$/;"	v
+b:loaded_vimim	vimim.vim	/^let b:loaded_vimim=1$/;"	v
+b:unaryTagsStack	closetag.vim	/^	let b:unaryTagsStack=""$/;"	v
+b:unaryTagsStack	closetag.vim	/^	let b:unaryTagsStack="area base br dd dt hr img input link meta param"$/;"	v
+bindMappings	NERD_tree.vim	/^function! s:bindMappings()$/;"	f
+bookmarkNode	NERD_tree.vim	/^function! s:bookmarkNode(name)$/;"	f
+bufInWindows	NERD_tree.vim	/^function! s:bufInWindows(bnum)$/;"	f
+bufname	project.vim	/^        let bufname=escape(substitute(expand('%:p', 0), '\\\\', '\/', 'g'), ' ')$/;"	v
+bzrFunctions.Add	vcsbzr.vim	/^function! s:bzrFunctions.Add(argList)$/;"	f
+bzrFunctions.Annotate	vcsbzr.vim	/^function! s:bzrFunctions.Annotate(argList)$/;"	f
+bzrFunctions.Commit	vcsbzr.vim	/^function! s:bzrFunctions.Commit(argList)$/;"	f
+bzrFunctions.Delete	vcsbzr.vim	/^function! s:bzrFunctions.Delete(argList)$/;"	f
+bzrFunctions.Diff	vcsbzr.vim	/^function! s:bzrFunctions.Diff(argList)$/;"	f
+bzrFunctions.GetBufferInfo	vcsbzr.vim	/^function! s:bzrFunctions.GetBufferInfo()$/;"	f
+bzrFunctions.Identify	vcsbzr.vim	/^function! s:bzrFunctions.Identify(buffer)$/;"	f
+bzrFunctions.Info	vcsbzr.vim	/^function! s:bzrFunctions.Info(argList)$/;"	f
+bzrFunctions.Lock	vcsbzr.vim	/^function! s:bzrFunctions.Lock(argList)$/;"	f
+bzrFunctions.Log	vcsbzr.vim	/^function! s:bzrFunctions.Log(argList)$/;"	f
+bzrFunctions.Revert	vcsbzr.vim	/^function! s:bzrFunctions.Revert(argList)$/;"	f
+bzrFunctions.Review	vcsbzr.vim	/^function! s:bzrFunctions.Review(argList)$/;"	f
+bzrFunctions.Status	vcsbzr.vim	/^function! s:bzrFunctions.Status(argList)$/;"	f
+bzrFunctions.Unlock	vcsbzr.vim	/^function! s:bzrFunctions.Unlock(argList)$/;"	f
+bzrFunctions.Update	vcsbzr.vim	/^function! s:bzrFunctions.Update(argList)$/;"	f
+c_d	project.vim	/^                let c_d=s:GetCd(info, '')$/;"	v
+centerView	NERD_tree.vim	/^function! s:centerView()$/;"	f
+chCwd	NERD_tree.vim	/^function! s:chCwd()$/;"	f
+chRoot	NERD_tree.vim	/^function! s:chRoot()$/;"	f
+checkForActivate	NERD_tree.vim	/^function! s:checkForActivate()$/;"	f
+checkForBrowse	NERD_tree.vim	/^function! s:checkForBrowse(dir)$/;"	f
+clearBookmarks	NERD_tree.vim	/^function! s:clearBookmarks(bookmarks)$/;"	f
+closeChildren	NERD_tree.vim	/^function! s:closeChildren()$/;"	f
+closeCurrentDir	NERD_tree.vim	/^function! s:closeCurrentDir()$/;"	f
+closeTree	NERD_tree.vim	/^function! s:closeTree()$/;"	f
+closeTreeIfOpen	NERD_tree.vim	/^function! s:closeTreeIfOpen()$/;"	f
+closeTreeIfQuitOnOpen	NERD_tree.vim	/^function! s:closeTreeIfQuitOnOpen()$/;"	f
+closeTreeWindow	NERD_tree.vim	/^function! s:closeTreeWindow()$/;"	f
+color	colorizer.vim	/^   let color = s:Xterm2rgb(c)$/;"	v
+command	project.vim	/^                let command=substitute(command, '%F', escape(fnames, '\\'), 'g')$/;"	v
+command	project.vim	/^                let command=substitute(command, '%d', escape(c_d, '\\'), 'g')$/;"	v
+command	project.vim	/^                let command=substitute(command, '%h', escape(home, '\\'), 'g')$/;"	v
+command	project.vim	/^                let command=substitute(command, '%s', escape(fnames, '\\'), 'g')$/;"	v
+command	project.vim	/^                let command=substitute(g:proj_run_fold{a:number}, '%f', substitute(escape(fnames, '\\'), '\\\\ ', ' ', 'g'), 'g')$/;"	v
+commentEnablers	NERD_commenter.vim	/^augroup commentEnablers$/;"	a
+compareBookmarks	NERD_tree.vim	/^function! s:compareBookmarks(first, second)$/;"	f
+compareNodes	NERD_tree.vim	/^function! s:compareNodes(n1, n2)$/;"	f
+completeBookmarks	NERD_tree.vim	/^function! s:completeBookmarks(A,L,P)$/;"	f
+createTreeWin	NERD_tree.vim	/^function! s:createTreeWin()$/;"	f
+cvsFunctions.Add	vcscvs.vim	/^function! s:cvsFunctions.Add(argList)$/;"	f
+cvsFunctions.Annotate	vcscvs.vim	/^function! s:cvsFunctions.Annotate(argList)$/;"	f
+cvsFunctions.Commit	vcscvs.vim	/^function! s:cvsFunctions.Commit(argList)$/;"	f
+cvsFunctions.Delete	vcscvs.vim	/^function! s:cvsFunctions.Delete(argList)$/;"	f
+cvsFunctions.Diff	vcscvs.vim	/^function! s:cvsFunctions.Diff(argList)$/;"	f
+cvsFunctions.GetBufferInfo	vcscvs.vim	/^function! s:cvsFunctions.GetBufferInfo()$/;"	f
+cvsFunctions.Identify	vcscvs.vim	/^function! s:cvsFunctions.Identify(buffer)$/;"	f
+cvsFunctions.Log	vcscvs.vim	/^function! s:cvsFunctions.Log(argList)$/;"	f
+cvsFunctions.Revert	vcscvs.vim	/^function! s:cvsFunctions.Revert(argList)$/;"	f
+cvsFunctions.Review	vcscvs.vim	/^function! s:cvsFunctions.Review(argList)$/;"	f
+cvsFunctions.Status	vcscvs.vim	/^function! s:cvsFunctions.Status(argList)$/;"	f
+cvsFunctions.Update	vcscvs.vim	/^function! s:cvsFunctions.Update(argList)$/;"	f
+debug_list	vimim.vim	/^function! s:debug_list(results)$/;"	f
+debugs	vimim.vim	/^function! s:debugs(key, value)$/;"	f
+defineOption	acp.vim	/^function s:defineOption(name, default)$/;"	f
+defineOption	fuf.vim	/^function s:defineOption(name, default)$/;"	f
+deleteBookmark	NERD_tree.vim	/^function! s:deleteBookmark()$/;"	f
+displayHelp	NERD_tree.vim	/^function! s:displayHelp()$/;"	f
+dumpHelp	NERD_tree.vim	/^function! s:dumpHelp()$/;"	f
+echo	NERD_tree.vim	/^function! s:echo(msg)$/;"	f
+echoError	NERD_tree.vim	/^function! s:echoError(msg)$/;"	f
+echoWarning	NERD_tree.vim	/^function! s:echoWarning(msg)$/;"	f
+egg	vimim.vim	/^let egg  = ["http:\/\/code.google.com\/p\/vimim\/issues\/entry         "]$/;"	v
+egg	vimim.vim	/^let egg += ["http:\/\/groups.google.com\/group\/vimim                "]$/;"	v
+egg	vimim.vim	/^let egg += ["http:\/\/vim.sf.net\/scripts\/script.php?script_id=2506 "]$/;"	v
+egg	vimim.vim	/^let egg += ["http:\/\/vimim-data.googlecode.com                    "]$/;"	v
+egg	vimim.vim	/^let egg += ["http:\/\/vimim.googlecode.com\/svn\/vimim\/vimim.html    "]$/;"	v
+error	rails.vim	/^function! s:error(str)$/;"	f
+error	uisvr.vim	/^function! s:error(msg)$/;"	f
+escape	fencview.vim	/^fun! s:escape(name)$/;"	f
+escvar	rails.vim	/^function! s:escvar(r)$/;"	f
+exec	NERD_tree.vim	/^function! s:exec(cmd)$/;"	f
+findAndRevealPath	NERD_tree.vim	/^function! s:findAndRevealPath()$/;"	f
+firstUsableWindow	NERD_tree.vim	/^function! s:firstUsableWindow()$/;"	f
+fnames	project.vim	/^                let fnames=Project_GetAllFnames(a:recurse, line('.'), ' ')$/;"	v
+g%	matchit.vim	/^nnoremap <silent> g% :<C-U>call <SID>Match_wrapper('',0,'n') <CR>$/;"	m
+g%	matchit.vim	/^onoremap <silent> g% v:<C-U>call <SID>Match_wrapper('',0,'o') <CR>$/;"	m
+g%	matchit.vim	/^vnoremap <silent> g% :<C-U>call <SID>Match_wrapper('',0,'v') <CR>m'gv``$/;"	m
+g:BufExplorer_title	bufexplorer.vim	/^let g:BufExplorer_title = "\\[Buf\\ List\\]"$/;"	v
+g:ConqueTerm_CWInsert	conque_term.vim	/^    let g:ConqueTerm_CWInsert = 0$/;"	v
+g:ConqueTerm_CloseOnEnd	conque_term.vim	/^    let g:ConqueTerm_CloseOnEnd = 0$/;"	v
+g:ConqueTerm_Color	conque_term.vim	/^    let g:ConqueTerm_Color = 1$/;"	v
+g:ConqueTerm_EscKey	conque_term.vim	/^    let g:ConqueTerm_EscKey = '<Esc>'$/;"	v
+g:ConqueTerm_Idx	conque_term.vim	/^let g:ConqueTerm_Idx = 0$/;"	v
+g:ConqueTerm_InsertOnEnter	conque_term.vim	/^    let g:ConqueTerm_InsertOnEnter = 0$/;"	v
+g:ConqueTerm_Loaded	conque_term.vim	/^let g:ConqueTerm_Loaded = 1$/;"	v
+g:ConqueTerm_PromptRegex	conque_term.vim	/^    let g:ConqueTerm_PromptRegex = '^\\w\\+@[0-9A-Za-z_.-]\\+:[0-9A-Za-z_.\/\\~,:-]\\+\\$'$/;"	v
+g:ConqueTerm_PyExe	conque_term.vim	/^    let g:ConqueTerm_PyExe = ''$/;"	v
+g:ConqueTerm_PyVersion	conque_term.vim	/^    let g:ConqueTerm_PyVersion = 2$/;"	v
+g:ConqueTerm_ReadUnfocused	conque_term.vim	/^    let g:ConqueTerm_ReadUnfocused = 0$/;"	v
+g:ConqueTerm_SendFunctionKeys	conque_term.vim	/^    let g:ConqueTerm_SendFunctionKeys = 0$/;"	v
+g:ConqueTerm_SendVisKey	conque_term.vim	/^    let g:ConqueTerm_SendVisKey = '<F9>'$/;"	v
+g:ConqueTerm_Syntax	conque_term.vim	/^    let g:ConqueTerm_Syntax = 'conque_term'$/;"	v
+g:ConqueTerm_TERM	conque_term.vim	/^    let g:ConqueTerm_TERM =  'vt100'$/;"	v
+g:ConqueTerm_ToggleKey	conque_term.vim	/^    let g:ConqueTerm_ToggleKey = '<F8>'$/;"	v
+g:ConqueTerm_Version	conque_term.vim	/^let g:ConqueTerm_Version = 200$/;"	v
+g:DoxygenToolkit_authorTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_authorTag = "@author "$/;"	v
+g:DoxygenToolkit_blockFooter	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_blockFooter = ""$/;"	v
+g:DoxygenToolkit_blockHeader	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_blockHeader = ""$/;"	v
+g:DoxygenToolkit_blockTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_blockTag = "@name "$/;"	v
+g:DoxygenToolkit_briefTag_className	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_briefTag_className = "no"$/;"	v
+g:DoxygenToolkit_briefTag_enumName	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_briefTag_enumName = "no"$/;"	v
+g:DoxygenToolkit_briefTag_funcName	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_briefTag_funcName = "no"$/;"	v
+g:DoxygenToolkit_briefTag_namespaceName	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_briefTag_namespaceName = "no"$/;"	v
+g:DoxygenToolkit_briefTag_post	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_briefTag_post = ""$/;"	v
+g:DoxygenToolkit_briefTag_pre	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_briefTag_pre = "@brief "$/;"	v
+g:DoxygenToolkit_briefTag_structName	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_briefTag_structName = "no"$/;"	v
+g:DoxygenToolkit_cinoptions	DoxygenToolkit.vim	/^    let g:DoxygenToolkit_cinoptions = "c1C1"$/;"	v
+g:DoxygenToolkit_classTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_classTag = "@class "$/;"	v
+g:DoxygenToolkit_commentType	DoxygenToolkit.vim	/^    let g:DoxygenToolkit_commentType = "C"$/;"	v
+g:DoxygenToolkit_commentType	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_commentType = "C"$/;"	v
+g:DoxygenToolkit_compactDoc	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_compactDoc = "no"$/;"	v
+g:DoxygenToolkit_compactOneLineDoc	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_compactOneLineDoc = "no"$/;"	v
+g:DoxygenToolkit_dateTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_dateTag = "@date "$/;"	v
+g:DoxygenToolkit_endCommentBlock	DoxygenToolkit.vim	/^    let g:DoxygenToolkit_endCommentBlock = ""$/;"	v
+g:DoxygenToolkit_endCommentBlock	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_endCommentBlock = "*\/"$/;"	v
+g:DoxygenToolkit_endCommentTag	DoxygenToolkit.vim	/^    let g:DoxygenToolkit_endCommentTag = ""$/;"	v
+g:DoxygenToolkit_endCommentTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_endCommentTag = "*\/"$/;"	v
+g:DoxygenToolkit_fileTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_fileTag = "@file "$/;"	v
+g:DoxygenToolkit_ignoreForReturn	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_ignoreForReturn += s:ignoreForReturn$/;"	v
+g:DoxygenToolkit_ignoreForReturn	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_ignoreForReturn = s:ignoreForReturn[:]$/;"	v
+g:DoxygenToolkit_interCommentBlock	DoxygenToolkit.vim	/^    let g:DoxygenToolkit_interCommentBlock = "\/\/ "$/;"	v
+g:DoxygenToolkit_interCommentBlock	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_interCommentBlock = "* "$/;"	v
+g:DoxygenToolkit_interCommentTag	DoxygenToolkit.vim	/^    let g:DoxygenToolkit_interCommentTag = "\/\/\/ "$/;"	v
+g:DoxygenToolkit_interCommentTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_interCommentTag = "* "$/;"	v
+g:DoxygenToolkit_keepEmptyLineAfterComment	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_keepEmptyLineAfterComment = "no"$/;"	v
+g:DoxygenToolkit_licenseTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_licenseTag = s:licenseTag$/;"	v
+g:DoxygenToolkit_maxFunctionProtoLines	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_maxFunctionProtoLines = 10$/;"	v
+g:DoxygenToolkit_paramTag_post	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_paramTag_post = ""$/;"	v
+g:DoxygenToolkit_paramTag_pre	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_paramTag_pre = "@param "$/;"	v
+g:DoxygenToolkit_python_autoFunctionReturn	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_python_autoFunctionReturn = "yes"$/;"	v
+g:DoxygenToolkit_python_autoRemoveSelfParam	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_python_autoRemoveSelfParam = "yes"$/;"	v
+g:DoxygenToolkit_returnTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_returnTag = "@return "$/;"	v
+g:DoxygenToolkit_startCommentBlock	DoxygenToolkit.vim	/^    let g:DoxygenToolkit_startCommentBlock = "\/\/ "$/;"	v
+g:DoxygenToolkit_startCommentBlock	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_startCommentBlock = "\/* "$/;"	v
+g:DoxygenToolkit_startCommentTag	DoxygenToolkit.vim	/^    let g:DoxygenToolkit_startCommentTag = "\/\/\/ "$/;"	v
+g:DoxygenToolkit_startCommentTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_startCommentTag = "\/** "$/;"	v
+g:DoxygenToolkit_templateParamTag_post	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_templateParamTag_post = ""$/;"	v
+g:DoxygenToolkit_templateParamTag_pre	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_templateParamTag_pre = "@tparam "$/;"	v
+g:DoxygenToolkit_throwTag_post	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_throwTag_post = ""$/;"	v
+g:DoxygenToolkit_throwTag_pre	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_throwTag_pre = "@throw " " @exception is also valid$/;"	v
+g:DoxygenToolkit_undocTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_undocTag = "DOX_SKIP_BLOCK"$/;"	v
+g:DoxygenToolkit_versionTag	DoxygenToolkit.vim	/^  let g:DoxygenToolkit_versionTag = "@version "$/;"	v
+g:FencCustom	fencview.vim	/^let g:FencCustom=$/;"	v
+g:LookupFile_AllowNewFiles	lookupfile.vim	/^  let g:LookupFile_AllowNewFiles = 1$/;"	v
+g:LookupFile_AlwaysAcceptFirst	lookupfile.vim	/^  let g:LookupFile_AlwaysAcceptFirst = 0$/;"	v
+g:LookupFile_Bufs_BufListExpr	lookupfile.vim	/^  let g:LookupFile_Bufs_BufListExpr = ''$/;"	v
+g:LookupFile_Bufs_LikeBufCmd	lookupfile.vim	/^  let g:LookupFile_Bufs_LikeBufCmd = 1$/;"	v
+g:LookupFile_Bufs_SkipUnlisted	lookupfile.vim	/^  let g:LookupFile_Bufs_SkipUnlisted = 1$/;"	v
+g:LookupFile_DefaultCmd	lookupfile.vim	/^  let g:LookupFile_DefaultCmd = ':LUTags'$/;"	v
+g:LookupFile_DisableDefaultMap	lookupfile.vim	/^  let g:LookupFile_DisableDefaultMap = 0$/;"	v
+g:LookupFile_EnableRemapCmd	lookupfile.vim	/^  let g:LookupFile_EnableRemapCmd = 1$/;"	v
+g:LookupFile_EscCancelsPopup	lookupfile.vim	/^  let g:LookupFile_EscCancelsPopup = 1$/;"	v
+g:LookupFile_FileFilter	lookupfile.vim	/^  let g:LookupFile_FileFilter = ''$/;"	v
+g:LookupFile_LookupAcceptFunc	lookupfile.vim	/^  let g:LookupFile_LookupAcceptFunc = ''$/;"	v
+g:LookupFile_LookupFunc	lookupfile.vim	/^  let g:LookupFile_LookupFunc = ''$/;"	v
+g:LookupFile_LookupNotifyFunc	lookupfile.vim	/^  let g:LookupFile_LookupNotifyFunc = ''$/;"	v
+g:LookupFile_MinPatLength	lookupfile.vim	/^  let g:LookupFile_MinPatLength = 4$/;"	v
+g:LookupFile_OnCursorMovedI	lookupfile.vim	/^  let g:LookupFile_OnCursorMovedI = 0$/;"	v
+g:LookupFile_PreserveLastPattern	lookupfile.vim	/^  let g:LookupFile_PreserveLastPattern = 1$/;"	v
+g:LookupFile_PreservePatternHistory	lookupfile.vim	/^  let g:LookupFile_PreservePatternHistory = 1$/;"	v
+g:LookupFile_RecentFileListSize	lookupfile.vim	/^  let g:LookupFile_RecentFileListSize = 20$/;"	v
+g:LookupFile_SearchForBufsInTabs	lookupfile.vim	/^  let g:LookupFile_SearchForBufsInTabs = 1$/;"	v
+g:LookupFile_ShowFiller	lookupfile.vim	/^  let g:LookupFile_ShowFiller = 1$/;"	v
+g:LookupFile_SortMethod	lookupfile.vim	/^  let g:LookupFile_SortMethod = 'alpha'$/;"	v
+g:LookupFile_TagExpr	lookupfile.vim	/^  let g:LookupFile_TagExpr = '&tags'$/;"	v
+g:LookupFile_TagsExpandCamelCase	lookupfile.vim	/^  let g:LookupFile_TagsExpandCamelCase = 1$/;"	v
+g:LookupFile_UpdateTime	lookupfile.vim	/^  let g:LookupFile_UpdateTime = 300$/;"	v
+g:LookupFile_UsingSpecializedTags	lookupfile.vim	/^  let g:LookupFile_UsingSpecializedTags = 0$/;"	v
+g:NERDTreeBookmark	NERD_tree.vim	/^let g:NERDTreeBookmark = s:Bookmark$/;"	v
+g:NERDTreeDirNode	NERD_tree.vim	/^let g:NERDTreeDirNode = s:TreeDirNode$/;"	v
+g:NERDTreeFileNode	NERD_tree.vim	/^let g:NERDTreeFileNode = s:TreeFileNode$/;"	v
+g:NERDTreeIgnore	NERD_tree.vim	/^    let g:NERDTreeIgnore = ['\\~$']$/;"	v
+g:NERDTreePath	NERD_tree.vim	/^let g:NERDTreePath = s:Path$/;"	v
+g:NERDTreeSortOrder	NERD_tree.vim	/^    let g:NERDTreeSortOrder = ['\\\/$', '*', '\\.swp$',  '\\.bak$', '\\~$']$/;"	v
+g:NERDTreeStatusline	NERD_tree.vim	/^    let g:NERDTreeStatusline = "%{exists('b:NERDTreeRoot')?b:NERDTreeRoot.path.str():''}"$/;"	v
+g:QuickTemplateCursorFlag	QuickTemplate.vim	/^let g:QuickTemplateCursorFlag = '#cursor#'$/;"	v
+g:QuickTemplatePath	QuickTemplate.vim	/^    let g:QuickTemplatePath = $HOME.'\/.vim\/'$/;"	v
+g:QuickTemplatePath	QuickTemplate.vim	/^    let g:QuickTemplatePath = $VIM.'\/vimfiles\/template\/'$/;"	v
+g:TransferChinese_Simplified	TransferChinese.vim	/^    let g:TransferChinese_Simplified = 0$/;"	v
+g:VCSCOMMAND_IDENTIFY_EXACT	vcscommand.vim	/^let g:VCSCOMMAND_IDENTIFY_EXACT = 1$/;"	v
+g:VCSCOMMAND_IDENTIFY_INEXACT	vcscommand.vim	/^let g:VCSCOMMAND_IDENTIFY_INEXACT = -1$/;"	v
+g:alternateNoDefaultAlternate	a.vim	/^   let g:alternateNoDefaultAlternate = 0$/;"	v
+g:alternateRelativeFiles	a.vim	/^   let g:alternateRelativeFiles = 0$/;"	v
+g:alternateSearchPath	a.vim	/^  let g:alternateSearchPath = 'sfr:..\/source,sfr:..\/src,sfr:..\/include,sfr:..\/inc'$/;"	v
+g:bufexplorer_version	bufexplorer.vim	/^let g:bufexplorer_version = "7.2.3"$/;"	v
+g:calendar_action	calendar.vim	/^  let g:calendar_action = "<SID>CalendarDiary"$/;"	v
+g:calendar_datetime	calendar.vim	/^  let g:calendar_datetime = 'title'$/;"	v
+g:calendar_diary	calendar.vim	/^  let g:calendar_diary = "~\/diary"$/;"	v
+g:calendar_focus_today	calendar.vim	/^  let g:calendar_focus_today = 0$/;"	v
+g:calendar_mark	calendar.vim	/^  let g:calendar_mark = 'left'$/;"	v
+g:calendar_navi	calendar.vim	/^  let g:calendar_navi = 'top'$/;"	v
+g:calendar_navi_label	calendar.vim	/^  let g:calendar_navi_label = "Prev,Today,Next"$/;"	v
+g:calendar_sign	calendar.vim	/^  let g:calendar_sign = "<SID>CalendarSign"$/;"	v
+g:calendar_version	calendar.vim	/^let g:calendar_version = "2.0"$/;"	v
+g:checksyntax_auto	checksyntax.vim	/^    let g:checksyntax_auto = 1$/;"	v
+g:command_t_loaded	command-t.vim	/^let g:command_t_loaded = 1$/;"	v
+g:did_ft	snipMate.vim	/^let g:did_ft = {}$/;"	v
+g:fencview_auto_patterns	fencview.vim	/^    let g:fencview_auto_patterns='*.txt,*.htm{l\\=}'$/;"	v
+g:fencview_autodetect	fencview.vim	/^    let g:fencview_autodetect = 1$/;"	v
+g:fencview_checklines	fencview.vim	/^    let g:fencview_checklines = 10$/;"	v
+g:fencview_html_filetypes	fencview.vim	/^    let g:fencview_html_filetypes='html'$/;"	v
+g:legacy_encoding	fencview.vim	/^        let g:legacy_encoding=&encoding$/;"	v
+g:legacy_encoding	fencview.vim	/^        let g:legacy_encoding=''$/;"	v
+g:legacy_encoding	fencview.vim	/^        let g:legacy_encoding=matchstr(&fileencodings, '^ucs-bom,utf-8,\\zs[^,]\\+')$/;"	v
+g:loaded_acp	acp.vim	/^let g:loaded_acp = 1$/;"	v
+g:loaded_checksyntax	checksyntax.vim	/^let g:loaded_checksyntax = 101$/;"	v
+g:loaded_fuf	fuf.vim	/^let g:loaded_fuf = 1$/;"	v
+g:loaded_lookupfile	lookupfile.vim	/^let g:loaded_lookupfile = 108$/;"	v
+g:loaded_rails	rails.vim	/^let g:loaded_rails = 1$/;"	v
+g:loaded_tagbar	tagbar.vim	/^let g:loaded_tagbar = 1$/;"	v
+g:loaded_vimcdoc	vimcdoc.vim	/^let g:loaded_vimcdoc = 1$/;"	v
+g:loaded_zencoding_vim	zencoding.vim	/^let g:loaded_zencoding_vim = 1$/;"	v
+g:proj_running	project.vim	/^        let g:proj_running = bufnr(bufname.'\\>')$/;"	v
+g:tagbar_autoclose	tagbar.vim	/^    let g:tagbar_autoclose = 0$/;"	v
+g:tagbar_autofocus	tagbar.vim	/^    let g:tagbar_autofocus = 0$/;"	v
+g:tagbar_autoshowtag	tagbar.vim	/^    let g:tagbar_autoshowtag = 0$/;"	v
+g:tagbar_compact	tagbar.vim	/^    let g:tagbar_compact = 0$/;"	v
+g:tagbar_ctags_bin	tagbar.vim	/^        let g:tagbar_ctags_bin = 'ctags'$/;"	v
+g:tagbar_ctags_bin	tagbar.vim	/^        let g:tagbar_ctags_bin = 'ctags-exuberant'$/;"	v
+g:tagbar_ctags_bin	tagbar.vim	/^        let g:tagbar_ctags_bin = 'ctags.exe'$/;"	v
+g:tagbar_ctags_bin	tagbar.vim	/^        let g:tagbar_ctags_bin = 'exctags'$/;"	v
+g:tagbar_ctags_bin	tagbar.vim	/^        let g:tagbar_ctags_bin = 'exuberant-ctags'$/;"	v
+g:tagbar_ctags_bin	tagbar.vim	/^        let g:tagbar_ctags_bin = 'tags'$/;"	v
+g:tagbar_ctags_bin	tagbar.vim	/^    let g:tagbar_ctags_bin = expand(g:tagbar_ctags_bin)$/;"	v
+g:tagbar_expand	tagbar.vim	/^    let g:tagbar_expand = 0$/;"	v
+g:tagbar_foldlevel	tagbar.vim	/^    let g:tagbar_foldlevel = 99$/;"	v
+g:tagbar_left	tagbar.vim	/^    let g:tagbar_left = 0$/;"	v
+g:tagbar_sort	tagbar.vim	/^    let g:tagbar_sort = 1$/;"	v
+g:tagbar_systemenc	tagbar.vim	/^    let g:tagbar_systemenc = &encoding$/;"	v
+g:tagbar_usearrows	tagbar.vim	/^    let g:tagbar_usearrows = 0$/;"	v
+g:tagbar_width	tagbar.vim	/^    let g:tagbar_width = 40$/;"	v
+g:uisvr_opening_window	uisvr.vim	/^    let g:uisvr_opening_window = "new"$/;"	v
+g:user_zen_leader_key	zencoding.vim	/^  let g:user_zen_leader_key = '<c-y>'$/;"	v
+g:zencoding_debug	zencoding.vim	/^  let g:zencoding_debug = 0$/;"	v
+gS	TransferChinese.vim	/^map gS  Hmt``mz:GoSimplifiedChinese<CR>`tzt`z$/;"	m
+gT	TransferChinese.vim	/^map gT  Hmt``mz:GoTraditionalChinese<CR>`tzt`z$/;"	m
+getPath	NERD_tree.vim	/^function! s:getPath(ln)$/;"	f
+getPaths	uisvr.vim	/^function! s:getPaths()$/;"	f
+getTreeWinNum	NERD_tree.vim	/^function! s:getTreeWinNum()$/;"	f
+get_next_token	jsbeautify.vim	/^function! s:get_next_token()$/;"	f
+gitFunctions.Add	vcsgit.vim	/^function! s:gitFunctions.Add(argList)$/;"	f
+gitFunctions.Annotate	vcsgit.vim	/^function! s:gitFunctions.Annotate(argList)$/;"	f
+gitFunctions.Commit	vcsgit.vim	/^function! s:gitFunctions.Commit(argList)$/;"	f
+gitFunctions.Delete	vcsgit.vim	/^function! s:gitFunctions.Delete(argList)$/;"	f
+gitFunctions.Diff	vcsgit.vim	/^function! s:gitFunctions.Diff(argList)$/;"	f
+gitFunctions.GetBufferInfo	vcsgit.vim	/^function! s:gitFunctions.GetBufferInfo()$/;"	f
+gitFunctions.Identify	vcsgit.vim	/^function! s:gitFunctions.Identify(buffer)$/;"	f
+gitFunctions.Log	vcsgit.vim	/^function! s:gitFunctions.Log(argList)$/;"	f
+gitFunctions.Revert	vcsgit.vim	/^function! s:gitFunctions.Revert(argList)$/;"	f
+gitFunctions.Review	vcsgit.vim	/^function! s:gitFunctions.Review(argList)$/;"	f
+gitFunctions.Status	vcsgit.vim	/^function! s:gitFunctions.Status(argList)$/;"	f
+gitFunctions.Update	vcsgit.vim	/^function! s:gitFunctions.Update(argList)$/;"	f
+gsub	rails.vim	/^function! s:gsub(str,pat,rep)$/;"	f
+handleMiddleMouse	NERD_tree.vim	/^function! s:handleMiddleMouse()$/;"	f
+help	project.vim	/^        cnoremap <buffer> help let g:proj_doinghelp = 1<CR>:help$/;"	m
+hgFunctions.Add	vcshg.vim	/^function! s:hgFunctions.Add(argList)$/;"	f
+hgFunctions.Annotate	vcshg.vim	/^function! s:hgFunctions.Annotate(argList)$/;"	f
+hgFunctions.Commit	vcshg.vim	/^function! s:hgFunctions.Commit(argList)$/;"	f
+hgFunctions.Delete	vcshg.vim	/^function! s:hgFunctions.Delete(argList)$/;"	f
+hgFunctions.Diff	vcshg.vim	/^function! s:hgFunctions.Diff(argList)$/;"	f
+hgFunctions.GetBufferInfo	vcshg.vim	/^function! s:hgFunctions.GetBufferInfo()$/;"	f
+hgFunctions.Identify	vcshg.vim	/^function! s:hgFunctions.Identify(buffer)$/;"	f
+hgFunctions.Info	vcshg.vim	/^function! s:hgFunctions.Info(argList)$/;"	f
+hgFunctions.Log	vcshg.vim	/^function! s:hgFunctions.Log(argList)$/;"	f
+hgFunctions.Revert	vcshg.vim	/^function! s:hgFunctions.Revert(argList)$/;"	f
+hgFunctions.Review	vcshg.vim	/^function! s:hgFunctions.Review(argList)$/;"	f
+hgFunctions.Status	vcshg.vim	/^function! s:hgFunctions.Status(argList)$/;"	f
+hgFunctions.Update	vcshg.vim	/^function! s:hgFunctions.Update(argList)$/;"	f
+home	project.vim	/^                let home=s:GetHome(info, '')$/;"	v
+in_array	jsbeautify.vim	/^function! s:in_array(what, arr)$/;"	f
+indent	jsbeautify.vim	/^function! s:indent()$/;"	f
+indentLevelFor	NERD_tree.vim	/^function! s:indentLevelFor(line)$/;"	f
+info	project.vim	/^                let info=s:RecursivelyConstructDirectives(line('.'))$/;"	v
+initMisc	fuf.vim	/^function s:initMisc()$/;"	f
+initNerdTree	NERD_tree.vim	/^function! s:initNerdTree(name)$/;"	f
+initNerdTreeInPlace	NERD_tree.vim	/^function! s:initNerdTreeInPlace(dir)$/;"	f
+initNerdTreeMirror	NERD_tree.vim	/^function! s:initNerdTreeMirror()$/;"	f
+initVariable	NERD_tree.vim	/^function! s:initVariable(var, value)$/;"	f
+initialize	fuf.vim	/^function s:initialize()$/;"	f
+install_plugin	zencoding.vim	/^function! s:install_plugin()$/;"	f
+isTreeOpen	NERD_tree.vim	/^function! s:isTreeOpen()$/;"	f
+isWindowUsable	NERD_tree.vim	/^function! s:isWindowUsable(winnumber)$/;"	f
+is_js	jsbeautify.vim	/^function! s:is_js()$/;"	f
+jslint_command	javaScriptLint.vim	/^  let jslint_command = 'jsl'$/;"	v
+jslint_command_options	javaScriptLint.vim	/^  let jslint_command_options = '-nofilelisting -nocontext -nosummary -nologo -process'$/;"	v
+jslint_highlight_color	javaScriptLint.vim	/^  let jslint_highlight_color = 'DarkMagenta'$/;"	v
+jumpToChild	NERD_tree.vim	/^function! s:jumpToChild(direction)$/;"	f
+jumpToFirstChild	NERD_tree.vim	/^function! s:jumpToFirstChild()$/;"	f
+jumpToLastChild	NERD_tree.vim	/^function! s:jumpToLastChild()$/;"	f
+jumpToParent	NERD_tree.vim	/^function! s:jumpToParent()$/;"	f
+jumpToRoot	NERD_tree.vim	/^function! s:jumpToRoot()$/;"	f
+jumpToSibling	NERD_tree.vim	/^function! s:jumpToSibling(forward)$/;"	f
+k	project.vim	/^            let k=k+1$/;"	v
+k	project.vim	/^        let k=1$/;"	v
+known_files.get	tagbar.vim	/^function! s:known_files.get(fname) dict$/;"	f
+known_files.getCurrent	tagbar.vim	/^function! s:known_files.getCurrent() dict$/;"	f
+known_files.has	tagbar.vim	/^function! s:known_files.has(fname) dict$/;"	f
+known_files.put	tagbar.vim	/^function! s:known_files.put(fileinfo, ...) dict$/;"	f
+known_files.rm	tagbar.vim	/^function! s:known_files.rm(fname) dict$/;"	f
+known_files.setCurrent	tagbar.vim	/^function! s:known_files.setCurrent(fileinfo) dict$/;"	f
+loaded_DoxygenToolkit	DoxygenToolkit.vim	/^let loaded_DoxygenToolkit = 1$/;"	v
+loaded_VCSCommand	vcscommand.vim	/^let loaded_VCSCommand = 1$/;"	v
+loaded_VCSCommand	vcscommand.vim	/^let loaded_VCSCommand = 2$/;"	v
+loaded_alipay_uisvr	uisvr.vim	/^let loaded_alipay_uisvr=1$/;"	v
+loaded_alternateFile	a.vim	/^let loaded_alternateFile = 1$/;"	v
+loaded_closetag	closetag.vim	/^let loaded_closetag=1$/;"	v
+loaded_colorizer	colorizer.vim	/^let loaded_colorizer = 1$/;"	v
+loaded_genutils	genutils.vim	/^let loaded_genutils = 205$/;"	v
+loaded_jsbeautify	jsbeautify.vim	/^let loaded_jsbeautify = 3$/;"	v
+loaded_matchit	matchit.vim	/^let loaded_matchit = 1$/;"	v
+loaded_mru	mru.vim	/^let loaded_mru=1$/;"	v
+loaded_nerd_comments	NERD_commenter.vim	/^let loaded_nerd_comments = 1$/;"	v
+loaded_nerd_tree	NERD_tree.vim	/^let loaded_nerd_tree = 1$/;"	v
+loaded_powertab	powertab.vim	/^let loaded_powertab = 1$/;"	v
+loaded_project	project.vim	/^let loaded_project=1$/;"	v
+loaded_quick_template	QuickTemplate.vim	/^let loaded_quick_template = 1$/;"	v
+loaded_snips	snipMate.vim	/^let loaded_snips = 1$/;"	v
+loaded_taglist	taglist.vim	/^            let loaded_taglist = 'no'$/;"	v
+loaded_taglist	taglist.vim	/^        let loaded_taglist = 'no'$/;"	v
+loaded_taglist	taglist.vim	/^    let loaded_taglist = 'fast_load_done'$/;"	v
+loaded_taglist	taglist.vim	/^let loaded_taglist = 'available'$/;"	v
+loaded_transfer_chinese	TransferChinese.vim	/^let loaded_transfer_chinese = 1$/;"	v
+makeDefaultBehavior	acp.vim	/^function s:makeDefaultBehavior()$/;"	f
+mappingInfo	vcscvs.vim	/^let mappingInfo = [$/;"	v
+menuBufEnter	rails.vim	/^function! s:menuBufEnter()$/;"	f
+menuBufLeave	rails.vim	/^function! s:menuBufLeave()$/;"	f
+menuRoot	NERD_commenter.vim	/^        let menuRoot = '&Plugin.&comment'$/;"	v
+menuRoot	NERD_commenter.vim	/^        let menuRoot = '&comment'$/;"	v
+menuRoot	NERD_commenter.vim	/^        let menuRoot = 'comment'$/;"	v
+menuRoot	NERD_commenter.vim	/^    let menuRoot = ""$/;"	v
+menucmd	rails.vim	/^function! s:menucmd(priority)$/;"	f
+menuprompt	rails.vim	/^function! s:menuprompt(vimcmd,prompt)$/;"	f
+nextBufferName	NERD_tree.vim	/^function! s:nextBufferName()$/;"	f
+onBufEnter	fuf.vim	/^function s:onBufEnter()$/;"	f
+onBufWritePost	fuf.vim	/^function s:onBufWritePost()$/;"	f
+onCommandPre	fuf.vim	/^function s:onCommandPre()$/;"	f
+openBookmark	NERD_tree.vim	/^function! s:openBookmark(name)$/;"	f
+openEntrySplit	NERD_tree.vim	/^function! s:openEntrySplit(vertical, forceKeepWindowOpen)$/;"	f
+openExplorer	NERD_tree.vim	/^function! s:openExplorer()$/;"	f
+openInNewTab	NERD_tree.vim	/^function! s:openInNewTab(stayCurrentTab)$/;"	f
+openNodeRecursively	NERD_tree.vim	/^function! s:openNodeRecursively()$/;"	f
+pow	colorizer.vim	/^function! s:pow(x, n) "{{{2$/;"	f
+previewNode	NERD_tree.vim	/^function! s:previewNode(openNewWin)$/;"	f
+print_newline	jsbeautify.vim	/^function! s:print_newline(ignore_repeated) $/;"	f
+print_space	jsbeautify.vim	/^function! s:print_space()$/;"	f
+print_token	jsbeautify.vim	/^function! s:print_token()$/;"	f
+promptToDelBuffer	NERD_tree.vim	/^function! s:promptToDelBuffer(bufnum, msg)$/;"	f
+putCursorInTreeWin	NERD_tree.vim	/^function! s:putCursorInTreeWin()$/;"	f
+putCursorOnBookmarkTable	NERD_tree.vim	/^function! s:putCursorOnBookmarkTable()$/;"	f
+railsPluginDetect	rails.vim	/^augroup railsPluginDetect$/;"	a
+railsPluginMenu	rails.vim	/^augroup railsPluginMenu$/;"	a
+refreshCurrent	NERD_tree.vim	/^function! s:refreshCurrent()$/;"	f
+refreshRoot	NERD_tree.vim	/^function! s:refreshRoot()$/;"	f
+remove_indent	jsbeautify.vim	/^function! s:remove_indent()$/;"	f
+renderBookmarks	NERD_tree.vim	/^function! s:renderBookmarks()$/;"	f
+renderView	NERD_tree.vim	/^function! s:renderView()$/;"	f
+renderViewSavingPosition	NERD_tree.vim	/^function! s:renderViewSavingPosition()$/;"	f
+renewCachesOfAllModes	fuf.vim	/^function s:renewCachesOfAllModes()$/;"	f
+reset_before_anything	vimim.vim	/^function! s:reset_before_anything()$/;"	f
+reset_matched_list	vimim.vim	/^function! s:reset_matched_list()$/;"	f
+reset_popupmenu_matched_list	vimim.vim	/^function! s:reset_popupmenu_matched_list()$/;"	f
+restoreScreenState	NERD_tree.vim	/^function! s:restoreScreenState()$/;"	f
+restore_mode	jsbeautify.vim	/^function! s:restore_mode()$/;"	f
+retval	project.vim	/^        let retval=b:fnamelist$/;"	v
+revealBookmark	NERD_tree.vim	/^function! s:revealBookmark(name)$/;"	f
+s:BaseTag	tagbar.vim	/^let s:BaseTag = {}$/;"	v
+s:Bookmark	NERD_tree.vim	/^let s:Bookmark = {}$/;"	v
+s:Fenc16bit	fencview.vim	/^let s:Fenc16bit=[$/;"	v
+s:Fenc8bit	fencview.vim	/^let s:Fenc8bit=[$/;"	v
+s:FencUnicode	fencview.vim	/^let s:FencUnicode=[$/;"	v
+s:FencWinName	fencview.vim	/^let s:FencWinName="FencView_8795684"$/;"	v
+s:FileInfo	tagbar.vim	/^let s:FileInfo = {}$/;"	v
+s:KeyMap	NERD_tree.vim	/^let s:KeyMap = {}$/;"	v
+s:KindheaderTag	tagbar.vim	/^let s:KindheaderTag = copy(s:BaseTag)$/;"	v
+s:MRU_Exclude_List	bufexplorer.vim	/^let s:MRU_Exclude_List = ["[BufExplorer]","__MRU_Files__"]$/;"	v
+s:MenuController	NERD_tree.vim	/^let s:MenuController = {}$/;"	v
+s:MenuItem	NERD_tree.vim	/^let s:MenuItem = {}$/;"	v
+s:NERDFileNameEscape	NERD_commenter.vim	/^let s:NERDFileNameEscape="[]#*$%'\\" ?`!&();<>\\\\"$/;"	v
+s:NERDTreeBufName	NERD_tree.vim	/^let s:NERDTreeBufName = 'NERD_tree_'$/;"	v
+s:NERDTreeSortStarIndex	NERD_tree.vim	/^let s:NERDTreeSortStarIndex = index(g:NERDTreeSortOrder, '*')$/;"	v
+s:NERD_tree_version	NERD_tree.vim	/^let s:NERD_tree_version = '4.1.0'$/;"	v
+s:NormalTag	tagbar.vim	/^let s:NormalTag = copy(s:BaseTag)$/;"	v
+s:Path	NERD_tree.vim	/^let s:Path = {}$/;"	v
+s:PseudoTag	tagbar.vim	/^let s:PseudoTag = copy(s:BaseTag)$/;"	v
+s:TemplatVersion	QuickTemplate.vim	/^let s:TemplatVersion = '$Id: QuickTemplate.vim 221 2008-11-05 15:17:34Z i.feelinglucky $'$/;"	v
+s:Tlist_Skip_Refresh	taglist.vim	/^let s:Tlist_Skip_Refresh = 0$/;"	v
+s:TreeDirNode	NERD_tree.vim	/^let s:TreeDirNode = copy(s:TreeFileNode)$/;"	v
+s:TreeFileNode	NERD_tree.vim	/^let s:TreeFileNode = {}$/;"	v
+s:VCSCommandUtility	vcsbzr.vim	/^let s:VCSCommandUtility = VCSCommandRegisterModule('BZR', expand('<sfile>'), s:bzrFunctions, [])$/;"	v
+s:VCSCommandUtility	vcscommand.vim	/^let s:VCSCommandUtility = {}$/;"	v
+s:VCSCommandUtility	vcscvs.vim	/^let s:VCSCommandUtility = VCSCommandRegisterModule('CVS', expand('<sfile>'), s:cvsFunctions, s:cvsExtensionMappings)$/;"	v
+s:VCSCommandUtility	vcsgit.vim	/^let s:VCSCommandUtility = VCSCommandRegisterModule('git', expand('<sfile>'), s:gitFunctions, [])$/;"	v
+s:VCSCommandUtility	vcshg.vim	/^let s:VCSCommandUtility = VCSCommandRegisterModule('HG', expand('<sfile>'), s:hgFunctions, [])$/;"	v
+s:VCSCommandUtility	vcssvk.vim	/^let s:VCSCommandUtility = VCSCommandRegisterModule('SVK', expand('<sfile>'), s:svkFunctions, [])$/;"	v
+s:VCSCommandUtility	vcssvn.vim	/^let s:VCSCommandUtility = VCSCommandRegisterModule('SVN', expand('<sfile>'), s:svnFunctions, [])$/;"	v
+s:access_symbols	tagbar.vim	/^let s:access_symbols = {$/;"	v
+s:autocommands_done	tagbar.vim	/^let s:autocommands_done = 0$/;"	v
+s:baseBufNr	lookupfile.vim	/^let s:baseBufNr = 0$/;"	v
+s:basic16	colorizer.vim	/^let s:basic16 = [ [ 0x00, 0x00, 0x00 ], [ 0xCD, 0x00, 0x00 ], [ 0x00, 0xCD, 0x00 ], [ 0xCD, 0xCD, 0x00 ], [ 0x00, 0x00, 0xEE ], [ 0xCD, 0x00, 0xCD ], [ 0x00, 0xCD, 0xCD ], [ 0xE5, 0xE5, 0xE5 ], [ 0x7F, 0x7F, 0x7F ], [ 0xFF, 0x00, 0x00 ], [ 0x00, 0xFF, 0x00 ], [ 0xFF, 0xFF, 0x00 ], [ 0x5C, 0x5C, 0xFF ], [ 0xFF, 0x00, 0xFF ], [ 0x00, 0xFF, 0xFF ], [ 0xFF, 0xFF, 0xFF ] ]$/;"	v
+s:bufList	lookupfile.vim	/^let s:bufList = [1]$/;"	v
+s:bzrFunctions	vcsbzr.vim	/^let s:bzrFunctions = {}$/;"	v
+s:bzrFunctions	vcsbzr.vim	/^let s:bzrFunctions.AnnotateSplitRegex = '^[^|]\\+ | '$/;"	v
+s:checked_ctags	tagbar.vim	/^let s:checked_ctags     = 0$/;"	v
+s:colortable	colorizer.vim	/^let s:colortable=[] "{{{2$/;"	v
+s:cp932TopChars	fencview.vim	/^let s:cp932TopChars=[$/;"	v
+s:cp936TopChars	fencview.vim	/^let s:cp936TopChars=[$/;"	v
+s:cp949TopChars	fencview.vim	/^let s:cp949TopChars=[$/;"	v
+s:cp950TopChars	fencview.vim	/^let s:cp950TopChars=[$/;"	v
+s:cpo_save	mru.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	taglist.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cvsExtensionMappings	vcscvs.vim	/^		let s:cvsExtensionMappings[shortCut] = commandText$/;"	v
+s:cvsExtensionMappings	vcscvs.vim	/^let s:cvsExtensionMappings = {}$/;"	v
+s:cvsFunctions	vcscvs.vim	/^let s:cvsFunctions = {}$/;"	v
+s:cvsFunctions	vcscvs.vim	/^let s:cvsFunctions.AnnotateSplitRegex = '): '$/;"	v
+s:defaultMappings	vcscommand.vim	/^let s:defaultMappings = [$/;"	v
+s:did_cocoa	cocoa.vim	/^let s:did_cocoa = 1$/;"	v
+s:disable_autodetection	fencview.vim	/^let s:disable_autodetection=0$/;"	v
+s:esc_filename_chars	mru.vim	/^let s:esc_filename_chars = ' *?[{`$%#"|!<>();&' . "'\\t\\n"$/;"	v
+s:escape_chars	NERD_tree.vim	/^    let s:escape_chars =  " \\\\`\\|\\"#%&,?()\\*^<>"$/;"	v
+s:escape_chars	NERD_tree.vim	/^    let s:escape_chars =  " `\\|\\"#%&,?()\\*^<>"$/;"	v
+s:euc_jpTopChars	fencview.vim	/^let s:euc_jpTopChars=[$/;"	v
+s:euc_twTopChars	fencview.vim	/^let s:euc_twTopChars=[$/;"	v
+s:fileWild	lookupfile.vim	/^let s:fileWild = {}$/;"	v
+s:gitFunctions	vcsgit.vim	/^let s:gitFunctions = {}$/;"	v
+s:gitFunctions	vcsgit.vim	/^let s:gitFunctions.AnnotateSplitRegex = ') '$/;"	v
+s:hgFunctions	vcshg.vim	/^let s:hgFunctions = {}$/;"	v
+s:hgFunctions	vcshg.vim	/^let s:hgFunctions.AnnotateSplitRegex = '\\d\\+: '$/;"	v
+s:icon_closed	tagbar.vim	/^    let s:icon_closed = '+'$/;"	v
+s:icon_closed	tagbar.vim	/^    let s:icon_closed = '▶'$/;"	v
+s:icon_closed	tagbar.vim	/^    let s:icon_closed = '▷'$/;"	v
+s:icon_open	tagbar.vim	/^    let s:icon_open   = '-'$/;"	v
+s:icon_open	tagbar.vim	/^    let s:icon_open   = '▼'$/;"	v
+s:icon_open	tagbar.vim	/^    let s:icon_open   = '◢'$/;"	v
+s:ignoreForReturn	DoxygenToolkit.vim	/^let s:ignoreForReturn = ['template', 'explicit', 'inline', 'static', 'virtual', 'void\\([[:blank:]]*\\*\\)\\@!', 'const', 'volatile', 'struct', 'extern']$/;"	v
+s:isEditFileRunning	vcscommand.vim	/^let s:isEditFileRunning = 0$/;"	v
+s:known_files	tagbar.vim	/^let s:known_files = {$/;"	v
+s:last_mps	matchit.vim	/^let s:last_mps = ""$/;"	v
+s:last_words	matchit.vim	/^let s:last_words = ":"$/;"	v
+s:lenSpaceStr	NERD_commenter.vim	/^let s:lenSpaceStr = strlen(s:spaceStr)$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = "Copyright (C) \\<enter>\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "GNU General Public License for more details.\\<enter>\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "This program is distributed in the hope that it will be useful,\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "This program is free software; you can redistribute it and\/or\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "You should have received a copy of the GNU General Public License\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "along with this program; if not, write to the Free Software\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "as published by the Free Software Foundation; either version 2\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "but WITHOUT ANY WARRANTY; without even the implied warranty of\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "modify it under the terms of the GNU General Public License\\<enter>"$/;"	v
+s:licenseTag	DoxygenToolkit.vim	/^let s:licenseTag = s:licenseTag . "of the License, or (at your option) any later version.\\<enter>\\<enter>"$/;"	v
+s:maxDotsInExtension	a.vim	/^let s:maxDotsInExtension = 1$/;"	v
+s:maxdelay	matrix.vim	/^let s:maxdelay = 5$/;"	v
+s:menuEnabled	vcscommand.vim	/^let s:menuEnabled = !VCSCommandGetOption('VCSCommandDisableMenu', 0)$/;"	v
+s:menuPriority	vcscommand.vim	/^let s:menuPriority = VCSCommandGetOption('VCSCommandMenuPriority', '')$/;"	v
+s:menuRoot	vcscommand.vim	/^let s:menuRoot = VCSCommandGetOption('VCSCommandMenuRoot', '&Plugin.VCS')$/;"	v
+s:menu_char_prefix	taglist.vim	/^let s:menu_char_prefix =$/;"	v
+s:mindelay	matrix.vim	/^let s:mindelay = 1$/;"	v
+s:mru_list_locked	mru.vim	/^let s:mru_list_locked = 0$/;"	v
+s:mySNR	lookupfile.vim	/^let s:mySNR = ''$/;"	v
+s:name	bufexplorer.vim	/^let s:name = '[BufExplorer]'$/;"	v
+s:next_buffer_number	NERD_tree.vim	/^let s:next_buffer_number = 1$/;"	v
+s:notslash	matchit.vim	/^let s:notslash = '\\\\\\@<!\\%(\\\\\\\\\\)*'$/;"	v
+s:old_cpo	NERD_tree.vim	/^let s:old_cpo = &cpo$/;"	v
+s:optionOverrides	vcscommand.vim	/^let s:optionOverrides = {}$/;"	v
+s:originBuffer	bufexplorer.vim	/^let s:originBuffer = 0$/;"	v
+s:path	vimim.vim	/^let s:path=expand("<sfile>:p:h")."\/"$/;"	v
+s:plugins	vcscommand.vim	/^let s:plugins = {}$/;"	v
+s:refreshBufferList	bufexplorer.vim	/^let s:refreshBufferList = 1$/;"	v
+s:running	bufexplorer.vim	/^let s:running = 0$/;"	v
+s:running_windows	NERD_tree.vim	/^let s:running_windows = has("win16") || has("win32") || has("win64")$/;"	v
+s:save_cpo	colorizer.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	lookupfile.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	matchit.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	vcsbzr.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	vcscommand.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	vcscvs.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	vcsgit.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	vcshg.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	vcssvk.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	vcssvn.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	zencoding.vim	/^let s:save_cpo = &cpo$/;"	v
+s:simplified_chinese	TransferChinese.vim	/^let s:simplified_chinese='$/;"	v
+s:snippets	snipMate.vim	/^let s:snippets = {} | let s:multi_snips = {}$/;"	v
+s:sort_by	bufexplorer.vim	/^let s:sort_by = ["number", "name", "fullpath", "mru", "extension"]$/;"	v
+s:sp	uisvr.vim	/^    let s:sp = '\\\\'$/;"	v
+s:sp	uisvr.vim	/^let s:sp = '\/'$/;"	v
+s:spaceStr	NERD_commenter.vim	/^let s:spaceStr = ' '$/;"	v
+s:splitMode	bufexplorer.vim	/^let s:splitMode = ""$/;"	v
+s:supportedVimVersion	IndentAnything.vim	/^let s:supportedVimVersion = 700$/;"	v
+s:svkFunctions	vcssvk.vim	/^let s:svkFunctions = {}$/;"	v
+s:svnFunctions	vcssvn.vim	/^let s:svnFunctions = {}$/;"	v
+s:svnFunctions	vcssvn.vim	/^let s:svnFunctions.AnnotateSplitRegex = '\\s\\+\\S\\+\\s\\+\\S\\+ '$/;"	v
+s:tlist_app_name	taglist.vim	/^let s:tlist_app_name = "none"$/;"	v
+s:tlist_brief_help	taglist.vim	/^let s:tlist_brief_help = 1$/;"	v
+s:tlist_cur_file_idx	taglist.vim	/^let s:tlist_cur_file_idx = -1$/;"	v
+s:tlist_debug	taglist.vim	/^let s:tlist_debug = 0$/;"	v
+s:tlist_debug_file	taglist.vim	/^let s:tlist_debug_file = ''$/;"	v
+s:tlist_def_asm_settings	taglist.vim	/^let s:tlist_def_asm_settings = 'asm;d:define;l:label;m:macro;t:type'$/;"	v
+s:tlist_def_aspperl_settings	taglist.vim	/^let s:tlist_def_aspperl_settings = 'asp;f:function;s:sub;v:variable'$/;"	v
+s:tlist_def_aspvbs_settings	taglist.vim	/^let s:tlist_def_aspvbs_settings = 'asp;f:function;s:sub;v:variable'$/;"	v
+s:tlist_def_awk_settings	taglist.vim	/^let s:tlist_def_awk_settings = 'awk;f:function'$/;"	v
+s:tlist_def_beta_settings	taglist.vim	/^let s:tlist_def_beta_settings = 'beta;f:fragment;s:slot;v:pattern'$/;"	v
+s:tlist_def_c_settings	taglist.vim	/^let s:tlist_def_c_settings = 'c;d:macro;g:enum;s:struct;u:union;t:typedef;' .$/;"	v
+s:tlist_def_cobol_settings	taglist.vim	/^let s:tlist_def_cobol_settings = 'cobol;d:data;f:file;g:group;p:paragraph;' .$/;"	v
+s:tlist_def_cpp_settings	taglist.vim	/^let s:tlist_def_cpp_settings = 'c++;n:namespace;v:variable;d:macro;t:typedef;' .$/;"	v
+s:tlist_def_cs_settings	taglist.vim	/^let s:tlist_def_cs_settings = 'c#;d:macro;t:typedef;n:namespace;c:class;' .$/;"	v
+s:tlist_def_csh_settings	taglist.vim	/^let s:tlist_def_csh_settings = 'sh;f:function'$/;"	v
+s:tlist_def_eiffel_settings	taglist.vim	/^let s:tlist_def_eiffel_settings = 'eiffel;c:class;f:feature'$/;"	v
+s:tlist_def_erlang_settings	taglist.vim	/^let s:tlist_def_erlang_settings = 'erlang;d:macro;r:record;m:module;f:function'$/;"	v
+s:tlist_def_expect_settings	taglist.vim	/^let s:tlist_def_expect_settings = 'tcl;c:class;f:method;p:procedure'$/;"	v
+s:tlist_def_fortran_settings	taglist.vim	/^let s:tlist_def_fortran_settings = 'fortran;p:program;b:block data;' .$/;"	v
+s:tlist_def_html_settings	taglist.vim	/^let s:tlist_def_html_settings = 'html;a:anchor;f:javascript function'$/;"	v
+s:tlist_def_java_settings	taglist.vim	/^let s:tlist_def_java_settings = 'java;p:package;c:class;i:interface;' .$/;"	v
+s:tlist_def_javascript_settings	taglist.vim	/^let s:tlist_def_javascript_settings = 'javascript;f:function'$/;"	v
+s:tlist_def_lisp_settings	taglist.vim	/^let s:tlist_def_lisp_settings = 'lisp;f:function'$/;"	v
+s:tlist_def_lua_settings	taglist.vim	/^let s:tlist_def_lua_settings = 'lua;f:function'$/;"	v
+s:tlist_def_make_settings	taglist.vim	/^let s:tlist_def_make_settings = 'make;m:macro'$/;"	v
+s:tlist_def_pascal_settings	taglist.vim	/^let s:tlist_def_pascal_settings = 'pascal;f:function;p:procedure'$/;"	v
+s:tlist_def_perl_settings	taglist.vim	/^let s:tlist_def_perl_settings = 'perl;c:constant;l:label;p:package;s:subroutine'$/;"	v
+s:tlist_def_php_settings	taglist.vim	/^let s:tlist_def_php_settings = 'php;c:class;d:constant;v:variable;f:function'$/;"	v
+s:tlist_def_python_settings	taglist.vim	/^let s:tlist_def_python_settings = 'python;c:class;m:member;f:function'$/;"	v
+s:tlist_def_rexx_settings	taglist.vim	/^let s:tlist_def_rexx_settings = 'rexx;s:subroutine'$/;"	v
+s:tlist_def_ruby_settings	taglist.vim	/^let s:tlist_def_ruby_settings = 'ruby;c:class;f:method;F:function;' .$/;"	v
+s:tlist_def_scheme_settings	taglist.vim	/^let s:tlist_def_scheme_settings = 'scheme;s:set;f:function'$/;"	v
+s:tlist_def_sh_settings	taglist.vim	/^let s:tlist_def_sh_settings = 'sh;f:function'$/;"	v
+s:tlist_def_slang_settings	taglist.vim	/^let s:tlist_def_slang_settings = 'slang;n:namespace;f:function'$/;"	v
+s:tlist_def_sml_settings	taglist.vim	/^let s:tlist_def_sml_settings = 'sml;e:exception;c:functor;s:signature;' .$/;"	v
+s:tlist_def_sql_settings	taglist.vim	/^let s:tlist_def_sql_settings = 'sql;c:cursor;F:field;P:package;r:record;' .$/;"	v
+s:tlist_def_tcl_settings	taglist.vim	/^let s:tlist_def_tcl_settings = 'tcl;c:class;f:method;m:method;p:procedure'$/;"	v
+s:tlist_def_vera_settings	taglist.vim	/^let s:tlist_def_vera_settings = 'vera;c:class;d:macro;e:enumerator;' .$/;"	v
+s:tlist_def_verilog_settings	taglist.vim	/^let s:tlist_def_verilog_settings = 'verilog;m:module;c:constant;P:parameter;' .$/;"	v
+s:tlist_def_vim_settings	taglist.vim	/^let s:tlist_def_vim_settings = 'vim;a:autocmds;v:variable;f:function'$/;"	v
+s:tlist_def_yacc_settings	taglist.vim	/^let s:tlist_def_yacc_settings = 'yacc;l:label'$/;"	v
+s:tlist_def_zsh_settings	taglist.vim	/^let s:tlist_def_zsh_settings = 'sh;f:function'$/;"	v
+s:tlist_file_count	taglist.vim	/^let s:tlist_file_count = 0$/;"	v
+s:tlist_file_lnum_idx_cache	taglist.vim	/^let s:tlist_file_lnum_idx_cache = -1$/;"	v
+s:tlist_file_name_idx_cache	taglist.vim	/^let s:tlist_file_name_idx_cache = -1$/;"	v
+s:tlist_file_names	taglist.vim	/^let s:tlist_file_names=''$/;"	v
+s:tlist_ftype_count	taglist.vim	/^let s:tlist_ftype_count = 0$/;"	v
+s:tlist_menu_empty	taglist.vim	/^let s:tlist_menu_empty = 1$/;"	v
+s:tlist_msg	taglist.vim	/^    let s:tlist_msg = ''$/;"	v
+s:tlist_removed_flist	taglist.vim	/^let s:tlist_removed_flist = ""$/;"	v
+s:tlist_sid	taglist.vim	/^    let s:tlist_sid = substitute(maparg('<SID>xx'), '<SNR>\\(\\d\\+_\\)xx$',$/;"	v
+s:tlist_win_maximized	taglist.vim	/^let s:tlist_win_maximized = 0$/;"	v
+s:tlist_winsize_chgd	taglist.vim	/^let s:tlist_winsize_chgd = -1$/;"	v
+s:tmpfile	matrix.vim	/^let s:tmpfile = tempname()$/;"	v
+s:traditional_chinese	TransferChinese.vim	/^let s:traditional_chinese='$/;"	v
+s:translators	vimim.vim	/^let s:translators = {}$/;"	v
+s:tree_markup_reg	NERD_tree.vim	/^let s:tree_markup_reg = '^[ `|]*[\\-+~]'$/;"	v
+s:tree_up_dir_line	NERD_tree.vim	/^let s:tree_up_dir_line = '.. (up a dir)'$/;"	v
+s:tree_wid	NERD_tree.vim	/^let s:tree_wid = 2$/;"	v
+s:type_init_done	tagbar.vim	/^let s:type_init_done    = 0$/;"	v
+s:types	bufexplorer.vim	/^let s:types = {"fullname": ':p', "path": ':p:h', "relativename": ':~:.', "relativepath": ':~:.:h', "shortname": ':t'}$/;"	v
+s:valuerange	colorizer.vim	/^let s:valuerange = [ 0x00, 0x5F, 0x87, 0xAF, 0xD7, 0xFF ]$/;"	v
+s:vimimhelp	vimim.vim	/^let s:vimimhelp = egg$/;"	v
+s:vimims	vimim.vim	/^let s:vimims = [VimIM]$/;"	v
+s:window_expanded	tagbar.vim	/^let s:window_expanded   = 0$/;"	v
+saveScreenState	NERD_tree.vim	/^function! s:saveScreenState()$/;"	f
+set_mode	jsbeautify.vim	/^function! s:set_mode(mode)$/;"	f
+setupStatusline	NERD_tree.vim	/^function! s:setupStatusline()$/;"	f
+setupSyntaxHighlighting	NERD_tree.vim	/^function! s:setupSyntaxHighlighting()$/;"	f
+showMenu	NERD_tree.vim	/^function! s:showMenu()$/;"	f
+snippets_dir	snipMate.vim	/^	let snippets_dir = substitute(globpath(&rtp, 'snippets\/'), "\\n", ',', 'g')$/;"	v
+stripMarkupFromLine	NERD_tree.vim	/^function! s:stripMarkupFromLine(line, removeLeadingSpaces)$/;"	f
+sub	rails.vim	/^function! s:sub(str,pat,rep)$/;"	f
+svkFunctions.Add	vcssvk.vim	/^function! s:svkFunctions.Add(argList)$/;"	f
+svkFunctions.Annotate	vcssvk.vim	/^function! s:svkFunctions.Annotate(argList)$/;"	f
+svkFunctions.Commit	vcssvk.vim	/^function! s:svkFunctions.Commit(argList)$/;"	f
+svkFunctions.Delete	vcssvk.vim	/^function! s:svkFunctions.Delete(argList)$/;"	f
+svkFunctions.Diff	vcssvk.vim	/^function! s:svkFunctions.Diff(argList)$/;"	f
+svkFunctions.GetBufferInfo	vcssvk.vim	/^function! s:svkFunctions.GetBufferInfo()$/;"	f
+svkFunctions.Identify	vcssvk.vim	/^function! s:svkFunctions.Identify(buffer)$/;"	f
+svkFunctions.Info	vcssvk.vim	/^function! s:svkFunctions.Info(argList)$/;"	f
+svkFunctions.Lock	vcssvk.vim	/^function! s:svkFunctions.Lock(argList)$/;"	f
+svkFunctions.Log	vcssvk.vim	/^function! s:svkFunctions.Log(argList)$/;"	f
+svkFunctions.Revert	vcssvk.vim	/^function! s:svkFunctions.Revert(argList)$/;"	f
+svkFunctions.Review	vcssvk.vim	/^function! s:svkFunctions.Review(argList)$/;"	f
+svkFunctions.Status	vcssvk.vim	/^function! s:svkFunctions.Status(argList)$/;"	f
+svkFunctions.Unlock	vcssvk.vim	/^function! s:svkFunctions.Unlock(argList)$/;"	f
+svkFunctions.Update	vcssvk.vim	/^function! s:svkFunctions.Update(argList)$/;"	f
+svnFunctions.Add	vcssvn.vim	/^function! s:svnFunctions.Add(argList)$/;"	f
+svnFunctions.Annotate	vcssvn.vim	/^function! s:svnFunctions.Annotate(argList)$/;"	f
+svnFunctions.Commit	vcssvn.vim	/^function! s:svnFunctions.Commit(argList)$/;"	f
+svnFunctions.Delete	vcssvn.vim	/^function! s:svnFunctions.Delete(argList)$/;"	f
+svnFunctions.Diff	vcssvn.vim	/^function! s:svnFunctions.Diff(argList)$/;"	f
+svnFunctions.GetBufferInfo	vcssvn.vim	/^function! s:svnFunctions.GetBufferInfo()$/;"	f
+svnFunctions.Identify	vcssvn.vim	/^function! s:svnFunctions.Identify(buffer)$/;"	f
+svnFunctions.Info	vcssvn.vim	/^function! s:svnFunctions.Info(argList)$/;"	f
+svnFunctions.Lock	vcssvn.vim	/^function! s:svnFunctions.Lock(argList)$/;"	f
+svnFunctions.Log	vcssvn.vim	/^function! s:svnFunctions.Log(argList)$/;"	f
+svnFunctions.Revert	vcssvn.vim	/^function! s:svnFunctions.Revert(argList)$/;"	f
+svnFunctions.Review	vcssvn.vim	/^function! s:svnFunctions.Review(argList)$/;"	f
+svnFunctions.Status	vcssvn.vim	/^function! s:svnFunctions.Status(argList)$/;"	f
+svnFunctions.Unlock	vcssvn.vim	/^function! s:svnFunctions.Unlock(argList)$/;"	f
+svnFunctions.Update	vcssvn.vim	/^function! s:svnFunctions.Update(argList)$/;"	f
+tabpagevar	NERD_tree.vim	/^function! s:tabpagevar(tabnr, var)$/;"	f
+toggle	NERD_tree.vim	/^function! s:toggle(dir)$/;"	f
+toggleIgnoreFilter	NERD_tree.vim	/^function! s:toggleIgnoreFilter()$/;"	f
+toggleShowBookmarks	NERD_tree.vim	/^function! s:toggleShowBookmarks()$/;"	f
+toggleShowFiles	NERD_tree.vim	/^function! s:toggleShowFiles()$/;"	f
+toggleShowHidden	NERD_tree.vim	/^function! s:toggleShowHidden()$/;"	f
+toggleZoom	NERD_tree.vim	/^function! s:toggleZoom()$/;"	f
+translators.translate	vimim.vim	/^function! s:translators.translate(line) dict$/;"	f
+treeExistsForBuf	NERD_tree.vim	/^function! s:treeExistsForBuf()$/;"	f
+treeExistsForTab	NERD_tree.vim	/^function! s:treeExistsForTab()$/;"	f
+trim_output	jsbeautify.vim	/^function! s:trim_output()$/;"	f
+uisvr	uisvr.vim	/^function! s:uisvr(...)$/;"	f
+unindent	jsbeautify.vim	/^function! s:unindent()$/;"	f
+unique	NERD_tree.vim	/^function! s:unique(list)$/;"	f
+upDir	NERD_tree.vim	/^function! s:upDir(keepState)$/;"	f
+vimim_1234567890_filter_on	vimim.vim	/^function! s:vimim_1234567890_filter_on()$/;"	f
+vimim_4corner_whole_match	vimim.vim	/^function! s:vimim_4corner_whole_match(keyboard)$/;"	f
+vimim_access_mycloud	vimim.vim	/^function! s:vimim_access_mycloud(cloud, cmd)$/;"	f
+vimim_action_label	vimim.vim	/^function! <SID>vimim_action_label(n)$/;"	f
+vimim_action_label_on	vimim.vim	/^function! s:vimim_action_label_on()$/;"	f
+vimim_add_im_if_empty	vimim.vim	/^function! s:vimim_add_im_if_empty(ims, key)$/;"	f
+vimim_apostrophe	vimim.vim	/^function! s:vimim_apostrophe(keyboard)$/;"	f
+vimim_apostrophe_fuzzy_pattern	vimim.vim	/^function! s:vimim_apostrophe_fuzzy_pattern(keyboards)$/;"	f
+vimim_build_popupmenu	vimim.vim	/^function! s:vimim_build_popupmenu(matched_list)$/;"	f
+vimim_build_reverse_4corner_cache	vimim.vim	/^function! s:vimim_build_reverse_4corner_cache(chinese)$/;"	f
+vimim_build_reverse_pinyin_cache	vimim.vim	/^function! s:vimim_build_reverse_pinyin_cache(chinese, one2one)$/;"	f
+vimim_check_mycloud_plugin	vimim.vim	/^function! s:vimim_check_mycloud_plugin()$/;"	f
+vimim_chinese_mode_mapping_on	vimim.vim	/^function! s:vimim_chinese_mode_mapping_on()$/;"	f
+vimim_create_quanpin_table	vimim.vim	/^function! s:vimim_create_quanpin_table()$/;"	f
+vimim_create_shuangpin_table	vimim.vim	/^function! s:vimim_create_shuangpin_table(rule)$/;"	f
+vimim_ctrl_e_ctrl_x_ctrl_u	vimim.vim	/^function! s:vimim_ctrl_e_ctrl_x_ctrl_u()$/;"	f
+vimim_ctrl_space_mapping_on	vimim.vim	/^function! s:vimim_ctrl_space_mapping_on()$/;"	f
+vimim_ctrl_x_ctrl_u_bs	vimim.vim	/^function! <SID>vimim_ctrl_x_ctrl_u_bs()$/;"	f
+vimim_ctrl_y_ctrl_x_ctrl_u	vimim.vim	/^function! s:vimim_ctrl_y_ctrl_x_ctrl_u()$/;"	f
+vimim_datafile_range	vimim.vim	/^function! s:vimim_datafile_range(keyboard)$/;"	f
+vimim_debug_reset	vimim.vim	/^function! s:vimim_debug_reset()$/;"	f
+vimim_decimal2hex	vimim.vim	/^function! s:vimim_decimal2hex(decimal)$/;"	f
+vimim_dictionary_chinese	vimim.vim	/^function! s:vimim_dictionary_chinese()$/;"	f
+vimim_dictionary_im	vimim.vim	/^function! s:vimim_dictionary_im()$/;"	f
+vimim_dictionary_shuangpin	vimim.vim	/^function! s:vimim_dictionary_shuangpin()$/;"	f
+vimim_diy_double_menu	vimim.vim	/^function! s:vimim_diy_double_menu(h_ac, h_d1, h_d2)$/;"	f
+vimim_diy_keyboard	vimim.vim	/^function! s:vimim_diy_keyboard(keyboard)$/;"	f
+vimim_diy_keyboard2number	vimim.vim	/^function! s:vimim_diy_keyboard2number(keyboard)$/;"	f
+vimim_diy_lines_to_hash	vimim.vim	/^function! s:vimim_diy_lines_to_hash(fuzzy_lines)$/;"	f
+vimim_diy_results	vimim.vim	/^function! s:vimim_diy_results(keyboards, cache_list)$/;"	f
+vimim_do_cloud_if_no_datafile	vimim.vim	/^function! s:vimim_do_cloud_if_no_datafile()$/;"	f
+vimim_dynamic_alphabet_trigger	vimim.vim	/^function! s:vimim_dynamic_alphabet_trigger()$/;"	f
+vimim_easter_chicken	vimim.vim	/^function! s:vimim_easter_chicken(keyboard)$/;"	f
+vimim_egg_vim	vimim.vim	/^function! s:vimim_egg_vim()$/;"	f
+vimim_egg_vimim	vimim.vim	/^function! s:vimim_egg_vimim()$/;"	f
+vimim_egg_vimimdebug	vimim.vim	/^function! s:vimim_egg_vimimdebug()$/;"	f
+vimim_egg_vimimdefaults	vimim.vim	/^function! s:vimim_egg_vimimdefaults()$/;"	f
+vimim_egg_vimimegg	vimim.vim	/^function! s:vimim_egg_vimimegg()$/;"	f
+vimim_egg_vimimhelp	vimim.vim	/^function! s:vimim_egg_vimimhelp()$/;"	f
+vimim_egg_vimimunicode	vimim.vim	/^function! s:vimim_egg_vimimunicode()$/;"	f
+vimim_egg_vimimvim	vimim.vim	/^function! s:vimim_egg_vimimvim()$/;"	f
+vimim_exact_match	vimim.vim	/^function! s:vimim_exact_match(lines, keyboard, match_start)$/;"	f
+vimim_expand_character_class	vimim.vim	/^function! s:vimim_expand_character_class(character_class)$/;"	f
+vimim_finalize_session	vimim.vim	/^function! s:vimim_finalize_session()$/;"	f
+vimim_first_punctuation_erbi	vimim.vim	/^function! s:vimim_first_punctuation_erbi(keyboard)$/;"	f
+vimim_free_fuzzy_pattern	vimim.vim	/^function! s:vimim_free_fuzzy_pattern(keyboard)$/;"	f
+vimim_fuzzy_match	vimim.vim	/^function! s:vimim_fuzzy_match(keyboard)$/;"	f
+vimim_get_chinese	vimim.vim	/^function! s:vimim_get_chinese(english)$/;"	f
+vimim_get_chinese_number	vimim.vim	/^function! s:vimim_get_chinese_number(keyboards, i)$/;"	f
+vimim_get_chinese_punctuation	vimim.vim	/^function! s:vimim_get_chinese_punctuation(english_punctuation)$/;"	f
+vimim_get_cloud_sogou	vimim.vim	/^function! s:vimim_get_cloud_sogou(keyboard)$/;"	f
+vimim_get_cloud_sogou_key	vimim.vim	/^function! s:vimim_get_cloud_sogou_key()$/;"	f
+vimim_get_double_quote	vimim.vim	/^function! s:vimim_get_double_quote()$/;"	f
+vimim_get_internal_code_char_before	vimim.vim	/^function! s:vimim_get_internal_code_char_before()$/;"	f
+vimim_get_keycode	vimim.vim	/^function! s:vimim_get_keycode()$/;"	f
+vimim_get_list_from_smart_ctrl_n	vimim.vim	/^function! s:vimim_get_list_from_smart_ctrl_n(keyboard)$/;"	f
+vimim_get_list_from_smart_ctrl_p	vimim.vim	/^function! s:vimim_get_list_from_smart_ctrl_p(keyboard)$/;"	f
+vimim_get_mycloud_plugin	vimim.vim	/^function! s:vimim_get_mycloud_plugin(keyboard)$/;"	f
+vimim_get_new_order_list	vimim.vim	/^function! s:vimim_get_new_order_list(chinese)$/;"	f
+vimim_get_pinyin_from_pinyin	vimim.vim	/^function! s:vimim_get_pinyin_from_pinyin(keyboard)$/;"	f
+vimim_get_pinyin_from_shuangpin	vimim.vim	/^function! s:vimim_get_pinyin_from_shuangpin(keyboard)$/;"	f
+vimim_get_pinyin_table	vimim.vim	/^function! s:vimim_get_pinyin_table()$/;"	f
+vimim_get_seamless	vimim.vim	/^function! s:vimim_get_seamless(current_positions)$/;"	f
+vimim_get_single_quote	vimim.vim	/^function! s:vimim_get_single_quote()$/;"	f
+vimim_getsid	vimim.vim	/^function!  s:vimim_getsid(scriptname)$/;"	f
+vimim_helper_mapping_on	vimim.vim	/^function! s:vimim_helper_mapping_on()$/;"	f
+vimim_hjkl	vimim.vim	/^function! <SID>vimim_hjkl(key)$/;"	f
+vimim_i18n_iconv	vimim.vim	/^function! s:vimim_i18n_iconv(line)$/;"	f
+vimim_i18n_read	vimim.vim	/^function! s:vimim_i18n_read(line)$/;"	f
+vimim_i18n_read_list	vimim.vim	/^function! s:vimim_i18n_read_list(lines)$/;"	f
+vimim_i_chinese_mode_autocmd_on	vimim.vim	/^function! s:vimim_i_chinese_mode_autocmd_on()$/;"	f
+vimim_i_chinese_mode_on	vimim.vim	/^function! s:vimim_i_chinese_mode_on()$/;"	f
+vimim_i_cursor_color	vimim.vim	/^function! s:vimim_i_cursor_color(switch)$/;"	f
+vimim_i_map_off	vimim.vim	/^function! s:vimim_i_map_off()$/;"	f
+vimim_i_setting_off	vimim.vim	/^function! s:vimim_i_setting_off()$/;"	f
+vimim_i_setting_on	vimim.vim	/^function! s:vimim_i_setting_on()$/;"	f
+vimim_imode_number	vimim.vim	/^function! s:vimim_imode_number(keyboard, prefix)$/;"	f
+vimim_initialization_once	vimim.vim	/^function! s:vimim_initialization_once()$/;"	f
+vimim_initialize_backdoor	vimim.vim	/^function! s:vimim_initialize_backdoor()$/;"	f
+vimim_initialize_backdoor_setting	vimim.vim	/^function! s:vimim_initialize_backdoor_setting()$/;"	f
+vimim_initialize_cloud	vimim.vim	/^function! s:vimim_initialize_cloud()$/;"	f
+vimim_initialize_datafile_in_vimrc	vimim.vim	/^function! s:vimim_initialize_datafile_in_vimrc()$/;"	f
+vimim_initialize_e2c	vimim.vim	/^function! s:vimim_initialize_e2c()$/;"	f
+vimim_initialize_encoding	vimim.vim	/^function! s:vimim_initialize_encoding()$/;"	f
+vimim_initialize_erbi	vimim.vim	/^function! s:vimim_initialize_erbi()$/;"	f
+vimim_initialize_global	vimim.vim	/^function! s:vimim_initialize_global()$/;"	f
+vimim_initialize_i_setting	vimim.vim	/^function! s:vimim_initialize_i_setting()$/;"	f
+vimim_initialize_keycode	vimim.vim	/^function! s:vimim_initialize_keycode()$/;"	f
+vimim_initialize_mapping	vimim.vim	/^function! s:vimim_initialize_mapping()$/;"	f
+vimim_initialize_mycloud_plugin	vimim.vim	/^function! s:vimim_initialize_mycloud_plugin()$/;"	f
+vimim_initialize_pinyin	vimim.vim	/^function! s:vimim_initialize_pinyin()$/;"	f
+vimim_initialize_punctuation	vimim.vim	/^function! s:vimim_initialize_punctuation()$/;"	f
+vimim_initialize_quantifiers	vimim.vim	/^function! s:vimim_initialize_quantifiers()$/;"	f
+vimim_initialize_session	vimim.vim	/^function! s:vimim_initialize_session()$/;"	f
+vimim_initialize_shuangpin	vimim.vim	/^function! s:vimim_initialize_shuangpin()$/;"	f
+vimim_initialize_skin	vimim.vim	/^function! s:vimim_initialize_skin()$/;"	f
+vimim_insert_entry	vimim.vim	/^function! s:vimim_insert_entry(entries)$/;"	f
+vimim_internal_code	vimim.vim	/^function! s:vimim_internal_code(keyboard)$/;"	f
+vimim_internal_codes	vimim.vim	/^function! s:vimim_internal_codes(numbers)$/;"	f
+vimim_keyboard_analysis	vimim.vim	/^function! s:vimim_keyboard_analysis(lines, keyboard)$/;"	f
+vimim_label	vimim.vim	/^function! <SID>vimim_label(n)$/;"	f
+vimim_label_1234567890_filter	vimim.vim	/^function! <SID>vimim_label_1234567890_filter(n)$/;"	f
+vimim_label_on	vimim.vim	/^function! s:vimim_label_on()$/;"	f
+vimim_length_filter	vimim.vim	/^function! s:vimim_length_filter(results, length)$/;"	f
+vimim_load_datafile	vimim.vim	/^function! s:vimim_load_datafile(datafile)$/;"	f
+vimim_localization	vimim.vim	/^function! s:vimim_localization()$/;"	f
+vimim_magic_tail	vimim.vim	/^function! s:vimim_magic_tail(keyboard)$/;"	f
+vimim_make_one_entry	vimim.vim	/^function! s:vimim_make_one_entry(cache, chinese)$/;"	f
+vimim_menu_4corner_filter	vimim.vim	/^function! s:vimim_menu_4corner_filter(matched_list)$/;"	f
+vimim_mini_vimrc	vimim.vim	/^function! s:vimim_mini_vimrc()$/;"	f
+vimim_navigation_label_on	vimim.vim	/^function! s:vimim_navigation_label_on()$/;"	f
+vimim_no_popupmenu_list	vimim.vim	/^function! s:vimim_no_popupmenu_list(periods)$/;"	f
+vimim_onekey_action	vimim.vim	/^function! s:vimim_onekey_action(onekey)$/;"	f
+vimim_onekey_mapping_on	vimim.vim	/^function! s:vimim_onekey_mapping_on()$/;"	f
+vimim_oneline_match	vimim.vim	/^function! s:vimim_oneline_match(lines, keyboard)$/;"	f
+vimim_pageup_pagedown	vimim.vim	/^function! s:vimim_pageup_pagedown(matched_list)$/;"	f
+vimim_pair_list	vimim.vim	/^function! s:vimim_pair_list(matched_list)$/;"	f
+vimim_pinyin_and_4corner	vimim.vim	/^function! s:vimim_pinyin_and_4corner(keyboard)$/;"	f
+vimim_pinyin_filter	vimim.vim	/^function! s:vimim_pinyin_filter(results, keyboards)$/;"	f
+vimim_pinyin_more_matches	vimim.vim	/^function! s:vimim_pinyin_more_matches(lines, keyboard, results)$/;"	f
+vimim_plugins_fix_start	vimim.vim	/^function! s:vimim_plugins_fix_start()$/;"	f
+vimim_plugins_fix_stop	vimim.vim	/^function! s:vimim_plugins_fix_stop()$/;"	f
+vimim_popup_word	vimim.vim	/^function! s:vimim_popup_word()$/;"	f
+vimim_popupmenu_list	vimim.vim	/^function! s:vimim_popupmenu_list(matched_list)$/;"	f
+vimim_process_mycloud_output	vimim.vim	/^function! s:vimim_process_mycloud_output(keyboard, output)$/;"	f
+vimim_punctuation_mapping	vimim.vim	/^function! <SID>vimim_punctuation_mapping(key)$/;"	f
+vimim_punctuation_navigation_on	vimim.vim	/^function! s:vimim_punctuation_navigation_on()$/;"	f
+vimim_punctuation_on	vimim.vim	/^function! <SID>vimim_punctuation_on()$/;"	f
+vimim_punctuations_navigation	vimim.vim	/^function! <SID>vimim_punctuations_navigation(key)$/;"	f
+vimim_quanpin_transform	vimim.vim	/^function! s:vimim_quanpin_transform(keyboard)$/;"	f
+vimim_quick_fuzzy_search	vimim.vim	/^function! s:vimim_quick_fuzzy_search(keyboard)$/;"	f
+vimim_reload_datafile	vimim.vim	/^function! s:vimim_reload_datafile(reload_flag)$/;"	f
+vimim_reset_before_stop	vimim.vim	/^function! s:vimim_reset_before_stop()$/;"	f
+vimim_reverse_lookup	vimim.vim	/^function! s:vimim_reverse_lookup(chinese)$/;"	f
+vimim_rot13	vimim.vim	/^function! s:vimim_rot13(keyboard)$/;"	f
+vimim_save_new_entry	vimim.vim	/^function! <SID>vimim_save_new_entry(entry)$/;"	f
+vimim_save_to_disk	vimim.vim	/^function! s:vimim_save_to_disk(lines)$/;"	f
+vimim_scan_plugin_for_more_im	vimim.vim	/^function! s:vimim_scan_plugin_for_more_im()$/;"	f
+vimim_scan_plugin_to_invoke_im	vimim.vim	/^function! s:vimim_scan_plugin_to_invoke_im()$/;"	f
+vimim_search	vimim.vim	/^function! s:vimim_search(key)$/;"	f
+vimim_search_boundary	vimim.vim	/^function! s:vimim_search_boundary(lines, keyboard)$/;"	f
+vimim_sentence_match	vimim.vim	/^function! s:vimim_sentence_match(lines, keyboard)$/;"	f
+vimim_set_encoding	vimim.vim	/^function! s:vimim_set_encoding()$/;"	f
+vimim_set_global_default	vimim.vim	/^function! s:vimim_set_global_default(options, default)$/;"	f
+vimim_set_seamless	vimim.vim	/^function! <SID>vimim_set_seamless()$/;"	f
+vimim_sexy_autocmd	vimim.vim	/^function! s:vimim_sexy_autocmd()$/;"	f
+vimim_sexy_mode_mapping_on	vimim.vim	/^function! s:vimim_sexy_mode_mapping_on()$/;"	f
+vimim_shuangpin_abc	vimim.vim	/^function! s:vimim_shuangpin_abc(rule)$/;"	f
+vimim_shuangpin_flypy	vimim.vim	/^function! s:vimim_shuangpin_flypy(rule)$/;"	f
+vimim_shuangpin_generic	vimim.vim	/^function! s:vimim_shuangpin_generic()$/;"	f
+vimim_shuangpin_microsoft	vimim.vim	/^function! s:vimim_shuangpin_microsoft(rule)$/;"	f
+vimim_shuangpin_nature	vimim.vim	/^function! s:vimim_shuangpin_nature(rule)$/;"	f
+vimim_shuangpin_plusplus	vimim.vim	/^function! s:vimim_shuangpin_plusplus(rule)$/;"	f
+vimim_shuangpin_purple	vimim.vim	/^function! s:vimim_shuangpin_purple(rule)$/;"	f
+vimim_shuangpin_transform	vimim.vim	/^function! s:vimim_shuangpin_transform(keyboard)$/;"	f
+vimim_smart_ctrl_n	vimim.vim	/^function! <SID>vimim_smart_ctrl_n()$/;"	f
+vimim_smart_ctrl_p	vimim.vim	/^function! <SID>vimim_smart_ctrl_p()$/;"	f
+vimim_smart_enter	vimim.vim	/^function! <SID>vimim_smart_enter()$/;"	f
+vimim_space_dynamic	vimim.vim	/^function! <SID>vimim_space_dynamic()$/;"	f
+vimim_space_onekey	vimim.vim	/^function! <SID>vimim_space_onekey()$/;"	f
+vimim_space_static	vimim.vim	/^function! <SID>vimim_space_static()$/;"	f
+vimim_square_bracket	vimim.vim	/^function! s:vimim_square_bracket(key)$/;"	f
+vimim_start	vimim.vim	/^function! s:vimim_start()$/;"	f
+vimim_start_chinese_mode	vimim.vim	/^function! s:vimim_start_chinese_mode()$/;"	f
+vimim_start_omni	vimim.vim	/^function! s:vimim_start_omni()$/;"	f
+vimim_start_onekey	vimim.vim	/^function! s:vimim_start_onekey()$/;"	f
+vimim_static_action	vimim.vim	/^function! s:vimim_static_action(space)$/;"	f
+vimim_static_alphabet_auto_select	vimim.vim	/^function! s:vimim_static_alphabet_auto_select()$/;"	f
+vimim_statusline	vimim.vim	/^function! s:vimim_statusline()$/;"	f
+vimim_stop	vimim.vim	/^function! s:vimim_stop()$/;"	f
+vimim_stop_chinese_mode	vimim.vim	/^function! s:vimim_stop_chinese_mode()$/;"	f
+vimim_stop_sexy_mode	vimim.vim	/^function! s:vimim_stop_sexy_mode()$/;"	f
+vimim_super_reset	vimim.vim	/^function! s:vimim_super_reset()$/;"	f
+vimim_to_cloud_or_not	vimim.vim	/^function! s:vimim_to_cloud_or_not(keyboards, clouds)$/;"	f
+vimim_toggle_punctuation	vimim.vim	/^function! <SID>vimim_toggle_punctuation()$/;"	f
+vimim_toggle_wubi_pinyin	vimim.vim	/^function! s:vimim_toggle_wubi_pinyin()$/;"	f
+vimim_translator	vimim.vim	/^function! s:vimim_translator(english)$/;"	f
+vimim_update_chinese_frequency_usage	vimim.vim	/^function! s:vimim_update_chinese_frequency_usage(both_list)$/;"	f
+vimim_url_xx_to_chinese	vimim.vim	/^function! s:vimim_url_xx_to_chinese(xx)$/;"	f
+vimim_visual_ctrl_6	vimim.vim	/^function! <SID>vimim_visual_ctrl_6(keyboard)$/;"	f
+vimim_visual_mapping_on	vimim.vim	/^function! s:vimim_visual_mapping_on()$/;"	f
+vimim_wildcard_search	vimim.vim	/^function! s:vimim_wildcard_search(keyboard, lines)$/;"	f
+vimim_without_datafile	vimim.vim	/^function! s:vimim_without_datafile(keyboard)$/;"	f
+vimim_wubi	vimim.vim	/^function! s:vimim_wubi(keyboard)$/;"	f
+vimim_wubi_whole_match	vimim.vim	/^function! s:vimim_wubi_whole_match(keyboard)$/;"	f
+vimim_wubi_z_as_wildcard	vimim.vim	/^function! s:vimim_wubi_z_as_wildcard(keyboard)$/;"	f
+warning	uisvr.vim	/^function! s:warning(msg)$/;"	f

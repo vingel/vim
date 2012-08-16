@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	Velocity HTML template
 " Maintainer:	Hsiaoming Young <http://lepture.com>
-" Last Change:	2011 Dec 23
+" Last Change:	2012 Jan 09
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -23,19 +23,19 @@ else
 endif
 
 syn keyword velocityTodo FIXME TODO contained
-syn region velocitySpec start="@" end=":" oneline contained
+syn region velocitySpec start="@" end=" " oneline contained
 syn region velocityComment start="#\*" end="\*#" contains=velocityTodo,velocitySpec
 syn match velocityComment /##.*/ contains=velocityTodo,velocitySpec
 syn region velocityString start='"' end='"' oneline
 syn region velocityList start='\[' end='\]' oneline contained contains=velocityString
 syn match velocityMath /=\|-\|+\|\/\|\*\|%/ contained
 syn match velocityBlock /#[a-z]\{2,\}/ contains=velocityStatement
-syn match velocityBlock /#[a-z]\{2,\}([^)]\+)/ contains=velocityStatement,velocityVar,velocityString,velocityMath,velocityList,velocityFunction
+syn match velocityBlock /#[a-z]\{2,\}(.\+)/ contains=velocityStatement,velocityVar,velocityString,velocityMath,velocityList
 syn keyword velocityStatement in set if else elseif end foreach include parse macro cmsparse stop break evaluate define contained
 
-syn match velocityVar /$!\?[a-zA-Z][a-zA-Z0-9_-]\+\.\?[a-zA-Z0-9]*/ contains=velocityFunction
-syn match velocityVar /$!\?{[a-zA-Z][a-zA-Z0-9_-]\+}/
-syn match velocityFunction /[a-zA-Z][a-zA-Z0-9_-]\+\.[a-zA-Z][a-zA-Z0-9_-]\+(.*)/ contains=velocityString,velocityList,velocityMath,velocityVar,velocityFunction
+syn match velocityVar /$!\?[a-zA-Z][a-zA-Z0-9_-]\+\.\?[a-zA-Z0-9]*/ contains=velocityFunction display containedin=ALL
+syn match velocityVar /$!\?{[a-zA-Z][a-zA-Z0-9_-]\+}/ display containedin=ALL
+syn match velocityFunction /[a-zA-Z][a-zA-Z0-9_-]\+\.[a-zA-Z][a-zA-Z0-9_-]\+([^)]*)/ contains=velocityString,velocityList,velocityMath,velocityVar,velocityFunction display containedin=velocityBlock
 
 " Define the default highlighting.
 " For version 5.7 and earlier: only when not done already
