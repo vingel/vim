@@ -1,0 +1,70 @@
+*csscomb.txt* CSScomb for Vim
+
+Vim plugin author: Aleksandr Batsuev <batsuev@gmail.com>
+CSScomb author: Vyacheslav Oliyancuk <miripiruni@gmail.com>
+WebSite: http://csscomb.com
+Repository: http://github.com/miripiruni/CSScomb-for-Vim
+
+==============================================================================
+CONTENTS                                                    *csscomb-contents*
+
+About                   |csscomb-about|
+Custom sort order       |csscomb-custom-sort-order|
+Install                 |csscomb-install|
+Usage                   |csscomb-usage|
+
+==============================================================================
+ABOUT                                                          *csscomb-about*
+
+The algorithm of CSScomb simulates web-technologist's actions upon working
+with CSS-code to the limit. Usually to re-order code you move lines over each
+other considering comments in the code, multilines records of property values,
+hacks and everything that could be found in the real file. CSScomb reproduces
+these actions for you. This means that the parser "thinks" as a person editing
+the text, not as a blind robot parsing CSS.
+
+For more info, online demo and tests see http://csscomb.com
+
+What can CSScomb do?
+
+* Sorts CSS-properties within the selectors according to the settings.
+
+* Treats the initial formatting of style sheets carefully.
+
+* Sorts commented properties as if they are not commented.
+
+* Moves down unknown properties in the order they are met within the selector.
+  E.g.: he\ight: 100% and similar will be taken as the unknown ones.
+
+* Successfully parses @media ... {...} and any other constructions with @.
+
+* Successfully parses expressions and then moves them to the end of the
+  properties in the order they are met within the framework of properties of
+  one selector.
+
+==============================================================================
+CUSTOM SORT ORDER                                  *csscomb-custom-sort-order*
+
+For adjusting plugins use one-dimensional and two-dimensional JSON arrays.
+In case of two-dimensional arrays the properties will be divided into groups
+with an empty line. In plugins you should pick open file csscomb.php
+
+==============================================================================
+INSTALL                                                      *csscomb-install*
+
+With Pathogen
+    cd ~/.vim/bundle
+    git clone https://github.com/miripiruni/csscomb-for-vim.git
+
+With Vundle
+    Add to .vimrc: Bundle 'git://github.com/miripiruni/csscomb-for-vim.git'
+
+Manual without plugins manager
+    git clone https://github.com/miripiruni/csscomb-for-vim.git
+    cp csscomb-vim/plugin/* ~/.vim/plugin/
+
+==============================================================================
+USAGE                                                          *csscomb-usage*
+
+For CSS resort you can use ':CSScomb' command.
+Also you can select a part of CSS file and type ':CSScomb'.
