@@ -3994,7 +3994,7 @@ Slashdot Solidot TechCrunch Boingboing friendfeed picasa apache nginx
 python django twisted pinax lambda
 javascript jQuery Prototype
 FabriQate Guptas Deepak Manav
-Alibaba Alipay Aliway Taobao alibaba-inc alipay-inc
+Alibaba Alipay Aliway Taobao
 Arale YAHOO YUI onDOMReady onContentReady onAvailable setXY getXY getStyle hasClass addClass removeClass getAncestorBy getAncestorByTagName getAncestorByClassName getChildren getFirstChild getLastChild getNextSibling getPreviousSibling isAncestor getDocumentHeight getDocumentScrollLeft getDocumentScrollTop getDocumentWidth getElementBy 
 stringUtil.equals
 Cocca NSObject NSAutoreleasePool NSUserDefaults NSUndoManager NSNotification NSNotificationCenter NSNotificationQueue NSDistributedNotificationCenter NSApplication NSWindow NSView NSController NSObjectController NSArrayController NSTreeController NSPanel NSMenu NSMenuItem NSCursor NSBox NSScrollView NSSplitView NSClipView NSRulerView NSTableView NSBrowser NSOutlineView
